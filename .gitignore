@@ -7,6 +7,8 @@ __pycache__/
 .venv/
 venv/
 node_modules/
+.uv-cache/
+.chrome-xhs-profile/
 
 .env
 .env.*
