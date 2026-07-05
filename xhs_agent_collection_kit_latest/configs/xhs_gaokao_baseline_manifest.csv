@@ -1,0 +1,6 @@
+event_id,event_name,event_date,country_group,brand,assigned_device,priority,collection_group,enabled,keywords,analysis_window_start,analysis_window_end,notes_limit_recon,notes_limit_deep,comments_per_note_pilot,comments_per_note_deep,author_post_limit,notes
+B001_P1,2026高考备考祝福预热,2026-06-07,Baseline,Gaokao,A,1,baseline,yes,2026高考|高考加油|高考倒计时|高考祝福|陪考|高考前一天|高考冲刺,2026-05-24,2026-06-06,30,120,30,80,20,基线事件P1；情绪预热与陪考
+B001_P2,2026高考开考现场,2026-06-07,Baseline,Gaokao,A,2,baseline,yes,高考开考|高考第一天|高考考场|高考家长|高考结束|高考现场|高考陪考,2026-06-07,2026-06-10,30,150,30,80,20,基线事件P2；全国同步爆发
+B001_P3,2026高考考题讨论,2026-06-07,Baseline,Gaokao,B,3,baseline,yes,高考作文|高考数学|高考语文|数学难|作文题|高考题|高考考后吐槽,2026-06-07,2026-06-12,30,150,30,80,20,基线事件P3；考题争议和考后表达
+B001_P4,2026高考查分晒分,2026-06-23,Baseline,Gaokao,B,4,baseline,yes,高考查分|高考成绩|高考分数线|晒分|查到分了|高考出分|高考录取线,2026-06-23,2026-06-27,30,150,30,80,20,基线事件P4；结果冲击
+B001_P5,2026高考志愿填报,2026-06-27,Baseline,Gaokao,C,5,baseline,yes,志愿填报|高考志愿|选专业|报志愿|专业怎么选|高考报考|大学专业,2026-06-27,2026-07-04,30,150,30,80,20,基线事件P5；决策扩散和营销污染对照

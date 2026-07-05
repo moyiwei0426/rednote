@@ -1,0 +1,2 @@
+event_id,event_name,event_date,country_group,brand,assigned_device,priority,collection_group,enabled,keywords,analysis_window_start,analysis_window_end,notes_limit_recon,notes_limit_deep,comments_per_note_pilot,comments_per_note_deep,author_post_limit,notes
+B001_P2,2026高考开考现场,2026-06-07,Baseline,Gaokao,A,1,baseline_firstpass_retry,yes,高考第一天|高考结束|高考陪考,2026-06-07,2026-06-10,20,100,30,80,0,第一轮 P2 页面加载超时失败关键词补跑；仍不采主页画像

@@ -1,0 +1,12 @@
+event_id,event_name,event_date,country_group,brand,assigned_device,priority,collection_group,enabled,keywords,analysis_window_start,analysis_window_end,notes_limit_recon,notes_limit_deep,comments_per_note_pilot,comments_per_note_deep,author_post_limit,notes
+E001,DeepSeek-V4,2026-04-24,China,DeepSeek,A,1,core,yes,DeepSeek V4|DeepSeek-V4|DeepSeek V4 发布|DeepSeek V4 怎么用|DeepSeek V4 测评|DeepSeek V4 编程|DeepSeek V4 Pro|DeepSeek V4 Flash,2026-04-17,2026-07-04,20,80,30,80,20,已验证为优先核心候选
+E002,GPT-5.5 / GPT-5.5 Instant,,Overseas,OpenAI,A,2,core,yes,GPT-5.5|GPT-5.5 Instant|OpenAI GPT-5.5|ChatGPT GPT-5.5|GPT-5.5 发布|GPT-5.5 怎么用|GPT-5.5 测评,2026-04-01,2026-07-04,20,80,30,80,20,OpenAI 系列核心候选
+E003,GPT-5.6 Sol,,Overseas,OpenAI,A,3,core,yes,GPT-5.6 Sol|GPT 5.6 Sol|OpenAI Sol|ChatGPT Sol|GPT-5.6 发布|GPT-5.6 怎么用|GPT-5.6 测评,2026-04-01,2026-07-04,20,80,30,80,20,OpenAI 系列核心候选
+E004,Claude Opus 4.7,,Overseas,Anthropic,B,4,core,yes,Claude Opus 4.7|Opus 4.7|Claude 4.7|Claude Opus 发布|Claude Opus 测评|Claude Opus 编程,2026-04-01,2026-07-04,20,80,30,80,20,Claude 系列候选
+E005,Claude Opus 4.8,,Overseas,Anthropic,B,5,core,yes,Claude Opus 4.8|Opus 4.8|Claude 4.8|Claude Opus 4.8 发布|Claude Opus 4.8 测评|Claude Opus 4.8 编程,2026-04-01,2026-07-04,20,80,30,80,20,Claude 系列候选
+E006,Claude Sonnet 5,,Overseas,Anthropic,B,6,core,yes,Claude Sonnet 5|Sonnet 5|Claude 5|Claude Sonnet 发布|Claude Sonnet 5 测评|Claude Sonnet 5 编程,2026-04-01,2026-07-04,20,80,30,80,20,Claude 系列候选
+E007,Claude Fable 5 / Mythos 5,,Overseas,Anthropic,B,7,observe,yes,Claude Fable 5|Claude Mythos 5|Fable 5|Mythos 5|Claude Fable 发布|Claude Mythos 发布,2026-04-01,2026-07-04,20,60,20,60,20,观察候选
+E008,Qwen3.6,,China,Qwen,C,8,observe,yes,Qwen3.6|Qwen 3.6|通义千问 3.6|通义千问 新模型|Qwen 发布|Qwen 测评|Qwen 编程,2026-04-01,2026-07-04,20,60,20,60,20,待验证官方事件
+E009,豆包 Seed 2.0,,China,ByteDance,C,9,observe,yes,豆包 Seed 2.0|豆包种子 2.0|Seed 2.0|豆包 新模型|豆包 发布|豆包 测评|豆包 编程,2026-04-01,2026-07-04,20,60,20,60,20,待验证官方事件
+E010,Kimi 新功能,,China,Kimi,C,10,observe,yes,Kimi 新功能|Kimi 更新|Kimi 大模型|Kimi 发布|Kimi 怎么用|Kimi 测评|Kimi 编程,2026-04-01,2026-07-04,20,60,20,60,20,观察候选
+E011,AI PPT / AI Agent 工具热点,,Application,Mixed,C,11,reference,no,AI PPT|AI Agent|AI Agent 工具|AI 做PPT|AI 办公|AI 工具 测评|AI Agent 怎么用,2026-04-01,2026-07-04,20,60,20,60,20,不进核心事件；只作应用扩散对照

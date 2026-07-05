@@ -1,0 +1,43 @@
+{
+  "export_name": "gaokao_2026_firstpass",
+  "source_run_dir": "/Users/momo/Documents/media catch/runs/xhs_baseline_events/gaokao_2026_firstpass",
+  "created_at": "2026-07-05T16:25:34",
+  "include_raw_zip": false,
+  "files": [
+    {
+      "file": "notes_unified.csv",
+      "kind": "unified_csv",
+      "rows": "292",
+      "bytes": "65524",
+      "note": "GitHub-ready unified research table"
+    },
+    {
+      "file": "comments_unified.csv",
+      "kind": "unified_csv",
+      "rows": "2390",
+      "bytes": "571733",
+      "note": "GitHub-ready unified research table"
+    },
+    {
+      "file": "actor_commenter_seed.csv",
+      "kind": "unified_csv",
+      "rows": "2292",
+      "bytes": "226865",
+      "note": "GitHub-ready unified research table"
+    },
+    {
+      "file": "event_phase_summary.csv",
+      "kind": "unified_csv",
+      "rows": "2",
+      "bytes": "214",
+      "note": "GitHub-ready unified research table"
+    },
+    {
+      "file": "representative_notes.csv",
+      "kind": "unified_csv",
+      "rows": "292",
+      "bytes": "65524",
+      "note": "GitHub-ready unified research table"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿file,kind,rows,bytes,note
+notes_unified.csv,unified_csv,292,65524,GitHub-ready unified research table
+comments_unified.csv,unified_csv,2390,571733,GitHub-ready unified research table
+actor_commenter_seed.csv,unified_csv,2292,226865,GitHub-ready unified research table
+event_phase_summary.csv,unified_csv,2,214,GitHub-ready unified research table
+representative_notes.csv,unified_csv,292,65524,GitHub-ready unified research table
