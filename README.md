@@ -19,3 +19,16 @@ same note URLs.
 
 See `FULL_RECON_COMMENTS_RUNBOOK.md` for the recommended low-frequency command and
 data field locations.
+
+## Commenter public profile enrichment
+
+Use `commenter-profiles` after comment collection when the study needs anonymized
+commenter public-post counts, public post text keywords, post type distribution, and
+AI-related post ratio. The stage uses profile access fields only in memory and writes
+anonymized outputs:
+
+- `commenter_profile_summary.csv`
+- `commenter_public_posts_sample.csv`
+- enriched `actor_commenter_seed.csv`
+
+See `COMMENTER_PROFILES_RUNBOOK.md` for the command, output fields, and privacy boundary.

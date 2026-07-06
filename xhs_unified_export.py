@@ -312,7 +312,42 @@ def merge_comments(run_dir: Path, notes_by_id: dict[str, dict[str, Any]]) -> lis
     return list(comments_by_id.values())
 
 
-def build_actor_seed(comments: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def merge_commenter_profiles(run_dir: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    profiles_by_key: dict[tuple[str, str, str], dict[str, Any]] = {}
+    posts_by_key: dict[tuple[str, str], dict[str, Any]] = {}
+    for path in sorted(run_dir.glob("**/commenter_profiles/csv/commenter_profile_summary.csv")):
+        with path.open("r", encoding="utf-8-sig", newline="") as fh:
+            for row in csv.DictReader(fh):
+                actor = row.get("commenter_anonymous_hash") or ""
+                event_id = row.get("event_id") or ""
+                phase_id = row.get("phase_id") or ""
+                if actor:
+                    profiles_by_key[(actor, event_id, phase_id)] = row
+    for path in sorted(run_dir.glob("**/commenter_profiles/csv/commenter_public_posts_sample.csv")):
+        with path.open("r", encoding="utf-8-sig", newline="") as fh:
+            for row in csv.DictReader(fh):
+                actor = row.get("commenter_anonymous_hash") or ""
+                post_hash = row.get("public_post_hash") or ""
+                if actor and post_hash:
+                    posts_by_key[(actor, post_hash)] = row
+    return list(profiles_by_key.values()), list(posts_by_key.values())
+
+
+def find_commenter_profile(profile_map: dict[tuple[str, str, str], dict[str, Any]], actor: str, event_id: str, phase_id: str) -> dict[str, Any] | None:
+    exact = profile_map.get((actor, event_id, phase_id))
+    if exact:
+        return exact
+    for (profile_actor, profile_events, profile_phases), profile in profile_map.items():
+        if profile_actor != actor:
+            continue
+        event_match = not event_id or event_id in str(profile_events).split("|")
+        phase_match = not phase_id or phase_id in str(profile_phases).split("|")
+        if event_match and phase_match:
+            return profile
+    return None
+
+
+def build_actor_seed(comments: list[dict[str, Any]], profiles: list[dict[str, Any]] | None = None) -> list[dict[str, Any]]:
     grouped: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in comments:
         actor = row.get("commenter_anonymous_hash") or ""
@@ -329,7 +364,7 @@ def build_actor_seed(comments: list[dict[str, Any]]) -> list[dict[str, Any]]:
             sample_reason.append("high_like_commenter")
         if len(rows) >= 2:
             sample_reason.append("repeat_commenter")
-        output.append({
+        actor_row = {
             "actor_hash": actor,
             "event_id": event_id,
             "phase_id": phase_id,
@@ -343,7 +378,26 @@ def build_actor_seed(comments: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "sentiment_tendency": "",
             "knowledge_behavior_type": "",
             "sample_reason": "|".join(sample_reason) or "ordinary_commenter",
-        })
+        }
+        profile_map = {
+            (
+                row.get("commenter_anonymous_hash") or "",
+                row.get("event_id") or "",
+                row.get("phase_id") or "",
+            ): row
+            for row in profiles or []
+        }
+        profile = find_commenter_profile(profile_map, actor, event_id, phase_id)
+        if profile:
+            actor_row.update({
+                "profile_accessible": profile.get("profile_accessible") or "",
+                "public_post_count_bucket": profile.get("public_post_count_bucket") or "",
+                "sampled_public_posts_count": profile.get("sampled_public_posts_count") or "",
+                "top_profile_keywords": profile.get("top_profile_keywords") or "",
+                "post_type_distribution": profile.get("post_type_distribution") or "",
+                "ai_related_post_ratio": profile.get("ai_related_post_ratio") or "",
+            })
+        output.append(actor_row)
     return output
 
 
@@ -415,6 +469,8 @@ ACTOR_FIELDS = [
     "actor_hash", "event_id", "phase_id", "actor_role", "comment_count_in_phase",
     "first_seen_time_bj", "regions_observed", "avg_comment_like", "max_comment_like",
     "dominant_comment_type", "sentiment_tendency", "knowledge_behavior_type", "sample_reason",
+    "profile_accessible", "public_post_count_bucket", "sampled_public_posts_count",
+    "top_profile_keywords", "post_type_distribution", "ai_related_post_ratio",
 ]
 
 SUMMARY_FIELDS = [
@@ -425,6 +481,21 @@ SUMMARY_FIELDS = [
 COLLECTION_URL_FIELDS = [
     "event_id", "event_name", "phase_id", "phase_name", "note_id", "note_url",
     "representative_rank_in_phase", "representative_score",
+]
+
+COMMENTER_PROFILE_FIELDS = [
+    "commenter_anonymous_hash", "event_id", "phase_id", "source_comment_count",
+    "source_note_count", "first_comment_time_bj", "regions_observed", "profile_accessible",
+    "public_post_count", "public_post_count_bucket", "sampled_public_posts_count",
+    "post_type_distribution", "top_profile_keywords", "ai_related_post_ratio",
+    "profile_collected_device", "profile_collected_account", "profile_collected_at_bj",
+]
+
+COMMENTER_POST_FIELDS = [
+    "commenter_anonymous_hash", "event_id", "phase_id", "public_post_hash", "post_type",
+    "post_text", "post_keywords", "post_publish_time_bj", "post_publish_date_bj",
+    "post_like_count_num", "post_comment_count_num", "post_collect_count_num",
+    "is_ai_related", "collected_at_bj",
 ]
 
 
@@ -443,7 +514,8 @@ def main() -> int:
     notes, notes_by_id = merge_notes(args.run_dir, manifest)
     mark_representative_notes(notes, args.representative_notes_per_phase)
     comments = merge_comments(args.run_dir, notes_by_id)
-    actors = build_actor_seed(comments)
+    commenter_profiles, commenter_posts = merge_commenter_profiles(args.run_dir)
+    actors = build_actor_seed(comments, commenter_profiles)
     summary = build_summary(notes, comments)
     collection_urls = build_representative_collection_urls(notes)
 
@@ -456,6 +528,8 @@ def main() -> int:
         NOTE_FIELDS,
     )
     write_csv(args.output_dir / "actor_commenter_seed.csv", actors, ACTOR_FIELDS)
+    write_csv(args.output_dir / "commenter_profile_summary.csv", commenter_profiles, COMMENTER_PROFILE_FIELDS)
+    write_csv(args.output_dir / "commenter_public_posts_sample.csv", commenter_posts, COMMENTER_POST_FIELDS)
     write_csv(args.output_dir / "event_phase_summary.csv", summary, SUMMARY_FIELDS)
     write_csv(args.output_dir / "representative_note_urls_for_collection.csv", collection_urls, COLLECTION_URL_FIELDS)
     print(f"notes={len(notes)} comments={len(comments)} actors={len(actors)} output={args.output_dir}")

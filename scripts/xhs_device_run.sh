@@ -71,6 +71,12 @@ fi
 if [ -n "${AUTHOR_POST_LIMIT:-}" ]; then
   COMMON_ARGS+=(--author-post-limit "$AUTHOR_POST_LIMIT")
 fi
+if [ -n "${COMMENTER_LIMIT:-}" ]; then
+  COMMON_ARGS+=(--commenter-limit "$COMMENTER_LIMIT")
+fi
+if [ -n "${PUBLIC_POST_LIMIT:-}" ]; then
+  COMMON_ARGS+=(--public-post-limit "$PUBLIC_POST_LIMIT")
+fi
 if [ -n "${DRY_RUN:-}" ] && [ "$DRY_RUN" != "0" ]; then
   COMMON_ARGS+=(--dry-run)
 fi

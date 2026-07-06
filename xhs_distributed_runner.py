@@ -467,6 +467,42 @@ def load_selected_note_rows(path: Path) -> list[dict[str, str]]:
     return rows
 
 
+def discover_note_rows(run_root: Path, device_id: str, source_stage: str) -> list[dict[str, str]]:
+    device_root = run_root / f"device_{normalize_device(device_id)}" / source_stage
+    rows: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for path in sorted(device_root.glob("**/xhs/jsonl/*contents*.jsonl")):
+        with path.open("r", encoding="utf-8", errors="replace") as fh:
+            for line in fh:
+                if not line.strip():
+                    continue
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                note_url = str(row.get("note_url") or "").strip()
+                if not note_url or note_url in seen:
+                    continue
+                seen.add(note_url)
+                rows.append({
+                    "event_id": str(row.get("event_id") or "").strip(),
+                    "phase_id": str(row.get("phase_id") or "").strip(),
+                    "note_id": str(row.get("note_id") or "").strip(),
+                    "note_url": note_url,
+                })
+    return rows
+
+
+def write_note_rows_csv(path: Path, rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = ["event_id", "phase_id", "note_id", "note_url"]
+    with path.open("w", encoding="utf-8-sig", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({key: row.get(key, "") for key in fieldnames})
+
+
 def chunked(items: list[dict[str, str]], size: int) -> Iterable[list[dict[str, str]]]:
     for i in range(0, len(items), size):
         yield items[i : i + size]
@@ -698,9 +734,63 @@ def run_author_profiles(args: argparse.Namespace) -> int:
     return returncode
 
 
+def run_commenter_profiles(args: argparse.Namespace) -> int:
+    run_root = args.run_root / args.run_id
+    output_dir = run_root / f"device_{normalize_device(args.device_id)}" / "commenter_profiles"
+    notes_file = args.notes_file
+    if not notes_file:
+        rows: list[dict[str, str]] = []
+        source_stages = [item.strip() for item in args.source_stage.split(",") if item.strip()]
+        for stage in source_stages:
+            rows.extend(discover_note_rows(run_root, args.device_id, stage))
+        if not rows:
+            print(f"No note URLs found. Run full-recon-comments/recon first or pass --notes-file.")
+            return 2
+        notes_file = output_dir / "commenter_profile_source_note_urls.csv"
+        write_note_rows_csv(notes_file, rows)
+
+    python_cmd, python_cwd = get_media_python_cmd()
+    script_path = str(ROOT / "xhs_commenter_profile_probe.py")
+    cmd = [
+        *python_cmd,
+        script_path,
+        "--notes-file",
+        str(notes_file.resolve()),
+        "--output-dir",
+        str(output_dir),
+        "--device-id",
+        args.device_id,
+        "--account-id",
+        args.account_id,
+        "--comments-per-note",
+        str(args.comments_per_note or 10000),
+        "--public-post-limit",
+        str(args.public_post_limit),
+        "--sleep",
+        str(args.author_sleep),
+        "--browser-timeout",
+        str(args.browser_timeout),
+    ]
+    if args.author_source_limit:
+        cmd.extend(["--limit-notes", str(args.author_source_limit)])
+    if args.commenter_limit:
+        cmd.extend(["--commenter-limit", str(args.commenter_limit)])
+
+    log_path = output_dir / "commenter_profiles.log"
+    env = os.environ.copy()
+    env.setdefault("UV_DEFAULT_INDEX", "https://pypi.org/simple")
+    print(f"Commenter profile source notes: {notes_file}")
+    returncode, captcha = run_command(cmd, python_cwd, log_path, env, args.dry_run)
+    if captcha and args.stop_on_captcha:
+        print(f"CAPTCHA detected in commenter profile stage. Log: {log_path}")
+        return 86
+    print(f"Commenter profile output: {output_dir}")
+    return returncode
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Distributed XHS event collection runner.")
-    parser.add_argument("--stage", choices=["recon", "full-recon-comments", "pilot-comments", "deep-comments", "selected-comments", "author-profiles"], required=True)
+    parser.add_argument("--stage", choices=["recon", "full-recon-comments", "pilot-comments", "deep-comments", "selected-comments", "author-profiles", "commenter-profiles"], required=True)
     parser.add_argument("--device-id", required=True, help="A, B, C, or another manifest-assigned device id.")
     parser.add_argument("--account-id", default="", help="Local account label for metadata only, e.g. account_a.")
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
@@ -726,10 +816,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--stop-on-captcha", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--stop-on-error", action=argparse.BooleanOptionalAction, default=False)
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--source-stage", default="deep-comments,recon", help="For author-profiles: comma-separated source stages.")
+    parser.add_argument("--source-stage", default="full-recon-comments,deep-comments,recon", help="For author/commenter profiles: comma-separated source stages.")
     parser.add_argument("--notes-file", type=Path, default=None, help="For author-profiles: explicit notes CSV/JSONL with note_url.")
     parser.add_argument("--author-source-limit", type=int, default=0)
     parser.add_argument("--author-post-limit", type=int, default=20)
+    parser.add_argument("--commenter-limit", type=int, default=0, help="For commenter-profiles: maximum unique commenters to probe.")
+    parser.add_argument("--public-post-limit", type=int, default=50, help="For commenter-profiles: maximum public posts sampled per commenter.")
     parser.add_argument("--author-sleep", type=float, default=2.0)
     parser.add_argument("--browser-timeout", type=int, default=30)
     return parser.parse_args()
@@ -746,6 +838,8 @@ def main() -> int:
         return collect_selected_comments(args)
     if args.stage == "author-profiles":
         return run_author_profiles(args)
+    if args.stage == "commenter-profiles":
+        return run_commenter_profiles(args)
     return collect_search_stage(args)
 
 
