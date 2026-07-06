@@ -143,6 +143,10 @@ def build_media_command(
         get_comment = "false"
         note_limit = args.notes_per_keyword or event.notes_limit_recon
         comments_limit = 0
+    elif stage == "full-recon-comments":
+        get_comment = "true"
+        note_limit = args.notes_per_keyword or event.notes_limit_recon
+        comments_limit = args.comments_per_note or 10000
     elif stage == "pilot-comments":
         get_comment = "true"
         note_limit = args.notes_per_keyword or event.notes_limit_recon
@@ -223,6 +227,20 @@ def completed_output_dirs_from_ledger(path: Path, stage: str) -> set[str]:
         for row in csv.DictReader(fh):
             if row.get("stage") == stage and row.get("status") == "ok" and row.get("output_dir"):
                 completed.add(row["output_dir"])
+    return completed
+
+
+def completed_search_keys_from_ledger(path: Path, stage: str) -> set[tuple[str, str]]:
+    if not path.exists():
+        return set()
+    completed: set[tuple[str, str]] = set()
+    with path.open("r", encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            if row.get("stage") == stage and row.get("status") == "ok":
+                event_id = (row.get("event_id") or "").strip()
+                keyword = (row.get("keyword") or "").strip()
+                if event_id and keyword:
+                    completed.add((event_id, keyword))
     return completed
 
 
@@ -308,12 +326,16 @@ def collect_search_stage(args: argparse.Namespace) -> int:
 
     jobs = list(iter_keyword_jobs(events, args.max_keywords))
     print(f"Selected {len(events)} events, {len(jobs)} keyword jobs for stage={args.stage}.")
+    completed_search_keys = completed_search_keys_from_ledger(ledger_path, args.stage) if args.resume_skip_completed else set()
 
     for index, (event, keyword) in enumerate(jobs, start=1):
         started_at = datetime.now().isoformat(timespec="seconds")
         keyword_slug = slug_text(keyword)
         output_dir = run_root / args.stage / event.event_id / keyword_slug
         log_path = output_dir / "crawler.log"
+        if (event.event_id, keyword) in completed_search_keys:
+            print(f"[{index}/{len(jobs)}] skip completed {args.stage} {event.event_id} | {keyword}")
+            continue
         meta = {
             "run_id": args.run_id,
             "device_id": args.device_id,
@@ -678,7 +700,7 @@ def run_author_profiles(args: argparse.Namespace) -> int:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Distributed XHS event collection runner.")
-    parser.add_argument("--stage", choices=["recon", "pilot-comments", "deep-comments", "selected-comments", "author-profiles"], required=True)
+    parser.add_argument("--stage", choices=["recon", "full-recon-comments", "pilot-comments", "deep-comments", "selected-comments", "author-profiles"], required=True)
     parser.add_argument("--device-id", required=True, help="A, B, C, or another manifest-assigned device id.")
     parser.add_argument("--account-id", default="", help="Local account label for metadata only, e.g. account_a.")
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)

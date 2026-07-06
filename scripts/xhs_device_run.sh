@@ -11,6 +11,12 @@ RUN_ID="${RUN_ID:-main_$(date +%Y%m%d)}"
 MANIFEST="${MANIFEST:-configs/xhs_core_events_manifest.csv}"
 RUN_ROOT="${RUN_ROOT:-runs/xhs_core_events}"
 
+if [ "$STAGE" = "full-recon-comments" ]; then
+  COMMENTS_PER_NOTE="${COMMENTS_PER_NOTE:-10000}"
+  SLEEP_BETWEEN_KEYWORDS="${SLEEP_BETWEEN_KEYWORDS:-1200}"
+  MAX_CONCURRENCY="${MAX_CONCURRENCY:-1}"
+fi
+
 COMMON_ARGS=(
   --manifest "$MANIFEST"
   --run-root "$RUN_ROOT"

@@ -1,4 +1,4 @@
 device_id,account_id,recommended_host,default_manifest,default_run_root,event_or_phase_scope,default_stage_notes
-A,account_a,Computer A,configs/xhs_core_events_manifest.csv,runs/xhs_core_events,E001/E002/E003 or B001_P2,recon/pilot/deep/selected-comments
-B,account_b,Computer B,configs/xhs_core_events_manifest.csv,runs/xhs_core_events,E004/E005/E006,recon/pilot/deep/selected-comments
-C,account_c,Computer C,configs/xhs_core_events_manifest.csv,runs/xhs_core_events,E008/E009/E010,recon/pilot/deep/selected-comments
+A,account_a,Computer A,configs/xhs_core_events_manifest.csv,runs/xhs_core_events,E001/E002/E003 or B001_P2,recon/full-recon-comments/pilot/deep/selected-comments
+B,account_b,Computer B,configs/xhs_core_events_manifest.csv,runs/xhs_core_events,E004/E005/E006,recon/full-recon-comments/pilot/deep/selected-comments
+C,account_c,Computer C,configs/xhs_core_events_manifest.csv,runs/xhs_core_events,E008/E009/E010,recon/full-recon-comments/pilot/deep/selected-comments
