@@ -1,0 +1,624 @@
+﻿event_id,event_name,note_id,note_url,title,desc,content_type,publish_time,publish_time_utc,publish_time_shanghai,creator_hash,nickname,public_ip_location,liked_count,collected_count,comment_count,share_count,tag_list,video_url,source_run,source_file
+E008,Qwen3.6,69cdf20b000000002101161e,https://www.xiaohongshu.com/explore/69cdf20b000000002101161e?xsec_token=AB4poKPEPzC3HgYspsJMpSHVEVuxR2KGzoH3TGUoSyrr0=&xsec_source=pc_search,🚀加速向超级智能体演进,"🎉Qwen3.6-Plus正式上线！
+Qwen3.6-Plus整体性能提升明显，尤其是编程Coding能力、智能体Agent能力和工具调用能力都实现了全面跃升。同时，Qwen3.6-Plus 对世界的感知也更加精准，多模态推理能力更为敏锐。我们在此前社区反馈的基础上，致力于带来真正具有变革意义的“氛围编程”（Vibe Coding）体验。
+	
+✨显著提升的智能体编程能力
+1️⃣代码智能体领域
+在主流代码修复基准上紧追行业标杆，在复杂终端操作与自动化任务执行中表现突出。
+2️⃣通用智能体与工具使用
+在高难度的长程规划任务中、在各类工具调用基准上全面领先。
+3️⃣通用能力
+无论是高难度的 STEM 推理、超长上下文的精准信息提取，还是多语言环境的广泛适配，模型均在多项关键评测中刷新最佳表现。
+	
+✨更出色的多模态感知与推理能力
+1️⃣多模态推理
+在复杂文档理解、物理世界视觉理解、视频推理和视觉编程等任务上取得了稳定提升。
+2️⃣指令模式实用性
+在指令遵循、疑难文字识别、万物识别、细粒度图像感知，以及真实场景理解中展现出更强的实用性与稳定性。
+3️⃣复杂任务执行
+多模态能力优化，不仅提升单点任务的效果，更为复杂流程任务提供更完整的能力支撑。
+	
+Qwen3.6-Plus 标志着我们在迈向原生多模态智能体征程中的关键里程碑，欢迎大家前往阿里云百炼、Qwen Chat等平台进行体验！同时，也敬请期待近期千问3.6系列其他尺寸模型的发布～
+#Qwen[话题]# #千问大模型[话题]# #千问[话题]# #AI[话题]# #大模型[话题]#",normal,1775104523000,2026-04-02T04:35:23+00:00,2026-04-02T12:35:23+08:00,c43443783c167be3,千***型,,664,198,110,163,"Qwen,千问大模型,千问,AI,大模型",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_005\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,69d65111000000001a02146d,https://www.xiaohongshu.com/explore/69d65111000000001a02146d?xsec_token=ABuH3usTT92DJCOnIh5wZ56Hf1QLFWxkKwwsTayImJKG0=&xsec_source=pc_search,ClaudeCode Skills别瞎装！这几个才是好用,"姐妹们，今天必须聊聊这个👇
+	
+🙅‍♀️ 很多人玩 Claude Code 第 一件事就是疯狂装 Skills
+装了一堆，结果呢？
+效果反而变差了……
+真相是：
+✨ Skills 不是越多越好，越精简，效果才越强！
+我自己踩了无数坑之后
+总结出了几个 日常真正高频在用 的 Skill
+今天一次性分享给你们 📖
+	
+🧩 而且！不止 Claude Code 能用
+👉 OpenClaw 也完全适配！
+所以别觉得这是某个工具的专 属福利
+只要你在用 AI Agent，这套方案都能直接上手 💪
+	
+🤫 蕞后偷偷告诉你们一个 超级懒人方法：
+	
+把图片保存后发给👇
+✅ Claude Code
+✅ OpenClaw
+✅ Codex
+让 Agent 帮你一口气全装上！
+	
+没错，就是这么简单 😎
+一句话的事儿，Agent 自己就搞定了
+	
+💬 别再一个一个手动配了
+聪明人都在让 AI 帮 AI 干活了 🧠
+📌 记住：少即是多，精简才是王道
+	
+#ClaudeCode #Skills配置 #AI工具 #OpenClaw
+#Codex #AI效率 #程序员日常 #懒人教程
+#Agent #AI编程 #AI提效 #小白友好",normal,1775653137000,2026-04-08T12:58:57+00:00,2026-04-08T20:58:57+08:00,846a9f7273984133,Ԫ***I,,4659,7142,163,1246,,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_026\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,69d65c4900000000230076f6,https://www.xiaohongshu.com/explore/69d65c4900000000230076f6?xsec_token=ABuH3usTT92DJCOnIh5wZ56BTv389fW9fS7KvF5BQ7tP0=&xsec_source=pc_search,我咋做到的我去AIGC生成占比0,6点改到现在 在免费网站查ai百分之20 花钱在维普查是0[石化R]#维普ai[话题]#,normal,1775656009000,2026-04-08T13:46:49+00:00,2026-04-08T21:46:49+08:00,dd46a68f1ea16ccf,苹***🥕,,7781,9312,512,981,维普ai,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_021\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,69d73d53000000001f006b5a,https://www.xiaohongshu.com/explore/69d73d53000000001f006b5a?xsec_token=ABuJKtAm3_G8ENaTByyzqVozjCvPHc25bQdcIJygMMvoU=&xsec_source=pc_search,阿里发布Qwen3.5-Omni，用来拉片太过瘾了！,甚至随手画的草图，都能直接Vibe Coding做出AI工具，非常强大！#vibecoding大赏[话题]# #AIChannel[话题]# #大模型[话题]# #人工智能[话题]# #通义实验室[话题]# #千问大模型[话题]# #qwen[话题]# #qwen35omni[话题]# #硬核科技迷[话题]# #RED新生代创作大赛[话题]#,video,1775731732000,2026-04-09T10:48:52+00:00,2026-04-09T18:48:52+08:00,5ffc869c78d0f974,捏***茄,,914,414,24,48,"vibecoding大赏,AIChannel,大模型,人工智能,通义实验室,千问大模型,qwen,qwen35omni,硬核科技迷,RED新生代创作大赛",http://sns-video-v6.xhscdn.com/stream/1/110/259/01e9d77c2752b9fd010370039d71be65fb_259.mp4?sign=60c5d1abf74541cebc2378eea9ed424c&t=6a527dae,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_036\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,69decd18000000001a025ebf,https://www.xiaohongshu.com/explore/69decd18000000001a025ebf?xsec_token=ABzwVNWs5rmaGtYf7W0QiRVWpqadfnhDURg1qsO0iNQu8=&xsec_source=pc_search,舌尖咬字法，说话声音好听清晰的秘诀,想让你的说话声音，变得好听又清晰，一定要注意在说话的时候，不要让整片舌头都在盲目的用力，而要把发音的位置，变得更加聚焦，舌尖咬字法，就可以让你的声音变得好听清晰起来#职场[话题]# #生活[话题]# #演讲[话题]# #面试技巧[话题]# #说话技巧[话题]#  @职场薯 @知识薯 @校园薯,video,1776209176000,2026-04-14T23:26:16+00:00,2026-04-15T07:26:16+08:00,819d8b2a18884ea9,柯***讲,,884,875,22,70,"职场,生活,演讲,面试技巧,说话技巧",http://sns-video-qc.xhscdn.com/stream/1/110/259/01e9deccbb06c3a4010370039d8e51b215_259.mp4?sign=7c0206c7345a20dc8d498bd390825db8&t=6a5021b2,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_019\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,69e6046f000000002301424a,https://www.xiaohongshu.com/explore/69e6046f000000002301424a?xsec_token=ABLdGRy9UJZvYLsCWak8M_bzlW_fddtr2B_AI_5Rg2vN8=&xsec_source=pc_search,阿里又出新模型，居然已经登顶了......,"-
+今天在群里看到有人发，阿里千问新模型又登顶了，这次登顶的还是 Artificial Analysis[doge]
+	
+给不熟悉的朋友们简单解释一下，Artificial Analysis 是一个全球性的第三方AI评测平台，不隶属于任何AI公司。
+	
+开发者和企业选模型的时候，经常把这个平台的评测结果当参考依据[黄金薯R]
+	
+登顶这种事不是经常发生吗？
+但这次，确实有点不一样[暗中观察R]
+	
+这次登顶的模型叫 Qwen3.6-Max-Preview，是千问系列里性能最强的旗舰模型。
+它在 Artificial Analysis 上超过了很多已经发布、调校完成的模型，拿下了国产模型第一。
+	
+我仔细了解了一下这个模型的具体情况，官方说在三个维度上有明显提升：智能体编程、世界知识、指令遵循[萌萌哒R]
+	
+#AI人工智能[话题]# #深度思考[话题]# #一个想法不一定对[话题]# #AI[话题]# #阿里[话题]# #千问[话题]# #Qwen模型[话题]#",normal,1776685072000,2026-04-20T11:37:52+00:00,2026-04-20T19:37:52+08:00,ad4e17dd14c9fbd6,西***森,,750,220,101,54,"AI人工智能,深度思考,一个想法不一定对,AI,阿里,千问,Qwen模型",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_037\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,69e61df8000000001a032b53,https://www.xiaohongshu.com/explore/69e61df8000000001a032b53?xsec_token=ABLdGRy9UJZvYLsCWak8M_b4mhI0zWytYX5oTo4Bmbp8I=&xsec_source=pc_search,查重和AIGC,虽然我是用paperpass查的，但是60%多还是太多了呀，救救我，救救我，救救我[抓狂R][抓狂R][凋谢R][凋谢R][凋谢R][凋谢R][哭惹R][哭惹R][哭惹R]#毕业论文[话题]# #论文写作[话题]# #论文修改[话题]# #论文降AI[话题]#,normal,1776688632000,2026-04-20T12:37:12+00:00,2026-04-20T20:37:12+08:00,8dbc07abb0b8b1d6,õ***ѩ,,2161,2337,181,111,"毕业论文,论文写作,论文修改,论文降AI",,device_c_e008_full_20260709,runs\xhs_core_events\device_c_e008_full_20260709\device_c\selected-comments\E008\chunk_001\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E008,Qwen3.6,69e649610000000023004d09,https://www.xiaohongshu.com/explore/69e649610000000023004d09?xsec_token=ABLdGRy9UJZvYLsCWak8M_b3Z_CMP_MWMSEUapDAtleFg=&xsec_source=pc_search,Kimi K2.6，现在发布并开源！,"今天，我们发布并开源最新的 Kimi K2.6 模型，带来行业领先（state-of-the-art）的代码、长程任务执行和 Agent 集群能力。
+	
+Kimi K2.6 现已上线 kimi.com、最新版 Kimi 应用、Kimi API 和 Kimi Code 编程助手，所有用户都可以开始使用。
+	
+Kimi K2.6 的通用 Agent、代码、视觉理解等综合能力得到全面提升，其在博士级难度的完整版「人类最后的考试（Humanity‘s Last Exam）」、考察模型真实软件工程能力的 SWE-Bench Pro、以及评估 Agent深度检索能力的 DeepSearchQA 等基准测试中，均取得行业领先的成绩，持平或优于 GPT-5.4、Claude Opus 4.6 和 Gemini 3.1 Pro等闭源模型。
+	
+Kimi K2.6 是我们迄今最强的代码模型，其长程编码能力得到显著提升，在测试中可以不间断编码 13 小时，编写或修改超过 4000 行代码，完成复杂系统的开发和优化。通过将代码与视觉能力的深度融合，K2.6 代码驱动的设计能力，可以交付极具设计创意与灵感的专业 Web 应用。
+	
+针对 OpenClaw、Hermes Agent 等主动式 Agent 框架，K2.6 展现出极强的自动化任务处理能力，支持长达 5 天的持续自主运行。
+	
+更强大的长程推理能力：
+	
+K2.6 成功在 Mac 本地下载并部署了Qwen3.5-0.8B 模型，经过 4,000 多次工具调用，超过 12 小时的不间断运行，K2.6 模型共迭代了 14 轮，将吞吐量从约 15 tokens/s 提升至约 193 tokens/s，最终实现比 LM Studio 快 20% 的推理速度。
+	
+由代码驱动的美学：
+	
+我们一直相信，美本身就是一种生产力。 Agent 模式现在可以制作极具设计感和视觉美学的网站。不局限于写前端页面，也支持基础的后端数据库模块。
+	
+Agent 集群模式，探索规模化的边界：
+	
+Agent 集群现在支持300个子Agent完成4000个协作步骤，在单次运行中，就能独立完成从文档到网页、再到 PPT 和表格的多产物端到端交付。
+	
+期待你使用Kimi K2.6 🌓.
+（看到最后一页的人有彩蛋[萌萌哒R]）
+	
+#kimi[话题]# #ai[话题]# #开源模型[话题]#",normal,1776699745000,2026-04-20T15:42:25+00:00,2026-04-20T23:42:25+08:00,b057d4fa6fb90b1f,K***手,,2097,378,414,801,"kimi,ai,开源模型",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_033\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,69f053a1000000003503bdc0,https://www.xiaohongshu.com/explore/69f053a1000000003503bdc0?xsec_token=ABTnXCVKIIL3oTUYWLAlywvBsMMIZHxsXTAbnTR_ECvbg=&xsec_source=pc_search,第一次使用deepseekv4，仿佛看到原子弹爆炸,"接上claude code就是旗舰模型的水平，用它来分析晶体结构，百万上下文长度，一次能分析几十种结构。
+500万token，只要一块钱，缓存命中率99.6%。这价格还有啥好说的，基本是电费+显卡折旧的费用。奥特曼看到了会眩晕瘫坐，黄仁勋看到会沉默。",normal,1777357729000,2026-04-28T06:28:49+00:00,2026-04-28T14:28:49+08:00,d99dac772ade75da,S***男,,8373,6837,371,2105,,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_013\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,69f815b3000000003503a1e6,https://www.xiaohongshu.com/explore/69f815b3000000003503a1e6?xsec_token=ABP40j4KxkLYiv_Fv8YAPSVNyRnpG-cm8OVSY_DFII50E=&xsec_source=pc_search,"为DeepSeek v4扛大旗，玩了一天花了七毛钱，也是让穷苦人民吃上好东西了
+#deepseek[话题]# #ai[话题]#","为DeepSeek v4扛大旗，玩了一天花了七毛钱，也是让穷苦人民吃上好东西了
+#deepseek[话题]# #ai[话题]#",normal,1777866163000,2026-05-04T03:42:43+00:00,2026-05-04T11:42:43+08:00,45aacf8026e3f50d,做***王,,2101,1697,285,265,"deepseek,ai",,device_c_e008_full_20260709,runs\xhs_core_events\device_c_e008_full_20260709\device_c\selected-comments\E008\chunk_002\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E008,Qwen3.6,69fa7fb8000000002300718d,https://www.xiaohongshu.com/explore/69fa7fb8000000002300718d?xsec_token=ABk1J0AC0aI9wmoewofWWMJLjGU07E28J-ihSSUSJceps=&xsec_source=pc_search,4 个 skill，跑通整套科研流程（夸张了）,"上周翻 GitHub，被这个 repo 钉在屏幕上看了半小时。
+	
+Imbad0202/academic-research-skills —— 学术研究 skill 全开源，4 个 skill 编成一条流水线，一行装。
+	
+单 skill 只解决""研究 → 写作 → 审稿 → 复现""中的一段，剩下手接。这套 4 个互相调用，整条线自动跑。
+	
+4 个 skill 各司其职：
+① deep-research（13 agents）：PRISMA 系统综述 + Socratic 引导式
+② academic-paper（12 agents）：Style Calibration 语言往期刊靠
+③ paper-reviewer（7 agents）：EIC + 3 审稿 + Devil's Advocate量化打分
+④ academic-pipeline（10 阶段）：串起前三个，每 stage 有 checkpoint
+	
+几个惊喜点：
+🛡 反谄媚：Devil's Advocate 不让 AI 一味顺你说""你对""
+🔍 引用核验：Semantic Scholar 检查，防 AI 编参考文献
+🚧 Integrity Gates：拦伪造数据/方法虚构/引用幻觉
+📦 Material Passport：跨会话恢复 + 复现锁文件
+	
+装两行（Claude Code v3.7+）：
+/plugin marketplace add Imbad0202/academic-research-skills
+/plugin install academic-research-skills
+	
+用：自然语言触发，不用记 prompt。
+	
+最戳我的是 README 那句：""AI is your copilot, not the pilot."" 整套设计都在防 AI 越俎代庖——每 stage 都给你 checkpoint 。
+	
+各位动动小手点点关注，持续分享AI+科研经验。
+	
+#Claude #ClaudeSkills #GitHub #AI写论文 #论文写作 #博士生 #学术 #科研 #芯片设计",normal,1778024376000,2026-05-05T23:39:36+00:00,2026-05-06T07:39:36+08:00,ddac09ec0244c8e6,青***辣,,4682,8498,102,1564,,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_039\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,69fc2b54000000001a02e314,https://www.xiaohongshu.com/explore/69fc2b54000000001a02e314?xsec_token=ABGnausFCfmaV5zxefG9UuQMeomOI-QGOk2Z1fHEj8tUg=&xsec_source=pc_search,"这几天的3.1简直震撼难吃，上下文是不读的，面具是不读的，记忆区是不读的，上一条刚说完的事情下一条就能忘，有的时候甚至不如3.0flash[黄金薯R]已经八股到了极致，有时候我真恨不得没看过它生出来的文字，所以谷歌现在真的都拿算力去研发3.5了吗，那何时才能吃到新模型
+#mufy[话题]# #kirakira[话题]# #rubii[话题]# #gemini[话题]# #救救user[话题]#","这几天的3.1简直震撼难吃，上下文是不读的，面具是不读的，记忆区是不读的，上一条刚说完的事情下一条就能忘，有的时候甚至不如3.0flash[黄金薯R]已经八股到了极致，有时候我真恨不得没看过它生出来的文字，所以谷歌现在真的都拿算力去研发3.5了吗，那何时才能吃到新模型
+#mufy[话题]# #kirakira[话题]# #rubii[话题]# #gemini[话题]# #救救user[话题]#",normal,1778133844000,2026-05-07T06:04:04+00:00,2026-05-07T14:04:04+08:00,d9a1581019b39741,*,,1624,701,178,40,"mufy,kirakira,rubii,gemini,救救user",,device_c_e008_full_20260709,runs\xhs_core_events\device_c_e008_full_20260709\device_c\selected-comments\E008\chunk_003\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E008,Qwen3.6,69ff03b90000000037037542,https://www.xiaohongshu.com/explore/69ff03b90000000037037542?xsec_token=ABTXPa1a-yLggw-j8l3xZo6hO1fmHWpdMPcZKCvJdlLMU=&xsec_source=pc_search,AI Coding套餐应该怎么买？,#AI[话题]# #CodingPlan[话题]# #Claude[话题]# #ChatGPT[话题]# #Cursor[话题]# #编程套餐[话题]# #AIAgent[话题]# #ClaudeCode[话题]#,video,1778320313000,2026-05-09T09:51:53+00:00,2026-05-09T17:51:53+08:00,e01b740c02a08154,第***猩,,546,530,47,123,"AI,CodingPlan,Claude,ChatGPT,Cursor,编程套餐,AIAgent,ClaudeCode","http://sns-video-qc.xhscdn.com/stream/79/110/259/01e9ff038814605c010370039e0c27ee2b_259.mp4?sign=db7aa371141087cf89946bcfbcf5e419&t=6a503076,http://sns-video-qc.xhscdn.com/stream/79/110/261/01e9ff038814605c4f0370019e0c293c28_261.mp4?sign=aa6c9c62dfdfc512dc8acef9cb769ce5&t=6a503076",device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_025\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a0190110000000038020cd0,https://www.xiaohongshu.com/explore/6a0190110000000038020cd0?xsec_token=ABfmoqdeMYjmEUbrVD3GKsIvfURfqs1vXX4fOmbjX-1HU=&xsec_source=pc_search,AI做PPT,Claude、Gemini、Chatgpt、Codex选哪个？优缺点如何？请赐教谢谢！！！,normal,1778487313000,2026-05-11T08:15:13+00:00,2026-05-11T16:15:13+08:00,47884273ba68359b,s***e,,2747,3058,284,234,,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_029\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a06a0bc000000003503251b,https://www.xiaohongshu.com/explore/6a06a0bc000000003503251b?xsec_token=ABhNB3VE3EO20iriVv1TdnlIbxJH9nJWRsOoBH-hgShjo=&xsec_source=pc_search,断网也能帮你写PPT，这笔记本有点东西,"一天的活，它陪我从早干到晚。咖啡泼了没事，断网了AI还跑，最后合上盖发现——充电器白背了。
+#惠普战66[话题]# #惠普战66新品[话题]# #惠普战66系列2026AIPC[话题]# #惠普战66系列新品上市[话题]##办公本[话题]##办公室好物[话题]##笔记本测评[话题]#",video,1779094856000,2026-05-18T09:00:56+00:00,2026-05-18T17:00:56+08:00,fb5e7c162e807195,氪***傅,,1239,174,5,12,"惠普战66,惠普战66新品,惠普战66系列2026AIPC,惠普战66系列新品上市,办公本,办公室好物,笔记本测评","http://sns-video-qc.xhscdn.com/stream/1/110/259/01ea067387171786010370039e29e5dd93_259.mp4?sign=3562e42ca468356a6b383d517f45f436&t=6a50291d,http://sns-video-qc.xhscdn.com/stream/1/110/261/01ea067387171786010370019e29e6bba5_261.mp4?sign=c75b0ae3f398034ffe30c1575c37b604&t=6a50291d",device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_022\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a0894990000000006030e35,https://www.xiaohongshu.com/explore/6a0894990000000006030e35?xsec_token=ABG1VVxr9xX6sMIr9XHIQopJT4M8yf3MefRSzXAI6dia0=&xsec_source=pc_search,DeepSeek专家模式不能上传文件了,于是尝试去ChatBox调用了Deepseek v4的api，意外打开新天地，v4比专家模式聪明多了[点赞R],normal,1778947226000,2026-05-16T16:00:26+00:00,2026-05-17T00:00:26+08:00,443fff9e3ab35aa1,意***助,,511,589,126,48,,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_007\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a0d01790000000008002d65,https://www.xiaohongshu.com/explore/6a0d01790000000008002d65?xsec_token=ABhPXzxcmWVZlGBW11wNPV9aVYH2C_dEGrZlqwLzwtpRI=&xsec_source=pc_search,Google发布会拉完了,产品线这么多，大模型和Agent能力还是比不过gpt和claude，3.5pro还要等下个月出...#Google[话题]#,normal,1779237241000,2026-05-20T00:34:01+00:00,2026-05-20T08:34:01+08:00,9b8f45e37d335603,在***i,,2103,388,1038,456,Google,,device_c_e008_top_level_second_final_20260715,runs\xhs_core_events\device_c_e008_top_level_second_final_20260715\device_c\selected-comments\E008\chunk_001\xhs\jsonl\detail_contents_2026-07-15.jsonl
+E008,Qwen3.6,6a0d28320000000035031ddc,https://www.xiaohongshu.com/explore/6a0d28320000000035031ddc?xsec_token=ABhPXzxcmWVZlGBW11wNPV9bvtOBr4qfTL6vj0DnUu96s=&xsec_source=pc_search,一码当先，长程执行,"Qwen3.7-Max 融合了前沿推理、跨框架泛化与持续高效执行的能力，是千问迄今最全面、最强大的智能体模型～
+#Qwen[话题]# #大模型[话题]# #AI[话题]# #千问大模型[话题]# #千问[话题]#",video,1779247154000,2026-05-20T03:19:14+00:00,2026-05-20T11:19:14+08:00,c43443783c167be3,千***型,,4087,399,50,94,"Qwen,大模型,AI,千问大模型,千问",http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea0d28324da92e010370039e43656bc1_259.mp4?sign=cbd71a1257100df000fe3251379bb68c&t=6a500904,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_009\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a0d8d160000000007023fd0,https://www.xiaohongshu.com/explore/6a0d8d160000000007023fd0?xsec_token=ABhPXzxcmWVZlGBW11wNPV9bogwm-Ub1W4AkFKMGQ9FPE=&xsec_source=pc_search,Qwen3.7-Max+Godot，下个星露谷就是你做的,"你有没有过自己做一款游戏的念头？
+	
+别装了，肯定有。大家应该都听过：星露谷物语，一个人做了五年，现在全球销量几千万份直接财富自由；动物井，一个人磨了七年，去年横空出世惊艳全网；Balatro（小丑牌），开发者本职工作甚至都不是程序员，业余时间搓出来的东西直接登上了TGA。这些故事每隔一段时间就会刷屏一次，每刷一次，像我这种宅男的心就痒一次，总觉得自己也行！
+	
+我是做AI方向的，按理说不该跑来聊游戏开发，但正因为一直在跟大模型打交道，我越来越觉得现在这个时间点，有一个今天的新组合值得认真推荐给所有有""独立游戏梦""的人：Godot + Qwen3.7-Max。
+	
+#小红书热点观察团[话题]# #阿里巴巴[话题]# #千问3[话题]# #qwen37max[话题]# #游戏开发[话题]# #godot[话题]# #个人开发者[话题]# #游戏设计[话题]# #互联网大厂[话题]# #qwen[话题]#",normal,1779278083000,2026-05-20T11:54:43+00:00,2026-05-20T19:54:43+08:00,4ab1fda2b622134a,电***奇,,2644,2367,173,367,"小红书热点观察团,阿里巴巴,千问3,qwen37max,游戏开发,godot,个人开发者,游戏设计,互联网大厂,qwen",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_030\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a0ed0d700000000350275bc,https://www.xiaohongshu.com/explore/6a0ed0d700000000350275bc?xsec_token=ABglEBkhZB5q9707i2_7EqOZU75-LXwe3gZhHN5PNaxeM=&xsec_source=pc_search,什么？😧千问3.7居然排名还挺靠前的啊？,"给大家分享个有意思的事儿。
+	
+昨天，也就是5月20日，阿里和谷歌在同一天各自发布了自己的新模型。
+两家公司发的两款模型，同时出现在了全球同一张评测榜单上。
+	
+结果出来，阿里千问3.7 Max得了56.6分，谷歌Gemini 3.5 Flash得了55.3分。
+	
+差距虽然不算大，但是赢了[暗中观察R]
+	
+#互联网大厂[话题]# #AI人工智能[话题]# #AI工具[话题]# #大模型[话题]# #千问[话题]# #谷歌[话题]# #Gemini[话题]#",normal,1779355863000,2026-05-21T09:31:03+00:00,2026-05-21T17:31:03+08:00,13e0f5a851987f6d,ĩ***1,,983,152,67,25,"互联网大厂,AI人工智能,AI工具,大模型,千问,谷歌,Gemini",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_010\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a1828f7000000003502a0b3,https://www.xiaohongshu.com/explore/6a1828f7000000003502a0b3?xsec_token=ABBdlfdXbnkRgeHBCEFnqCF-e21nI8vmGJyZJwx_a7uQc=&xsec_source=pc_search,完了，我做的猫开始监视我了【AI桌宠开源】,"我们又做了一个新的AI宠物，这次是只小猫～
+你别看他小，他有四个自由度，而且还能帮你干活。这次我们用的是全新的Qwen 3.5 Omni作为底座，端到端全模态，直接和你产生情感交流！
+现在已经完全开源，开源项目地址在视频中（在GitHub上搜索项目名AI_DesktopCat“”就可以找到），快来复刻一个吧！
+#qwen[话题]# #千问大模型[话题]# #通义实验室[话题]# #ai硬件[话题]#",video,1779968247000,2026-05-28T11:37:27+00:00,2026-05-28T19:37:27+08:00,879582d87bb743d7,A***哥,,4168,4969,175,1434,"qwen,千问大模型,通义实验室,ai硬件",http://sns-video-qc.xhscdn.com/stream/1/110/259/01ea182684134a1e010370039e6e623e3e_259.mp4?sign=c328b3520221f2b3f7f0b9ef7645c6a3&t=6a501a3f,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_016\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a2280b40000000020038cef,https://www.xiaohongshu.com/explore/6a2280b40000000020038cef?xsec_token=ABJS79RdIPK_ZEl5ffsQEXdAwSUYFPSmKMJK4v86nzJhE=&xsec_source=pc_search,项目太大，读一次10块钱,有什么省token方法不，已经李姐了。#deepseekv4[话题]#,normal,1780646068000,2026-06-05T07:54:28+00:00,2026-06-05T15:54:28+08:00,4848ece6ddfb7d9d,灵***满,,2486,3230,116,179,deepseekv4,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_031\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a2289850000000021018044,https://www.xiaohongshu.com/explore/6a2289850000000021018044?xsec_token=ABJS79RdIPK_ZEl5ffsQEXdCTU_cYE-TdLVG_oSTER1kk=&xsec_source=pc_search,虽然豆包用户掉了610万，但还是断层第一...,"据Aicpb（全球人工智能市场追踪机构）周三发布的数据显示，豆包首次收费后，5月份月活直接少了610万，这......
+	
+按说豆包在国内AI应用里排第一，2025年12月QuestMobile统计月活2.26亿，领先第二名的DeepSeek一大截，但这一收费，用户还是说走就走
+	
+问题出在哪呢？浅浅瞎猜一下，豆包搞了三档订阅：标准版68元/月、加强版200元/月、专业版500元/月，付费功能主打PPT生成、数据分析这类高算力场景。但问题是，豆包的3.45亿月活里，大部分是来白嫖的普通用户，根本用不上这些功能；而真正有付费需求的重度用户，觉得豆包专业能力不够，也很少用豆包做项目，两边不讨好啊
+	
+字节2025年净利润同比下滑超70%，AI算力投入是核心原因，收费可能是为了止血，但市场上大把免费AI，用户切换成本几乎为零，文心一言之前收费最后又退回去，可见免费心智根深蒂固
+DeepSeek、元宝这些竞品还都免费着，等于白送豆包一个用户流失窗口期，最近豆包屡上热搜，不知从啥时候，大家笑着笑着，就把“傻”豆包的刻板印象逐渐深化了，字节这次压力不小哇～#豆包付费后月活减少[话题]# #豆包[话题]# #豆包收费[话题]# #傻豆包[话题]# #ai[话题]# #大模型[话题]# #科技[话题]# #字节跳动[话题]# #互联网大厂[话题]#",normal,1780648325000,2026-06-05T08:32:05+00:00,2026-06-05T16:32:05+08:00,1a74c2888616bfa8,W***🔭,,1517,280,812,182,"豆包付费后月活减少,豆包,豆包收费,傻豆包,ai,大模型,科技,字节跳动,互联网大厂",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_042\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,6a2291bf000000002202bea3,https://www.xiaohongshu.com/explore/6a2291bf000000002202bea3?xsec_token=ABJS79RdIPK_ZEl5ffsQEXdDQPtC6zUIU_oU2m4u1u8hU=&xsec_source=pc_search,人工智障,Codex比我想象中的难使用很多，不知道是不是我不会用，想象中的以后直接解放双手，只需要自己检查一下流程和结果，实际上问题一堆#codex[话题]#,normal,1780650431000,2026-06-05T09:07:11+00:00,2026-06-05T17:07:11+08:00,1a1c4d8962eb0127,蒙***丹,,1515,1422,113,56,codex,,device_c_e008_top_level_final_retry2_20260715,runs\xhs_core_events\device_c_e008_top_level_final_retry2_20260715\device_c\selected-comments\E008\chunk_001\xhs\jsonl\detail_contents_2026-07-15.jsonl
+E008,Qwen3.6,6a2409b4000000001c025fbb,https://www.xiaohongshu.com/explore/6a2409b4000000001c025fbb?xsec_token=ABDEyEfwT0oMbHt1Z_sSgrgdDGpC8_qkTkEhr1bLM2hiU=&xsec_source=pc_search,现在AI实习生真是什么垃圾简历都敢投啊,"求简历锐评[害羞R][害羞R]，太想找AI实习了[皱眉R][皱眉R]
+标题单纯当个引子感慨下行情[偷笑R][偷笑R]
+点进来的宝子别误会哈[飞吻R][飞吻R]
+最近投递岗位才真切感受到内卷烈度[哭惹R][哭惹R][哭惹R]
+潜心深耕相关领域许久，打磨自身履历
+认认真真筹备，[萌萌哒R]满心期许[皱眉R]投递岗位
+可当下竞争激烈程度，属实超出预想[哭惹R][哭惹R][哭惹R]
+难免忍不住[黑薯问号R]心生疑惑[黑薯问号R]
+如今入行门槛已经拔高到这般地步了吗？[惊恐R][惊恐R][惊恐R]
+真心求教圈内前辈同行[皱眉R][皱眉R]
+这份履历水准，放在求职市场里究竟处于什么水平[蹲后续H][蹲后续H]
+欢迎大家锐评[萌萌哒R][萌萌哒R][萌萌哒R]
+#找实习[话题]# #改简历[话题]# #内推[话题]# #面试求职[话题]# #求职[话题]# #ai应用开发[话题]# #大模型应用[话题]#",normal,1780746676000,2026-06-06T11:51:16+00:00,2026-06-06T19:51:16+08:00,8f4c990ef3894778,.***Z,,3229,3952,250,312,"找实习,改简历,内推,面试求职,求职,ai应用开发,大模型应用",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_028\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a265722000000001702a8b0,https://www.xiaohongshu.com/explore/6a265722000000001702a8b0?xsec_token=ABJrWzq3qQOz4WdUImVH5i_ZM3Zd2jgjI8pUv5nOV8toI=&xsec_source=pc_search,阿里请了80位艺术家，来教 AI 什么是「美」,"刷小红书无意中看到的，阿里Qwen团队出的，文生图美学评估标准，叫Qwen-Image-Bench。
+	
+做法超级有意思，他们真请了艺术家来参与。
+	
+以前评AI的图，思路像指代分割
+文字提了什么，图里有没有，位置对不对，再加个清晰度，基本就完事了。
+	
+但「好不好看」这个事，似乎一直没人认真评过。
+	
+构图、情绪、视觉和谐，这些比较主观的东西，算法不太好量化。
+	
+他们就把这块拆开了，56个评判维度 👇
+	
+技术质量、美学表现、文图一致、真实世界还原、创意生成，五个大方向。
+	
+其中「美学」这块，构图、情绪表达、视觉和谐度，每个都单独打分。
+	
+看到这个维度设计，觉得蛮用心的。
+	
+🧑‍🎨 标注团队也讲究。
+	
+80位标注员，全来自艺术院校，学摄影、导演、美术的都有。
+	
+不是随便找的众包，是真正受过训练的人。
+	
+他们标了13万条数据，训了个评审模型叫Q-Judger，基于Qwen3.6-27B。
+	
+跟人类专家的打分排名，吻合度到了92%，还蛮高的。
+	
+📐 论文本身的图，也画得蛮舒服。
+	
+第一张图是维度全景图，5个支柱往下拆，层级关系一目了然。
+	
+第二张图是prompt构造流程，四个阶段画得清清楚楚。
+	
+能感觉到团队做事细，每张图都在帮你理解逻辑，看着很舒服。
+	
+🔍 有几个小设计我觉得蛮巧的。
+	
+评分就三档，0、1、2加个N/A，不合格、及格、优秀、不适用，干脆利落。
+	
+及格映射60分，不是50，拉大了「能不能用」的判断距离。
+	
+这种细节，看得出团队想过，这个分最终谁来用。
+	
+💡 附带的1000条prompt也值得翻翻。
+	
+中英双语，长短各500条，每条跨3到5个维度。
+	
+做图的朋友拿来当灵感库，其实挺好用的。
+	
+📊 他们横评了18个模型，GPT Image 2拿了最高分64.7。
+	
+有意思的是，模型间差距最大的，恰好是新加的两个维度，「真实世界还原」和「创意生成」。
+	
+之前评测分不出高下，可能是考的内容太基础了。
+	
+论文标题我蛮喜欢的，From Generation to Creation。
+	
+生成到创作，一字之差，但心态不一样。
+@森森李  你们团队这个研究真的超级意思的，把美学评测做得这么细，让人着实眼前一亮 [害羞R]
+#AI[话题]# #benchmark[话题]# #阿里[话题]# #Qwen[话题]# #论文[话题]# #硕博[话题]# #科研[话题]# #艺术[话题]# #美学[话题]# #图像生成[话题]#",normal,1780897570000,2026-06-08T05:46:10+00:00,2026-06-08T13:46:10+08:00,23b805ce23756802,K*,福建,836,782,47,418,"AI,benchmark,阿里,Qwen,论文,硕博,科研,艺术,美学,图像生成",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_034\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a267583000000001702d501,https://www.xiaohongshu.com/explore/6a267583000000001702d501?xsec_token=ABJrWzq3qQOz4WdUImVH5i_SB2zkchQ_AZ9HnyqdAl85Y=&xsec_source=pc_search,26年6月，款旗舰AI模型，多维度雷达测评 ,"2026年6月。16款旗舰大模型在我们跨境电商公司业务里的真实生产环境八维雷达记录。
+	
+分数来自创意、财务、决策、供应链、分析、代码、法律等日常 Agent 工作流，想到哪记哪，主观记录仅供参考。
+	
+━━━━━━━━━━━━━━━━
+	
+八个维度
+	
+上下文衰减｜文字推理｜编码｜工具调用｜多模态｜速度｜经济性｜智力稳定性
+	
+━━━━━━━━━━━━━━━━
+	
+本期 16 款（按视频出场顺序）
+	
+Kimi 2.6｜MiniMAX M3｜Mimo 2.5 Pro｜Gemini Pro 3.1｜Gemini Flash 3.5
+	
+DeepSeek V4 Pro｜GLM 5.1｜Claude Sonnet 4.6｜Qwen 3.7 MAX
+	
+Claude Opus 4.6（4.7 推出后）｜Composer 2.5｜Opus 4.7
+	
+Claude  Opus 4.6｜Codex 5.5｜Claude  Opus 4.8｜5.5 Pro
+	
+━━━━━━━━━━━━━━━━
+	
+数据来源
+	
+团队内部网关近 30 天实际调用见置顶评论。",video,1780905347000,2026-06-08T07:55:47+00:00,2026-06-08T15:55:47+08:00,f0c97dffeabb3c7f,苍***姐,上海,2024,1499,180,235,,http://sns-video-v6.xhscdn.com/stream/1/110/259/01ea2674fd7106a0010370039ea63b7573_259.mp4?sign=e368a49667c303dd6437a1cf99e6db6f&t=6a5287a3,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_040\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,6a268be60000000035038fb2,https://www.xiaohongshu.com/explore/6a268be60000000035038fb2?xsec_token=ABJrWzq3qQOz4WdUImVH5i_bkcyJrwsoJtDs2Wx96mkU4=&xsec_source=pc_search,#deepseekv4[话题]#,#deepseekv4[话题]#,normal,1780911078000,2026-06-08T09:31:18+00:00,2026-06-08T17:31:18+08:00,693feac41f93d008,Z***n,湖南,547,629,632,24,deepseekv4,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_006\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a2a7fab000000002101b7fa,https://www.xiaohongshu.com/explore/6a2a7fab000000002101b7fa?xsec_token=ABtsGoUvI3eTWqhWrK-EoiNPh-h4ewNNF7QBQSQvAnepQ=&xsec_source=pc_search,AI 发论文经验分享,"很好奇，真的有人纯用 AI（codex 等）做科研，并且已经把论文发表了的吗？🥲
+#AI[话题]# #科研[话题]# #硕博[话题]# #论文[话题]# #SCI[话题]# #AI4S[话题]# #论文发表[话题]# #学术圈[话题]#",normal,1781170091000,2026-06-11T09:28:11+00:00,2026-06-11T17:28:11+08:00,35b8c83627d65ff4,病***探,浙江,1859,1672,297,164,"AI,科研,硕博,论文,SCI,AI4S,论文发表,学术圈",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_032\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a2c1d4c0000000035033443,https://www.xiaohongshu.com/explore/6a2c1d4c0000000035033443?xsec_token=ABKEkhRvckbbNfhbh8PWWmQX7c3-SUx-aFaLmYgDgZG-g=&xsec_source=pc_search,用1.6T录播训了张雪峰大模型第二版,"全量数据用LLM重新清洗了一下，修正了一些ASR近音字，比如爱婆婆-APP，保员率-保研率。
+并且修复了张雪峰老师不爱说话的问题。比如图4，之前的模型可以看到说两句会断掉，是因为训练数据是直播人声分离转语音做的QA对，会存在张雪峰老师没说完，家长就回复哦，嗯之类的语气词，导致模型话没说完就会等回复。这次我们把家长提问的60%汇总后作为总的user提问去输入，这样既保证了简单问答的质量，又提升了回答的连贯性。
+同时底模也换成了qwen3.6-27b dense模型，知识库新很多。
+前一版本只保留了连麦的问答QA，这次大规模的加入了张雪峰老师的独白和带货，卖课语录，我们觉得这样更能保留张老师的风格。
+训练使用数据量大概1000多万字，正在整理，明天就能开源到hf上。
+训练使用Pro6000，Lora微调，时长4h，耗费24大洋
+btw，想用1.35T的录播做端到端的数字人，现在有什么比较好的方案吗？#张雪峰[话题]# #大模型[话题]# #互联网大厂[话题]# #DeepSeek[话题]# #vibecoding[话题]# #酒馆[话题]#",normal,1781275980000,2026-06-12T14:53:00+00:00,2026-06-12T22:53:00+08:00,e7ca5f63247c4164,闰***猹,浙江,943,456,193,1116,"张雪峰,大模型,互联网大厂,DeepSeek,vibecoding,酒馆",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_018\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a2fe4e500000000210160b7,https://www.xiaohongshu.com/explore/6a2fe4e500000000210160b7?xsec_token=ABAb5zAjmydDq0EWa1jeZwsOM4cqU-xoZhk451e_k64B0=&xsec_source=pc_search,GPT-5.6要上了？,"看到一个没啥根据的爆料，说OpenAI可能会在6月23日发布GPT-5.6，并且具有以下几个优势：
+- 价格比 Fable 便宜约 3 倍
+- 支持高达 150 万 Token 的上下文窗口
+- 更强大的智能体编程工作流
+- 直接对标 Claude 风格的系统
+虽然真假未知，但选在6月23日发布也挺合理😂
+按照原本的规划，这个时间点正好能赶上大批Fable用户被迫升级高级付费套餐。#ai[话题]# #大模型[话题]# #openai[话题]# #chatgpt[话题]# #claude[话题]# #科技[话题]#",normal,1781523685000,2026-06-15T11:41:25+00:00,2026-06-15T19:41:25+08:00,1618ad391c293e22,动***g,广西,878,131,282,495,"ai,大模型,openai,chatgpt,claude,科技",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_024\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a30d794000000001702c3f3,https://www.xiaohongshu.com/explore/6a30d794000000001702c3f3?xsec_token=ABRLaSnbC8QqTh8xhIMDOVrIeCj-dmhF-YY__hteO90xU=&xsec_source=pc_search,🦾不止于回答，更是行动派,"我们希望打造⼀个能够去往任何地⽅、做任何事情、并预⻅其后果的物理智能体，⽽ Qwen-Robot Suite 是我们迈向它的第⼀个完整步伐。
+#AI[话题]# #Qwen[话题]# #大模型[话题]#",video,1781585812000,2026-06-16T04:56:52+00:00,2026-06-16T12:56:52+08:00,c43443783c167be3,千***型,浙江,720,59,10,36,"AI,Qwen,大模型",http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea30d75042406b010370039ececa9536_259.mp4?sign=b5864d903e926415bb2dae3614340623&t=6a5282cb,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_038\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,6a31631a00000000220177e9,https://www.xiaohongshu.com/explore/6a31631a00000000220177e9?xsec_token=ABmrCs38WuE3TFfAPX2KUns2UqoB6kbp0Rik6HfFkQbIg=&xsec_source=pc_search,10分钟搓出来的智能体，现在热度第一……,"主包前几天参加
+科大讯飞的“星火杯大模型应用创新赛”
+初心是薅一下他们80块钱的平台礼品卡
+10分钟手搓了一个“雅思口语陪练官”智能体
+今天点进去直接到热度第一了！！！
+难道说难道说我要财富自由了吗hhh
+优秀奖都有5000￥！！
+我的智能体还在迭代中
+大家可以去星辰agent上玩玩看
+有啥建议直接评论区说
+	
+二编
+参加比赛的方式在这里
+【https://challenge.xfyun.cn/?ch=2026gxsxs6】
+用自然语言prompt就可以搓
+趁着现在还不是很多人哈哈
+大家都可以去试试看！！
+真挺好玩的！很有成就感！
+#大学生[话题]# #AI[话题]# #vibecoding[话题]# #科大讯飞[话题]# #智能体[话题]# #比赛[话题]# #白嫖[话题]# #奖金[话题]#",normal,1781621530000,2026-06-16T14:52:10+00:00,2026-06-16T22:52:10+08:00,f1277165e45ce672,不***g,江苏,1347,1355,56,579,"大学生,AI,vibecoding,科大讯飞,智能体,比赛,白嫖,奖金",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_017\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a368556000000001101eaef,https://www.xiaohongshu.com/explore/6a368556000000001101eaef?xsec_token=ABTIEUwMnvVHQ1sJ7UeGQEiuIxHe1lVx8mQUmp3Z8jtJM=&xsec_source=pc_search,Qwen3.7-Max让水波纹更逼真了｜vibe coding,"上个月那条50万播放的水波纹,说实话当时我自己觉得还不够真。这次我把源代码丢给Qwen3.7-Max进行优化，来回改了十几轮,从头记到尾,一条老作品被重新做成了我一直想要的样子
+	
+#vibecoding[话题]# #Qwen[话题]# #千问[话题]##QoderWork[话题]# #AI编程[话题]# #创意编程[话题]# #数字艺术[话题]# #交互艺术[话题]##vibecoding大赏[话题]##阿里云[话题]#",video,1781958658000,2026-06-20T12:30:58+00:00,2026-06-20T20:30:58+08:00,27a4490986288d15,希***赫,北京,7341,1099,44,180,"vibecoding,Qwen,千问,QoderWork,AI编程,创意编程,数字艺术,交互艺术,vibecoding大赏,阿里云",http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea36843d3ffaaf010370039ee4f988cd_259.mp4?sign=8602da41d9278e973d784b14ced2cca3&t=6a501567,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_014\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a36b431000000002100bd64,https://www.xiaohongshu.com/explore/6a36b431000000002100bd64?xsec_token=ABTIEUwMnvVHQ1sJ7UeGQEigxIsfJoCz4iwFcuGkVSssg=&xsec_source=pc_search,2026值得收藏的AI工具清单,#howto用好AI[话题]# #AI工具[话题]# #人工智能[话题]# #AI人工智能[话题]# #AI[话题]# #效率神器[话题]# #ai工具[话题]# #ai[话题]#,normal,1781969969000,2026-06-20T15:39:29+00:00,2026-06-20T23:39:29+08:00,ae2789f53f546cf3,刘***k,河北,648,546,36,51,"howto用好AI,AI工具,人工智能,AI人工智能,AI,效率神器,ai工具,ai",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_012\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a37ea2a000000001101fb14,https://www.xiaohongshu.com/explore/6a37ea2a000000001101fb14?xsec_token=ABa-Tx4hMLQpXtd1NWeNGbbMSsZKMj01iTS34gCyo1H68=&xsec_source=pc_search,VibeCoding粒子交互和复古相机原来这么简单,"我用的QoderWork选的Qwen3.7–Max模型
+非常简单好上手！！
+别老觉得别人厉害了 其实真不难
+大家一起玩起来哈哈哈
+#vibecoding[话题]# #阿里云[话题]# #Qwen[话题]#  #Ai教程[话题]# #QoderWork[话题]#",video,1782050272000,2026-06-21T13:57:52+00:00,2026-06-21T21:57:52+08:00,e6fb43a531ec84c9,I***军,浙江,4694,2296,24,234,"vibecoding,阿里云,Qwen,Ai教程,QoderWork","http://sns-video-v6.xhscdn.com/stream/1/110/259/01ea37ea292f4944010370039eea6d4ff9_259.mp4?sign=54e0fb6b9a32e5da17cb8d2a95ca7001&t=6a5017d4,http://sns-video-v6.xhscdn.com/stream/1/110/261/01ea37ea292f4944010370019eea6cf44a_261.mp4?sign=4975b41f545ab8c8f570f66e22ceb419&t=6a5017d4",device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_015\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a38e534000000001700b931,https://www.xiaohongshu.com/explore/6a38e534000000001700b931?xsec_token=ABkg8ks4O-cuIH7vVBJ-WzEJGgN8jJQS7l7zW6L2Cysgc=&xsec_source=pc_search,报复性点外卖的一天,#阿里最强最新Qwen[话题]# #千问爽文大女主[话题]# #千问我不允许有人忤逆你[话题]# #吃播日常[话题]# #美食测评[话题]# #吃货才懂这一口的含金量[话题]# #一天只吃外卖[话题]#,video,1782125717000,2026-06-22T10:55:17+00:00,2026-06-22T18:55:17+08:00,b065e0bec26ce052,我***了,安徽,1960,79,123,19,"阿里最强最新Qwen,千问爽文大女主,千问我不允许有人忤逆你,吃播日常,美食测评,吃货才懂这一口的含金量,一天只吃外卖","http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea38e52738d92e010370039eee425553_259.mp4?sign=a3e1dce96a32891f60ce89ab242bc122&t=6a528a19,http://sns-video-v6.xhscdn.com/stream/79/110/261/01ea38e52738d92e4f0370019eee472d7e_261.mp4?sign=5be8f897bac8e6880c94e0f000cc608f&t=6a528a19",device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_041\xhs\jsonl\detail_contents_2026-07-08.jsonl
+E008,Qwen3.6,6a3930ce000000001101a9e2,https://www.xiaohongshu.com/explore/6a3930ce000000001101a9e2?xsec_token=AB63ReRdNF_PP8np1HHG2kqYHM_xzy0JnqrFEXMDm2b8k=&xsec_source=pc_search,一晚上+12问，把钱彻底理清一遍,"你有没有这种感觉——
+每个月钱好像都花了，却说不清到底花在哪。
+不敢看账户，越不看越慌，一提到""钱""就焦虑。
+存款数字模模糊糊，心里一点底都没有。
+对钱模糊，就是对人生没底气。
+其实你不缺赚钱的能力，缺的是""把钱看清""的一个晚上。
+这 12 个问题，找一个安静的夜晚，1 小时，
+从""盘点—漏洞—安全垫—增长""四步，把钱彻底理一遍。
+💰 现状盘点——先看清，才不慌
+写出收入、支出、存款、负债的真实数字；
+算一算""自由月数""=存款÷月支出（不工作能撑几个月）。
+🔍 看清漏洞——存不下，多半是漏得多
+找出最大的隐形支出、为情绪买的单、
+还有那些""办了不用""还在扣钱的订阅会员。
+🛟 安全垫——底气是""出事也撑得住""
+有没有 3-6 个月应急金？突然没收入能撑多久？
+最该先补的那个漏洞是哪个？
+📈 增长与行动——把模糊变成具体数字
+下半年想存下多少（写一个具体的数）；
+能增加收入的 1 个小动作是什么。
+💡 工具加分
+把你的月度收支整理成一段，丢给 AI（豆包 / Qwen / Claude / GPT），
+让它做财务分析 + 找出 3 个最该砍的支出 + 给一个存钱方案。
+比你自己对着账单发呆一晚上有用得多。
+📍 对钱模糊，就对人生没底气。算清楚，焦虑就少一半。
+这 12 问，你打算从哪一个开始？
+评论区说说你下半年最想存下的那个数字。
+——
+🌿 下一篇预告：24 个问题，看清你和钱的""隐形关系""
+关注 @Evomind清醒笔记 · 我们一起把人生重启一次。
+#理财[话题]# #存钱[话题]# #财务规划[话题]# #记账[话题]# #攒钱[话题]# #清醒消费[话题]# #自我管理[话题]# #下半年规划[话题]# #女生必看[话题]# #EvoMind进化蓝图[话题]#",normal,1782132942000,2026-06-22T12:55:42+00:00,2026-06-22T20:55:42+08:00,2010bc5f0f3bb015,E***记,湖北,1193,1092,,132,"理财,存钱,财务规划,记账,攒钱,清醒消费,自我管理,下半年规划,女生必看,EvoMind进化蓝图",,device_c_e008_top_level_remaining_20260714,runs\xhs_core_events\device_c_e008_top_level_remaining_20260714\device_c\selected-comments\E008\chunk_001\xhs\jsonl\detail_contents_2026-07-14.jsonl
+E008,Qwen3.6,6a3b57da000000001700ab4e,https://www.xiaohongshu.com/explore/6a3b57da000000001700ab4e?xsec_token=AB0mK14pOLWANaVmkEjDhX007CmSwL9ZKuZbrKsbDc5XQ=&xsec_source=pc_search,从文本生成到具身智能，模型是如何进化的？,"AI模型如何从只能输出文字进化成能听、能看、能动手？
+	
+我们回溯Qwen家族的所有模型，尝试梳理每一类模型的工作机制和核心能力。
+大语言模型➡️推理模型➡️多模态模型➡️生成模型➡️全模态模型➡️具身智能模型
+	
+一个视频搞懂AI打破边界的进化路线图。
+	
+#Qwen[话题]#  #大模型[话题]#  #多模态[话题]#  #全模态[话题]#  #具身智能[话题]#",video,1782274010000,2026-06-24T04:06:50+00:00,2026-06-24T12:06:50+08:00,73f37801a21d6403,通***室,浙江,4157,1369,50,136,"Qwen,大模型,多模态,全模态,具身智能","http://sns-video-v6.xhscdn.com/stream/1/110/259/01ea3de24d09ca74010370039f01cc3cb7_259.mp4?sign=3d3657009d06531f5c74339a8236ac9d&t=6a500698,http://sns-video-v6.xhscdn.com/stream/1/110/261/01ea3de24d09ca74010370019f01c09ea2_261.mp4?sign=86011806296bf2d133955aae4a6ade35&t=6a500698",device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_008\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a467c8d00000000110115ab,https://www.xiaohongshu.com/explore/6a467c8d00000000110115ab?xsec_token=ABc0qld05WOs271gCMLGkCP7zSSBoXU1Uof0E_-7VWMwo=&xsec_source=pc_search,本人不想再听到任何关于美光、半导体、LLM,"、大语言模型、三星、海力士、ChatGPT、编程、Agent、Codex、 ClaudeCode、 CUDA、GPU、H100、B200、台积电、ASML、NVIDIA、黄仁勋、OpenAl、
+Anthropic, Gemini, Grok, DeepSeek, Qwen,, Transformer, Prompt, Token.
+Inference, API, Copilot, Cursor, Docker.
+Kubernetes、Linux、云计算、算力、A100、服务器、机房、晶圆、EUV、HBM、DDR5、量化、蒸馏、多模态、Scaling Law、AI 融资、
+Benchmark, Stable Diffusion.
+Midjourney、AI 视频生成、自动驾驶、机器人、SpaceX、硅谷、科技股、纳斯达克、英伟达市值、马斯克的相关内容了。
+请把我带回到史前时代，谢谢",normal,1783004301000,2026-07-02T14:58:21+00:00,2026-07-02T22:58:21+08:00,62200486d54c5cfe,M***饱,上海,5068,565,361,850,,,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_027\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a4759500000000022016f71,https://www.xiaohongshu.com/explore/6a4759500000000022016f71?xsec_token=ABN0C1GB1Lbh9gQJEZvAIBelif-eNuH-uEOBXcLygkvu4=&xsec_source=pc_search,Claude Code 被封后，我找到一个更好的方案,"Claude Code 账号终于被接二连三的封的干干净净彻彻底底了，本来还打算再折腾折腾，但是我发现了一个既好用又省钱的替代方案，国内还可以直接用。
+	
+其实这是个组合方案：CLI用Qoder CLI，桌面端用QoderWork，模型用Qwen3.7-Max。为啥要选这个方案呢？因为Qwen3.7-Max 现在能 2 折用，1 个 Credit 当 5 个用。这比我的100刀Claude账号省太多了。
+	
+现在各个厂商都缺算力，Coding plan套餐也只剩个口号了，几乎抢不到。Qwen3.7-Max刚上线的时候我就做过深度测评，实力我是知道的。所以刚看到折扣时也有点不信，便宜这么多，会不会偷偷换了个小模型？后来对比一圈才发现没有，是原汁原味版的 Max，没降智，它确实把计费的倍率调低了。这个点对我挺重要。因为我不是想找一个便宜小模型凑合用。便宜模型当然有便宜模型的用处，但真要处理复杂项目、长任务、反复改代码，很多时候还是得靠强模型。问题是强模型一旦完整跑任务，Credits 又会让人心疼。
+	
+给大家发一下具体的折扣：Qwen3.7-Max 现在低峰计费时段能 2 折用，1 个 Credit 可以当 5 个用。白天 Qwen3.7-Max 是5折，Qwen3.7-Plus 在低峰计费时段是 4 折，相当于 1 个 Credit 差不多顶 2.5 个用。
+	
+#AI[话题]# #claudecode[话题]# #免费ai[话题]# #qoderwork[话题]# #qoder[话题]# #ai新手村[话题]# #token[话题]# #免费AI工具[话题]#",normal,1783064268000,2026-07-03T07:37:48+00:00,2026-07-03T15:37:48+08:00,98510c1f58f51efc,跟***I,北京,702,621,60,66,"AI,claudecode,免费ai,qoderwork,qoder,ai新手村,token,免费AI工具",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_020\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E008,Qwen3.6,6a488bbf0000000011007828,https://www.xiaohongshu.com/explore/6a488bbf0000000011007828?xsec_token=ABhYRVfg0rZ8LzLUBfNFfBaCWFXyP4WI2ecPsBOpNn7jY=&xsec_source=pc_search,突发！豆包、千问：将下线智能体功能,"7月4日，豆包和通义千问宣布智能体功能将下线。豆包发布《豆包智能体功能下线通知》，称由于产品功能调整，智能体功能将于2026年7月15日下线。
+	
+同一时间，千问（通义千问）也向用户推送“千问智能体服务下线提醒”，称千问智能体功能与服务将于2026年7月15日正式下线，下线后用户将无法继续访问相关智能体配置及历史对话记录。
+	
+有意思的是，将于2026年7月15日正式施行的《人工智能拟人化互动服务管理暂行办法》已进入准备阶段。上海市委网信办已向近百家重点平台进行法规宣贯，督导企业严格落实未成年人身份核验，防范情感依赖与消费诱导。
+	
+而豆包和千问选择的下线日期7月15日，正是该办法正式施行的同一天。
+	
+#人工智能[话题]# #热点[话题]# #互联网大厂[话题]# #大厂[话题]# #智能体[话题]# #智能化时代[话题]# #科技前沿与未来[话题]##豆包[话题]# #千问[话题]#",normal,1783139264000,2026-07-04T04:27:44+00:00,2026-07-04T12:27:44+08:00,e773d4a10369987e,大***室,河南,850,263,332,469,"人工智能,热点,互联网大厂,大厂,智能体,智能化时代,科技前沿与未来,豆包,千问",,device_c_recon_20260705,runs\xhs_core_events\device_c_recon_20260705\device_c\selected-comments\E008\chunk_011\xhs\jsonl\detail_contents_2026-07-06.jsonl
+E009,豆包 Seed 2.0,69cf9f8100000000230043f4,https://www.xiaohongshu.com/explore/69cf9f8100000000230043f4?xsec_token=ABkOyzLFZ9B0GmNebadJGFcl1SiQvToDZK1ROSjMfmMkM=&xsec_source=pc_search,怎么用豆包炒股，提示词很关键,#炒股技巧[话题]# #A股[话题]# #财经干货[话题]# #股市[话题]# #股票知识[话题]# #股票[话题]#,video,1775268108000,2026-04-04T02:01:48+00:00,2026-04-04T10:01:48+08:00,c3770fa17524dec3,财***白,,4333,7261,117,2487,"炒股技巧,A股,财经干货,股市,股票知识,股票",http://sns-video-v6.xhscdn.com/stream/79/110/259/01e9cf9f4b58be7e010370039d5307bf81_259.mp4?sign=f3ab9e04ed10c85441de309d2ec0a86d&t=6a583a4f,device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_005\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,69d075e5000000001b0039c4,https://www.xiaohongshu.com/explore/69d075e5000000001b0039c4?xsec_token=ABl04CfoPKIMJdjR3SYqXqr3SlgNIu5OCLvkDjLa2CwFU=&xsec_source=pc_search,2.0w战力达成！豆包的指挥堪比职业教练！,#豆包[话题]##王者荣耀[话题]##ai[话题]##国服[话题]#,video,1775269350000,2026-04-04T02:22:30+00:00,2026-04-04T10:22:30+08:00,58732739e2217cfa,落***歌,,9285,1317,745,4491,"豆包,王者荣耀,ai,国服",http://sns-video-v6.xhscdn.com/stream/1/110/259/01e9d075db521c98010370039d56519339_259.mp4?sign=46904cac0e0c92a51df0df336174237e&t=6a5937ac,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_015\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,69d62bb70000000023015298,https://www.xiaohongshu.com/explore/69d62bb70000000023015298?xsec_token=ABuH3usTT92DJCOnIh5wZ56OZ0hxK5iOoRmkaNWemI7SM=&xsec_source=pc_search,零基础大学生用豆包就做出了AI短片！！,"AIGC作品《永生》
+#AI视频[话题]# #AI动画[话题]# #自学剪辑[话题]# #驯服AI[话题]# #让插画动起来[话题]#",video,1775643575000,2026-04-08T10:19:35+00:00,2026-04-08T18:19:35+08:00,db04a12d381d4fa6,ˮ***i,,4067,2128,213,574,"AI视频,AI动画,自学剪辑,驯服AI,让插画动起来",http://sns-video-v6.xhscdn.com/stream/1/110/259/01e9d62bb6524ccc010370039d6c9bd898_259.mp4?sign=4585c9ff92ad5df7900902c39a7c60af&t=6a591136,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_003\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,69e47752000000001a03123c,https://www.xiaohongshu.com/explore/69e47752000000001a03123c?xsec_token=ABK4kVoHJAM8ekXdd2QH-XOli54XoqaI9GOAuEw1wZ5Es=&xsec_source=pc_search,起猛了，豆包竟然长脚了！,豆包都长脚了，现在外面的世界都发展成这样了吗！#机器人[话题]#  #豆包[话题]#  #人工智能[话题]#  #抽象[话题]#  #机器人马拉松[话题]#,video,1776580434000,2026-04-19T06:33:54+00:00,2026-04-19T14:33:54+08:00,7d490f9d140537c7,元***妈,,2.4万,6528,465,4003,"机器人,豆包,人工智能,抽象,机器人马拉松",http://sns-video-v6.xhscdn.com/stream/1/110/259/01e9e4739009d2f9010370039da472ae01_259.mp4?sign=3d227d45ac8cd476a9a515995fe3e6f3&t=6a591743,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_005\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,69e9d6c900000000200390a8,https://www.xiaohongshu.com/explore/69e9d6c900000000200390a8?xsec_token=ABfgWOhk1HGJY9bsyxtqkw4EK_PbjlMXHbPfqqUfxj1Ds=&xsec_source=pc_search,我把AI拉进群聊，问它们AI会不会代替人类,把好几个AI拖到群里聊天，问了3个问题，最后一个问题“AI会不会代替人类” AI的回答真的太震惊了！#AI对话[话题]# #AI群聊[话题]# #AI聊天[话题]# #AI大模型[话题]# #千问小酒窝[话题]##千问[话题]# #阿里[话题]#,video,1776934518000,2026-04-23T08:55:18+00:00,2026-04-23T16:55:18+08:00,241d3902bfbe1c33,刘***I,,2277,691,45,41,"AI对话,AI群聊,AI聊天,AI大模型,千问小酒窝,千问,阿里",http://sns-video-qc.xhscdn.com/stream/1/110/259/01e9e9d6c90620e7010370039db97080c6_259.mp4?sign=b06918273d47ac00a4dfa180a76ab621&t=6a570b91,device_c_e009_e010_top_20260711,runs\xhs_core_events\device_c_e009_e010_top_20260711\device_c\selected-comments\E009\chunk_006\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,69ef2edd000000001b0220cb,https://www.xiaohongshu.com/explore/69ef2edd000000001b0220cb?xsec_token=AB3ibGu1hWyJ_aivh36f2oaV7q6wx8E70szTtEOFTS3f8=&xsec_source=pc_search,从Seedance 2.0到古籍，原来科技可以这么暖,"🛸技术的进步代表什么？
+它不只停留在数字代码
+也不仅象征着星辰大海
+我们通过科技普惠
+把希望的种子撒向更广阔的天地
+让普通人也可以书写生活的艺术
+	
+[勾引R]《字节跳动企业社会责任报告2025（中国）》
+今天正式发布
+通过这些美好的小事
+一起看见科技的力量
+	
+#字节跳动[话题]# #豆包[话题]# #寻人[话题]# #助农[话题]#  #非遗[话题]# #古籍[话题]# #算法[话题]# #2026苏超[话题]# #公益[话题]#",normal,1777282781000,2026-04-27T09:39:41+00:00,2026-04-27T17:39:41+08:00,69c7b933d2adaa41,字***动,,1749,319,23,27,"字节跳动,豆包,寻人,助农,非遗,古籍,算法,2026苏超,公益",,device_c_e009_e010_top_20260711,runs\xhs_core_events\device_c_e009_e010_top_20260711\device_c\selected-comments\E009\chunk_003\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E009,豆包 Seed 2.0,69f5c7ee000000001a02e77e,https://www.xiaohongshu.com/explore/69f5c7ee000000001a02e77e?xsec_token=ABMC3qMtBmjwKcqomPfvCJoFxIS_lilVfSVHZyulvSLic=&xsec_source=pc_search,Ai挑榴莲挑战赛咱也是吃上不花钱的榴莲了,"咱也是吃上免费榴莲的人了！
+感谢豆ai包挑榴莲挑战赛
+零成本开榴莲 直接实现榴莲自由
+每一房都满满当当 太满足啦😋
+#大连房产[话题]# #大连好房找小秋[话题]#
+#免费榴莲[话题]#  #榴莲自由[话题]#  #报恩榴莲[话题]#  #挑榴莲技巧[话题]#   #榴莲控[话题]#  #开榴莲[话题]#  #不花钱吃榴莲[话题]#",video,1777715182000,2026-05-02T09:46:22+00:00,2026-05-02T17:46:22+08:00,aba1a12de01bfd4b,大***业,,9208,300,168,398,"大连房产,大连好房找小秋,免费榴莲,榴莲自由,报恩榴莲,挑榴莲技巧,榴莲控,开榴莲,不花钱吃榴莲",http://sns-video-v4.xhscdn.com/stream/1/110/259/01e9f5c74d4d4f35010370039de8246537_259.mp4?sign=1116d9e9d6198dcb1542b80c92e26983&t=6a582a1d,device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_003\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,69f87a1e0000000035026ecf,https://www.xiaohongshu.com/explore/69f87a1e0000000035026ecf?xsec_token=ABP40j4KxkLYiv_Fv8YAPSVIdmDsAEVQ7gLjHZkrFBBdU=&xsec_source=pc_search,豆包收费翻车了,#AI[话题]# #大模型[话题]# #ai时代坚持手搓的艺薯家[话题]# #豆包[话题]#,normal,1777891870000,2026-05-04T10:51:10+00:00,2026-05-04T18:51:10+08:00,d75ba58e5dc1140e,孙***哥,,1049,272,601,527,"AI,大模型,ai时代坚持手搓的艺薯家,豆包",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_011\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a02fa71000000003601eddc,https://www.xiaohongshu.com/explore/6a02fa71000000003601eddc?xsec_token=ABdEkk4jDdW7nENUrXn6N52ZOKPH356zwCsh9Pty1Hte4=&xsec_source=pc_search,开庭被豆包坑了,"最近发生了2件事，更让我坚定AI永远替代不了律师的作用。
+二审开庭，上诉人拿出了新证据，称可以推翻原判决，我以为案件出特殊情况了，结果一看他的证据，瞬间松了一口气，原来他所谓的新证据，是豆包推测的结论，法官见怪不怪，让他详细说明豆包推测的全过程，他瞬间僵在原地。
+	
+第二件事情发生在今天，开庭时当事人询问法官，某某赔偿项目不应该这么计算吗，法官说，不是！别从网上瞎查，没有这么判的。
+	
+豆包是讨好型人格，但开庭的时候，法官可不会讨好你。
+#重返庭审现场[话题]#",normal,1778580081000,2026-05-12T10:01:21+00:00,2026-05-12T18:01:21+08:00,61aef2707276a359,小***波,,3931,1602,614,832,重返庭审现场,,device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_007\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a033b710000000007010b24,https://www.xiaohongshu.com/explore/6a033b710000000007010b24?xsec_token=ABic-kl4t-9pHNtXPubZp6P6pzxe-SJjG3ClArOVB6rVg=&xsec_source=pc_search,我的天啊，怎么是0啊，我是用ai写的啊？？,,normal,1778596721000,2026-05-12T14:38:41+00:00,2026-05-12T22:38:41+08:00,86dbcee3cb62cdb5,邪***鹅,,5343,3538,204,287,,,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_016\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a086dba000000003502da60,https://www.xiaohongshu.com/explore/6a086dba000000003502da60?xsec_token=ABG1VVxr9xX6sMIr9XHIQopA6rs-r_gRsLIAsqW6ntdrg=&xsec_source=pc_search,豆包被起诉了 迅速来围观 笑不活了,#豆包[话题]# #搞笑[话题]# #招谁惹谁了[话题]#,normal,1778937274000,2026-05-16T13:14:34+00:00,2026-05-16T21:14:34+08:00,48d73de8b2aee14a,没***称,,3.5万,2747,1.5万,10万+,"豆包,搞笑,招谁惹谁了",,device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_008\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a0af3490000000006023ddd,https://www.xiaohongshu.com/explore/6a0af3490000000006023ddd?xsec_token=ABJZA8gkJDh2nWO4pfIapzivkdYNi-R4CwX1Ni0qrna4A=&xsec_source=pc_search,AI工具排行榜，有你常用的吗？,#Ai[话题]#  #Ai工具[话题]# #热门[话题]# #人工智能[话题]# #ai人工智能[话题]# #排行榜[话题]# #人工智能未来[话题]# #ai关键词[话题]# #大模型[话题]# #人工智能就业[话题]#,normal,1779102537000,2026-05-18T11:08:57+00:00,2026-05-18T19:08:57+08:00,c5806a546b150e82,婧***）,,1169,714,131,150,"Ai,Ai工具,热门,人工智能,ai人工智能,排行榜,人工智能未来,ai关键词,大模型,人工智能就业",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_012\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a0b3a84000000003502a01f,https://www.xiaohongshu.com/explore/6a0b3a84000000003502a01f?xsec_token=AB6VyEPtXBkVXROVGVn6bIiUxswfY7QIIAbpMKN6ZgxJc=&xsec_source=pc_search,"初次尝试codex，一整个刘姥姥进大观园感
+让它帮我创建一个国风版的毛笔字画图的软件，功能惊人的好用
+让它帮我把某个文件夹里的照片按内容命名，干得惊人的又快又好
+让它帮我把设计稿直接生成可交互demo，这个有点傻了吧唧了，不过是我自己指令太模糊了，不怪它
+简直就是神笔马良[皱眉R]
+怪不得都说vibecoding会上瘾呢
+后悔为啥没早点玩起来
+#vibecoding[话题]#","初次尝试codex，一整个刘姥姥进大观园感
+让它帮我创建一个国风版的毛笔字画图的软件，功能惊人的好用
+让它帮我把某个文件夹里的照片按内容命名，干得惊人的又快又好
+让它帮我把设计稿直接生成可交互demo，这个有点傻了吧唧了，不过是我自己指令太模糊了，不怪它
+简直就是神笔马良[皱眉R]
+怪不得都说vibecoding会上瘾呢
+后悔为啥没早点玩起来
+#vibecoding[话题]#",normal,1779120772000,2026-05-18T16:12:52+00:00,2026-05-19T00:12:52+08:00,1dbb7ff1de538fcb,白***存,,2815,1640,141,222,vibecoding,,device_c_e009_e010_top_20260711,runs\xhs_core_events\device_c_e009_e010_top_20260711\device_c\selected-comments\E009\chunk_004\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E009,豆包 Seed 2.0,6a1d8f1b0000000007027b90,https://www.xiaohongshu.com/explore/6a1d8f1b0000000007027b90?xsec_token=AB-xQh-ON23sgPmz4XaY5TXmgkoAs5jcwPL6gwFceYeK0=&xsec_source=pc_search,你这一辈子有没有为进山姆拼过命？,#精神状态belike[话题]#  #豆包[话题]#  #玩梗[话题]# #山姆[话题]# #人类模仿ai[话题]#,video,1780322075000,2026-06-01T13:54:35+00:00,2026-06-01T21:54:35+08:00,b8bf7f0a235779d0,菜***豆,,10万+,3.6万,9506,7万,"精神状态belike,豆包,玩梗,山姆,人类模仿ai",http://sns-video-qc.xhscdn.com/stream/1/110/259/01ea1d8eff70ed90010370039e8377cdf1_259.mp4?sign=3071de8725dda52c8822ef05c78f9db0&t=6a57da45,device_c_e009_e010_top_resume_20260712,runs\xhs_core_events\device_c_e009_e010_top_resume_20260712\device_c\selected-comments\E009\chunk_001\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a200949000000002202968d,https://www.xiaohongshu.com/explore/6a200949000000002202968d?xsec_token=ABuT9V4SR6jtO1JXr4dNDDKxMnVVoVI0mhExF6atidTng=&xsec_source=pc_search,一张角色设定图能做到什么程度？,一张 Image2 生成的角色图，直接扔进 Seedance2.0，浅试一下Latte大佬的工作流。 #gptimage2[话题]# #seedance2[话题]#  #ai动画[话题]# #小云雀[话题]# #小云雀AI[话题]#,video,1780484426000,2026-06-03T11:00:26+00:00,2026-06-03T19:00:26+08:00,3c575a04a135bbb2,A***ʦ,,626,644,34,94,"gptimage2,seedance2,ai动画,小云雀,小云雀AI",http://sns-video-qc.xhscdn.com/stream/79/110/259/01ea2008fe4d6af3010370039e8d24ba17_259.mp4?sign=231e8a63057857663bc4b3d90c5af4ee&t=6a594a18,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_021\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a2011480000000038037140,https://www.xiaohongshu.com/explore/6a2011480000000038037140?xsec_token=ABuT9V4SR6jtO1JXr4dNDDK9ZJPtFZEPfSnsdzUjAZKhI=&xsec_source=pc_search,豆包收费，610万用户跑了,"5月4日，豆包在App Store悄悄加了一行小字：付费订阅即将上线，68元、200元、500元三档。消息冲上热搜第一，评论区炸了。""收费就卸载""""豆包笨还收费""""免费版会降智吧""。
+QuestMobile数据显示，豆包MAU在收费消息传出后跌了约610万。3.45亿月活掉610万，不到2%，但国内AI市场的估值全靠用户规模撑着，裂缝一旦出现，后面真收费了能不能顶住还很难说。
+豆包走到收费这一步，毫无悬念。火山引擎的数据摆在那里，截至2026年3月，豆包大模型日均Token调用量突破120万亿。三个月前60万亿，两年前刚发布时只有120亿，22个月涨了1000倍。每一次推理背后是真金白银，单次成本中硬件折旧占58%、电力占29%，两项合计87%。用户越多，成本越膨胀。
+字节的报表更直白。2025年资本开支超1500亿元，约900亿投向AI算力，净利润同比下滑超70%。抖音集团副总裁李亮澄清按经营利润率口径只是""小幅下滑""，但也承认电商增速放缓与新兴业务投入带来了压力。社交软件多一个用户成本趋近于零，生成式AI多一个用户就是在烧GPU。3.45亿月活从资产变成了每天数百万美元的账单。
+610万MAU的流失是一个信号。国内市场的拉扯比任何地方都更激烈：免费拉用户，用户越多算力越贵，撑不住就收费，收费就流失用户。在中国，消费者对订阅天然不感冒，这个死循环更加凶险。
+豆包以3.45亿月活的体量率先打破免费默契，它在重新定义行业规则。两年前它用""百分之一""的API定价清场，这次它在定价。
+能不能跑通，取决于一个朴素的答案：3.45亿人里，到底有多少愿意为""AI帮我做PPT""每月付68块钱。这个数字成立，国产大模型C端付费就成立。不成立，610万只是开始。",normal,1780486472000,2026-06-03T11:34:32+00:00,2026-06-03T19:34:32+08:00,95cd75b2a896de9c,J***记,,4307,770,1942,1072,,,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_017\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a23ba3f000000002100b8a8,https://www.xiaohongshu.com/explore/6a23ba3f000000002100b8a8?xsec_token=ABUJQUEDebVuy4ZPofoH1NiS8LtIHCl2dkKgNmtEShBOQ=&xsec_source=pc_search,豆包居然自己把自己改造了？！,你们最喜欢哪一个？在评论期发布一下吧！#这么可爱不要命啦[话题]#,normal,1780726335000,2026-06-06T06:12:15+00:00,2026-06-06T14:12:15+08:00,c35612ab42093844,清***鹿,,6685,1918,1566,4543,这么可爱不要命啦,,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_001\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a27091f000000003502a21c,https://www.xiaohongshu.com/explore/6a27091f000000003502a21c?xsec_token=ABdOqT46DReRHjbhj0hJJTx-XjGSHaiNgxwKD5utyJEgI=&xsec_source=pc_search,豆包知道自己出盲盒了吗？？,#盲盒[话题]# #开箱[话题]# #玩具[话题]# #豆包[话题]#,video,1780943135000,2026-06-08T18:25:35+00:00,2026-06-09T02:25:35+08:00,4f7e55c91be49e8f,章*,,1.9万,6095,343,2732,"盲盒,开箱,玩具,豆包","http://sns-video-v3.xhscdn.com/stream/79/110/259/01ea2709064cbad8010370039ea87de759_259.mp4?sign=556802743346ca6ecc35cba6fd125862&t=6a581287,http://sns-video-v3.xhscdn.com/stream/79/110/261/01ea2709064cbad84f0370019ea87e87d6_261.mp4?sign=af076f6dfc316dbcb2b970b21a3c83d9&t=6a581287",device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_001\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a270a26000000002103f66d,https://www.xiaohongshu.com/explore/6a270a26000000002103f66d?xsec_token=ABdOqT46DReRHjbhj0hJJTx7pW_rdYh4GVWZfPfBCHS9Y=&xsec_source=pc_search,近年来最让人失望的一届WWDC,"WWDC2026一开完，天塌了。这简直是有史以来最水的一届WWDC。
+iOS 27主要侧重于iPhone设备的性能提升，以及家长控制方面的更新。唯二的亮点就是苹果精修了液态玻璃，可以自由调整液态玻璃的透明度；以及iOS 27仍然支持iPhone 11系列。
+苹果貌似是把iOS、macOS、iPadOS串起来讲的。发布会开头克雷格只是提了一嘴新版本macOS叫做macOS Golden Gate，后面就再也没有提过macOS的其他功能更新。
+新Siri算是一个亮点，变成了独立应用，设计也改成了灵动岛上浮动的小窗口，全屏就可以像豆包等AI软件一样对话，还可以选择大模型。但是对于国内用户而言，这个新Siri的内容非常空洞。不知道国行设备什么时候才能用得上。
+最让我惊讶的是，watchOS、tvOS居然发布会上提都没提。
+总的来说，作为库老板卸任前的最后一场发布会，我真的很失望，没有创新，更新的内容都特别空洞虚无，比WWDC 2024还水。苹果再也难以回到WWDC 2020的巅峰。#科技数码新鲜事儿[话题]# #数码发烧派对[话题]#",normal,1780943398000,2026-06-08T18:29:58+00:00,2026-06-09T02:29:58+08:00,4d64cc0d11b1c15c,J***n,,1351,191,422,416,"科技数码新鲜事儿,数码发烧派对",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_009\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a2b91990000000022021031,https://www.xiaohongshu.com/explore/6a2b91990000000022021031?xsec_token=ABSPV7IU56kh6WLAudeeM0sBh7RNyGZjQ2OKeVb0fujFs=&xsec_source=pc_search,大家能懂现在的孙哥么,"2016年的财富自由之路真的非常好
+绝大部分观点都非常合我心意
+也许是这十年蹉跎 现在的新言论我已经有点“看不懂”了
+	
+也许孙哥和普通人的认知差距确实是随着时间而指数级跨度越来越大
+	
+只和ai聊天 全力拥抱ai 关键这ai的门槛也太高了 普通人怎么用这个赚钱呢？而且豆包真的不太好用呢 有时候像个智障 感觉ai还没厉害到让我想彻底拥抱的感觉？
+	
+#孙宇晨[话题]# #孙宇晨波场[话题]# #孙宇晨课程[话题]# #孙割[话题]# #ai[话题]# #ai工具[话题]# #ai创作[话题]# #未来[话题]# #预知未来[话题]#",normal,1781240217000,2026-06-12T04:56:57+00:00,2026-06-12T12:56:57+08:00,3f780e2542443f95,金***）,,1094,340,27,31,"孙宇晨,孙宇晨波场,孙宇晨课程,孙割,ai,ai工具,ai创作,未来,预知未来",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_018\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a336fe9000000001503cab1,https://www.xiaohongshu.com/explore/6a336fe9000000001503cab1?xsec_token=ABQTfles3_YWivT_mMMAYRuiOEhgrEo5ZEaBQkmU7xmr0=&xsec_source=pc_search,Seedance2.0mini怎么使用？效果如何？,#AI工具测评[话题]# #seedance2mini[话题]# #邪修howto[话题]#,video,1781755881000,2026-06-18T04:11:21+00:00,2026-06-18T12:11:21+08:00,edd60cf63c30c093,小***📷,广东,836,143,11,10,"AI工具测评,seedance2mini,邪修howto","http://sns-video-qc.xhscdn.com/stream/79/110/259/01ea336fe841e4bb010370039ed8ed6ba8_259.mp4?sign=86e6d8e2bce1fa0b685b28c19eb32e41&t=6a59452b,http://sns-video-qc.xhscdn.com/stream/79/110/261/01ea336fe841e4bb4f0370019ed8eda8c9_261.mp4?sign=849121aeb3cfcf27b94b007bf22cd589&t=6a59452b",device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_019\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a369a3a00000000210157e7,https://www.xiaohongshu.com/explore/6a369a3a00000000210157e7?xsec_token=ABTIEUwMnvVHQ1sJ7UeGQEikhUGkEagpnVPZnOo-J9Tas=&xsec_source=pc_search,豆包！立刻给我入侵叠纸大楼,#无限暖暖[话题]# #Nikki[话题]# #红薯游戏美学家[话题]# #游戏心动存档计划[话题]# #好视频扶持计划[话题]# #无限暖暖千星所向的旅途[话题]##暖暖[话题]#,video,1781963322000,2026-06-20T13:48:42+00:00,2026-06-20T21:48:42+08:00,6138a449496f45f7,陶***椰,四川,7148,363,322,537,"无限暖暖,Nikki,红薯游戏美学家,游戏心动存档计划,好视频扶持计划,无限暖暖千星所向的旅途,暖暖",http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea369a3a3fd13f010370039ee54c6e69_259.mp4?sign=45c943ee01a380457e5749c500ef94cc&t=6a5830ec,device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_004\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a3a5e4b0000000011014012,https://www.xiaohongshu.com/explore/6a3a5e4b0000000011014012?xsec_token=ABRktal62tV1aAtIO4xySYNu0QD9cdx8wHQucWtBXcr8Q=&xsec_source=pc_search,豆包大模型2.1跑通芯片设计RTL代码全流程,"不是 demo，是一条真实工程链路。
+18 小时连续运行，Doubao-Seed-2.1-pro 从规格文档出发，完成👇
+📄 Spec 理解
+🏗️ 架构设计
+💻 RTL 编码（6 个核心模块 / 1303 行代码）
+🧪 仿真与回归
+⚙️ 综合检查
+✅ 最终应用验证（手写数字识别跑通）
+这一次不是“生成代码”，而是把一整个芯片设计流程跑完。
+AI 正在从代码生成工具，进化为能够完成复杂工程任务的智能体。
+	
+#火山引擎Agent社区[话题]# #AIAgent[话题]# #RTL[话题]# #芯片设计[话题]# #NPU[话题]# #DoubaoSeed[话题]#",video,1782210123000,2026-06-23T10:22:03+00:00,2026-06-23T18:22:03+08:00,99b4de629e9241ea,火***区,山东,2510,488,21,208,"火山引擎Agent社区,AIAgent,RTL,芯片设计,NPU,DoubaoSeed",http://sns-video-qc.xhscdn.com/stream/79/110/259/01ea3a45443ff60c010370039ef40098b6_259.mp4?sign=3d926e5036057126dc8d9eab8313250a&t=6a5706ac,device_c_e009_e010_top_20260711,runs\xhs_core_events\device_c_e009_e010_top_20260711\device_c\selected-comments\E009\chunk_005\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a3a8aea00000000150254d7,https://www.xiaohongshu.com/explore/6a3a8aea00000000150254d7?xsec_token=ABRktal62tV1aAtIO4xySYNs1WlS-Vyl4BYZ_lJ1pCxuA=&xsec_source=pc_search,Seed2.1这是把Seedance2.0的质变点复刻了？？,"如果你用过一年前的各种AI各种大模型的话，再对比现在的，真的能感觉到它变好用了[doge]而且，是一种能真的交付到工作流、替你干活的那种好用
+	
+可以说，过去一年全球的模型，能力都不再按版本号一点点的线性提升了，会更像是爬楼梯一样，在某个节点突然跳一格，AI 就会在某个场景里变成真正的生产工具
+	
+而这种跨越，就叫“质变点”[暗中观察R]
+	
+我想今天的Seed 2.1，就和当年的Opus 4.6和Seedance 2.0一样，再次把这个质变点复刻出来了[得意R]
+	
+#ai[话题]# #大模型[话题]# #vibecoding[话题]# #AIChannel[话题]# #AI前沿[话题]# #AI编程[话题]# #seed[话题]# #seedance2[话题]# #火山引擎[话题]# #agent[话题]#",normal,1782221547000,2026-06-23T13:32:27+00:00,2026-06-23T21:32:27+08:00,ecce61a05398776a,T***r,浙江,505,196,9,26,"ai,大模型,vibecoding,AIChannel,AI前沿,AI编程,seed,seedance2,火山引擎,agent",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_023\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a3b40e3000000000803fd9a,https://www.xiaohongshu.com/explore/6a3b40e3000000000803fd9a?xsec_token=AB0mK14pOLWANaVmkEjDhX04SRbgblhZvOku0xVyKE_rQ=&xsec_source=pc_search,专业版正式上线，基于最新的 2.1 系列大模型，帮助专业用户更好地处理复杂工作、生产力场景,专业版正式上线，基于最新的 2.1 系列大模型，帮助专业用户更好地处理复杂工作、生产力场景,video,1782268131000,2026-06-24T02:28:51+00:00,2026-06-24T10:28:51+08:00,26efd070c68da45c,豆*,北京,2747,948,388,394,,"http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea3b405c425268010370039ef775e01b_259.mp4?sign=74a28921a8f84a0511dd1f1b631bb049&t=6a591dcf,http://sns-video-v6.xhscdn.com/stream/79/110/261/01ea3b405c4252684f0370019ef775fa2d_261.mp4?sign=2d1074efcfecc8bebeac45b9b1df9f07&t=6a591dcf",device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_007\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a3b492d00000000210212fc,https://www.xiaohongshu.com/explore/6a3b492d00000000210212fc?xsec_token=AB0mK14pOLWANaVmkEjDhX0162xdvH0X8CBeYd7ge84w8=&xsec_source=pc_search,专业版正式上线。基于最新的 2.1 系列大模型，帮助专业用户更好地处理复杂工作、生产力场景。提供更高的生产力场景使用额度，以及接入 2.1 Pro 模型的办公任务模式。此外，免费用户也可以体验接入 2.1 Turbo 模型的办公任务模式。,专业版正式上线。基于最新的 2.1 系列大模型，帮助专业用户更好地处理复杂工作、生产力场景。提供更高的生产力场景使用额度，以及接入 2.1 Pro 模型的办公任务模式。此外，免费用户也可以体验接入 2.1 Turbo 模型的办公任务模式。,normal,1782270253000,2026-06-24T03:04:13+00:00,2026-06-24T11:04:13+08:00,26efd070c68da45c,豆*,北京,949,364,746,148,,,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_013\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a3b5bc80000000021008055,https://www.xiaohongshu.com/explore/6a3b5bc80000000021008055?xsec_token=AB0mK14pOLWANaVmkEjDhX0zevCAGnpYJCivaLNaSu9t0=&xsec_source=pc_search,测评豆包盲盒！豆包居然出盲盒了？？,#测评[话题]# #盲盒开箱[话题]# #打假[话题]# #避雷[话题]# #潮玩开箱[话题]#,video,1782275016000,2026-06-24T04:23:36+00:00,2026-06-24T12:23:36+08:00,3398a195736856d4,阿***】,广东,4899,3500,710,96,"测评,盲盒开箱,打假,避雷,潮玩开箱","http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea3b5bc8429dd5010370039ef7dfa7d9_259.mp4?sign=271e12a9b7252253990fee63b4c6dd97&t=6a58409f,http://sns-video-v6.xhscdn.com/stream/79/110/261/01ea3b5bc8429dd54f0370019ef7e0c6ab_261.mp4?sign=49b0b20939a7ea093efe6bdf28bfa96d&t=6a58409f",device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_006\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a3b7c00000000000802795d,https://www.xiaohongshu.com/explore/6a3b7c00000000000802795d?xsec_token=AB0mK14pOLWANaVmkEjDhX00nmZriKmMxwjWvTbjhxSK4=&xsec_source=pc_search,Seedance2.5将上线，为实体产业创造更多价值,"[向右R]在6月23日召开的火山引擎Force原动力大会上，全新的豆包视频生成模型Seedance2.5首次亮相。
+	
+Seedance 2.5在视频生成长度、全模态素材联合输入、视频编辑能力三个方面进行了重要升级，将在具身智能、工业制造、自动驾驶等实体产业中发挥更多作用，为数据生成、场景仿真、流程演示和训练评测提供新的工具能力。",video,1782283264000,2026-06-24T06:41:04+00:00,2026-06-24T14:41:04+08:00,69c7b933d2adaa41,字***动,北京,1098,216,52,62,,http://sns-video-v6.xhscdn.com/stream/1/110/259/01ea3b7c002f755b010370039ef85cf907_259.mp4?sign=36aa3e1c3c7fd2bd87e69f42271bd75e&t=6a5927a4,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_010\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a3bbe320000000015024588,https://www.xiaohongshu.com/explore/6a3bbe320000000015024588?xsec_token=AB0mK14pOLWANaVmkEjDhX02Y2BiiUUGzQrMYFHF6xlwk=&xsec_source=pc_search,豆包2.1 Pro首测，6个Agent工作流都接住了,"@科技薯 @HOWTO薯
+#howto用好AI[话题]# #万物皆可howto[话题]# #小红书科技AMA[话题]# #AIchannel[话题]# #AI工具[话题]# #HOWTO[话题]# #vibecoding大赏[话题]# #AI新手村[话题]# #科技资讯早知道[话题]# #大模型[话题]#",video,1782300210000,2026-06-24T11:23:30+00:00,2026-06-24T19:23:30+08:00,5e5fcdef350e8871,卡***茨,浙江,610,223,7,22,"howto用好AI,万物皆可howto,小红书科技AMA,AIchannel,AI工具,HOWTO,vibecoding大赏,AI新手村,科技资讯早知道,大模型",http://sns-video-qc.xhscdn.com/stream/1/110/259/01ea3bbe3209d133010370039ef95fd2f3_259.mp4?sign=c67d56f8d6b4e7674102c60bca70bf19&t=6a5947a1,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_020\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a3bd19d0000000011012eca,https://www.xiaohongshu.com/explore/6a3bd19d0000000011012eca?xsec_token=AB0mK14pOLWANaVmkEjDhX08eJRqxo1li5WUXWzhI7ltI=&xsec_source=pc_search,Seed-2.1pro：豆包到底追上来了吗,"豆包 2.1 昨天在火山引擎 Force 发布。我自己搭了一套测试。
+	
+#豆包[话题]# #豆包2[话题]#.1 #Claude[话题]# #Opus[话题]# #DeepSeek[话题]# #GLM[话题]# #大模型评测[话题]# #vibecoding[话题]#",normal,1782305181000,2026-06-24T12:46:21+00:00,2026-06-24T20:46:21+08:00,5ec44aee98b037ff,A***e,北京,509,190,34,27,"豆包,豆包2,Claude,Opus,DeepSeek,GLM,大模型评测,vibecoding",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_022\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a3d50e5000000001c026735,https://www.xiaohongshu.com/explore/6a3d50e5000000001c026735?xsec_token=ABPn-2hmi5Xe8x0AI3FCQ6C2daaEC87mTQSm5nPl_j04Y=&xsec_source=pc_search,啊啊高度近视海淘到最薄的眼镜片!爱住😍,从日本jins官网海淘到1.76东海双非眼镜，真的轻薄很多（眼睛不会放得那么那么小了）而且这副框架是我线下去jins试了的无敌满意，也是日本官网比较火的一款，真的超级适合方圆脸，非常轻非常舒适修饰脸型😭就是要等个20多天有点久，但收到太满意了！而且超级超级好价，1000不到，国内要4000多而且好多门店不做了。（记得用优惠卷！）附上海淘手把手教程，因为中间的一些细节还是要注意下，免得搞错了退什么的很麻烦！真真真高度近视福音，唯一不好的就是最近1.76眼镜片暂时停售因为原材料缺了，我查了下八九月可能会能买到！大家可以蹲蹲（教程很详细详细看教程#适合高度数眼镜[话题]# #jins眼镜日本海淘[话题]# #配眼镜攻略[话题]# #日本jins[话题]#,video,1782403301000,2026-06-25T16:01:41+00:00,2026-06-26T00:01:41+08:00,559212ffad4a343a,自***易,北京,1.2万,1.5万,160,1130,"适合高度数眼镜,jins眼镜日本海淘,配眼镜攻略,日本jins",http://sns-video-v3.xhscdn.com/stream/1/110/259/01ea3d50e408986d010370039eff8fb5b8_259.mp4?sign=2e005e1e7af19bf8c11d104a8eba52ad&t=6a582153,device_c_e009_e010_top_skiphot_20260712,runs\xhs_core_events\device_c_e009_e010_top_skiphot_20260712\device_c\selected-comments\E009\chunk_002\xhs\jsonl\detail_contents_2026-07-12.jsonl
+E009,豆包 Seed 2.0,6a3e457e000000000f016518,https://www.xiaohongshu.com/explore/6a3e457e000000000f016518?xsec_token=ABHBP4LtXfz272i7UaZOXJBJbZG3rTbSZIFEu16Zc1cfY=&xsec_source=pc_search,父母催婚话术是如何做到全国统一的,#催婚[话题]# #精神状态belike[话题]# #高情商回复[话题]# #豆包[话题]# #人类模仿ai[话题]# #菜包豆[话题]#,video,1782638102000,2026-06-28T09:15:02+00:00,2026-06-28T17:15:02+08:00,b8bf7f0a235779d0,菜***豆,北京,10万+,6.4万,1.2万,7.3万,"催婚,精神状态belike,高情商回复,豆包,人类模仿ai,菜包豆","http://sns-video-v4.xhscdn.com/stream/1/110/259/01ea3e457e42627f010370039f033fb89c_259.mp4?sign=4f0e8a981e9da9a954e088b59c7fca92&t=6a56b375,http://sns-video-v4.xhscdn.com/stream/1/110/261/01ea3e457e42627f010370019f033fedd2_261.mp4?sign=ba9e2df90846f471137012cee1a4a018&t=6a56b375",device_c_e009_e010_top_20260711,runs\xhs_core_events\device_c_e009_e010_top_20260711\device_c\selected-comments\E009\chunk_002\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E009,豆包 Seed 2.0,6a413ded000000001502693a,https://www.xiaohongshu.com/explore/6a413ded000000001502693a?xsec_token=ABwWAGBrOB14hiwU3Vx3CJta1tYJTMxMWzG485s5PuR4A=&xsec_source=pc_search,别再写：熟练使用豆包/千问/GPT等AI产品,"很多同学想让自己的简历上也能呈现和ai有关的东西
+也有同学私信问我：完全没有ai经历但是想去面和ai有关的岗位应该怎么写简历
+我就合并在这一篇内容一起讲
+	
+之前有提到，现在实习/校招生的简历质量提升了很多
+基本能做到：干净整洁无雷霆模板、经历表述清楚、基础要素齐全
+但最近发现了一个新的值得提醒和探讨聊聊的点——
+很多同学直接写：我熟练使用豆包/DeepSeek/千问等ai工具
+这句话的写法是很有问题的，因为任何一个下载了这几个工具的人都可以说自己会熟练使用，因为他们的形式都是chatbot，也就是直接对话就能用
+	
+那么正确的写法是什么？
+不同岗位分别应该怎么写？
+没有ai实践经历的怎么开始？
+可以看看内容哦～
+	
+依旧欢迎大家跟我沟通交流，分享创造价值～！
+	
+#互联网大厂[话题]# #ai[话题]# #ai实用小技巧[话题]# #简历[话题]# #ai项目[话题]# #vibecoding[话题]# #ai工作流[话题]# #ai工具[话题]# #简历技巧[话题]# #简历教程[话题]#",video,1782660589000,2026-06-28T15:29:49+00:00,2026-06-28T23:29:49+08:00,37cc2077323c3fa5,֣***1,广东,5259,5445,30,453,"互联网大厂,ai,ai实用小技巧,简历,ai项目,vibecoding,ai工作流,ai工具,简历技巧,简历教程",http://sns-video-v6.xhscdn.com/stream/1/110/259/01ea413b75088072010370039f0edd20c3_259.mp4?sign=6b9d480d5a2228f647d0c589378685cd&t=6a591b4f,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_006\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a4242b80000000008025628,https://www.xiaohongshu.com/explore/6a4242b80000000008025628?xsec_token=AB45KKlJ_Ykw-kzMUOpv0ekwyBl3Ykxl2ycL5RkA383AM=&xsec_source=pc_search,豆包豆包帮我在浴缸里生成一个洛恩,#原神[话题]# #洛恩[话题]# #原神洛恩[话题]# #ooc致歉[话题]#,video,1782727352000,2026-06-29T10:02:32+00:00,2026-06-29T18:02:32+08:00,ec3378e112550906,双***🐾,江苏,7.7万,6501,255,1329,"原神,洛恩,原神洛恩,ooc致歉","http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea42429f372669010370039f12d50197_259.mp4?sign=da0c832b4dc9b7d7de0d875bd6f4fbbf&t=6a591424,http://sns-video-v6.xhscdn.com/stream/79/110/261/01ea42429f3726694f0370019f12d4d0d9_261.mp4?sign=adb4984c407aefbaee81a1ba697e3aba&t=6a591424",device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_004\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a4506f6000000000803348e,https://www.xiaohongshu.com/explore/6a4506f6000000000803348e?xsec_token=ABua_iq7gCzYXeb1lRBlEsteFSeXoaQXeA-rg5ve-81hM=&xsec_source=pc_search,小玉拼豆包包图纸热辣来袭（可装手机）,"新鲜出炉的图纸，成品来源于@幸运女侠平安康泰 老师新作品[心心眼R]
+因为不支持二传二改，所以大图我把相应的地方已经留了（图中C9色号为小玉部分），侧边的图案也进行了调整下（大家也可以根据自己喜好替换哦），小玉大家去原作者那找到图纸按原图放上去就好，原图链接我放评论区喽[吧唧R]
+图纸放最后啦，因为太大了不知道会不会压画质，看不清可私。
+Ps：因为一开始不知道二改的意思，所以直接发出来了，已经后台和老师沟通过啦
+图纸老师：@好运来oy6
+#拼豆实用主义[话题]# 拼豆实用主义#手工的夏天[话题]#  #万物皆可拼[话题]##拼豆包[话题]# #创作疯长计划[话题]#",normal,1782908662000,2026-07-01T12:24:22+00:00,2026-07-01T20:24:22+08:00,7b3d24ec7f5847bb,咕*,广东,1142,1076,80,169,"拼豆实用主义,手工的夏天,万物皆可拼,拼豆包,创作疯长计划",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_014\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a45d978000000001c027879,https://www.xiaohongshu.com/explore/6a45d978000000001c027879?xsec_token=ABua_iq7gCzYXeb1lRBlEstQglkxO7cs-5lcBrqIqXiuk=&xsec_source=pc_search,📚新学年开学季｜✏️不踩坑的文具VS书包🎒,"9月份孩子们要升级了～
+小豆包要上幼儿园 了～
+幼儿园的小朋友开始新的挑战成为一名小学生～
+小学生升级高一年级～
+豆浆妈妈已经为你们选好新学期文具和书包了！
+#家有小学生[话题]# #海淀妈妈[话题]# #海淀娃[话题]# #护脊书包选轻的[话题]# #开学必备的清单[话题]# #减重书包[话题]# #开学带这些[话题]# #儿童书包[话题]# #适合学生党的双肩包[话题]##小学生书包[话题]#",video,1782962552000,2026-07-02T03:22:32+00:00,2026-07-02T11:22:32+08:00,b5857505434305b2,我***浆,北京,3296,1896,105,46,"家有小学生,海淀妈妈,海淀娃,护脊书包选轻的,开学必备的清单,减重书包,开学带这些,儿童书包,适合学生党的双肩包,小学生书包","http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea45d89f3a6389010370039f20db7b6b_259.mp4?sign=5237a335989711932447a8676bc4dd11&t=6a5921a1,http://sns-video-v6.xhscdn.com/stream/79/110/261/01ea45d89f3a63894f0370019f20dd2f0b_261.mp4?sign=07be8f1ea50e100abb515ad5e12f8bdb&t=6a5921a1",device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_008\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E009,豆包 Seed 2.0,6a48852d0000000011014504,https://www.xiaohongshu.com/explore/6a48852d0000000011014504?xsec_token=ABhYRVfg0rZ8LzLUBfNFfBaBDpdeZpZKUmWdWtV1GGQWU=&xsec_source=pc_search,豆包、千问：智能体功能将下线,"豆包发布《豆包智能体功能下线通知》，称由于产品功能调整，智能体功能将于2026年7月15日下线。
+	
+千问也发布智能体服务下线提醒，称千问智能体功能与服务将于2026年7月15日正式下线，下线后用户将无法继续访问相关智能体配置及历史对话记录。（科创板日报）#热点[话题]# #社会[话题]# #生活[话题]# #智能体[话题]# @热点薯",normal,1783137581000,2026-07-04T03:59:41+00:00,2026-07-04T11:59:41+08:00,5eb9a9b37c839386,潇***报,湖南,2719,648,711,1360,"热点,社会,生活,智能体",,device_c_e009_e010_top_20260711,runs\xhs_core_events\device_c_e009_e010_top_20260711\device_c\selected-comments\E009\chunk_001\xhs\jsonl\detail_contents_2026-07-11.jsonl
+E009,豆包 Seed 2.0,6a48c3fe000000001503c03c,https://www.xiaohongshu.com/explore/6a48c3fe000000001503c03c?xsec_token=ABhYRVfg0rZ8LzLUBfNFfBaPnQ5D47OWERDQPqEKKaXgo=&xsec_source=pc_search,豆包、千问将下线智能体功能,"7月4日消息，豆包和通义千问宣布智能体功能将下线。
+豆包发布《豆包智能体功能下线通知》，称由于产品功能调整，智能体功能将于2026年7月15日下线。功能下线后，用户仍可在一段时间内查看并自行保存智能体信息及历史对话数据，10月15日后，豆包将根据《隐私政策》对智能体相关数据进行处理，后续将无法在豆包内查看或恢复。
+同一时间，千问（通义千问）也向用户推送“千问智能体服务下线提醒”，称千问智能体功能与服务将于2026年7月15日正式下线，下线后用户将无法继续访问相关智能体配置及历史对话记录。#豆包 #千问 #智能体",video,1783153662000,2026-07-04T08:27:42+00:00,2026-07-04T16:27:42+08:00,c931569af72bd1bf,2***道,广东,5694,1782,2135,3682,,http://sns-video-v6.xhscdn.com/stream/79/110/259/01ea48c3813729b5010370039f2c3db210_259.mp4?sign=895faf6639c3fd81bf832b269894430c&t=6a590d26,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E009\chunk_002\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,69cdd101000000002301174d,https://www.xiaohongshu.com/explore/69cdd101000000002301174d?xsec_token=AB4poKPEPzC3HgYspsJMpSHRHzKA3gyk27TFUiaIGzwHQ=&xsec_source=pc_search,外国人白给的编程资源神器,#游戏的意义[话题]# #python[话题]# #编程[话题]# #没想到你是这样的程序员[话题]# #有趣的网站[话题]# #免费学习资源网站[话题]# #计算机[话题]#,video,1775096065000,2026-04-02T02:14:25+00:00,2026-04-02T10:14:25+08:00,3fe9ab2114307b37,叮***喵,,1.5万,2.1万,803,1048,"游戏的意义,python,编程,没想到你是这样的程序员,有趣的网站,免费学习资源网站,计算机",http://sns-video-qc.xhscdn.com/stream/1/110/259/01e9cdd0e8526799010370039d4bf8a73b_259.mp4?sign=94215826b2ed49d0c09cb8688b0be773&t=6a59640a,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_007\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,69e88dff000000002101334e,https://www.xiaohongshu.com/explore/69e88dff000000002101334e?xsec_token=ABT8s2aEnFRDO2jhH0fCa9sCl0MH5KkpuPDeY7eaxOKnc=&xsec_source=pc_search,已经被gpt和codex吓晕了,"本来想让ai指导一下做ppt，结果它随手生成的图片就是我的一辈子，试了一下直接生成ppt模板都已经比我所有的模板好看了。
+第二张是codex控制电脑给微信好友发消息。
+#ai[话题]# #gpt[话题]# #codex[话题]#",normal,1776848383000,2026-04-22T08:59:43+00:00,2026-04-22T16:59:43+08:00,9e17f7aa1ff6287f,x***h,,1.7万,1.7万,408,2517,"ai,gpt,codex",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_002\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,69edd0bb00000000350253dc,https://www.xiaohongshu.com/explore/69edd0bb00000000350253dc?xsec_token=ABhSkoJ2Mbvesqv9gdxRjTESkge3MY_fIbrqAyubly4fY=&xsec_source=pc_search,DeepSeek V4 接入Claude Code最全教程🔥,"DeepSeek V4 + Claude Code，AI 编程新组合实测来了 🔥
+性价比目前没得说，DeepSeek 国产大模型，
+教程已经写好了，照着做就行！
+	
+#vibecoding大赏[话题]# #DeepSeek[话题]# #deepseek[话题]# #deepseekv4[话题]# #claudecode[话题]# #ai编程[话题]# #ai开发[话题]# #claude[话题]# #ai[话题]#  #vibecoding[话题]#",normal,1777195743000,2026-04-26T09:29:03+00:00,2026-04-26T17:29:03+08:00,8fc51a05046bd34a,库***I,,1.2万,1.6万,799,4943,"vibecoding大赏,DeepSeek,deepseek,deepseekv4,claudecode,ai编程,ai开发,claude,ai,vibecoding",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_003\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,6a280498000000001702e776,https://www.xiaohongshu.com/explore/6a280498000000001702e776?xsec_token=ABR300NEuRmNtZOydKuRG9KWY802BAGgYMSq0hTVTTnZE=&xsec_source=pc_search,打工人必看！这些AI工具让我少加班三小时,"不早说！看懂这些AI工具真的能提前下班三小时！
+最近整理了一份「2026年最佳AI工具」金字塔精选清单，发现AI工具已经不是“可选项”，而是工作流必备了。
+	
+以前我以为AI就是写写文案、问问问题。后来才发现，真正会用AI的人，早就开始按场景选工具了。
+	
+① Codex｜核心大脑 这次我把 Codex 放在第一层。它不只是写代码，还能帮你做网页、搭小工具、生成原型、跑自动化脚本。不会代码的人，也可以先把想法做出来。
+	
+② 通用助手 代表工具：ChatGPT、Claude、Perplexity 适合写作、搜索、研究、头脑风暴、整理思路。刚入门AI，可以先从这几个开始。
+	
+③ 开发/搭建 代表工具：Cursor、Replit、Lovable、Base44 适合写代码、搭产品、做MVP，把想法快速验证出来。
+	
+④ 内容输出 代表工具：Midjourney、Kling、HeyGen、Descript、Canva、Opus Clip 适合做图片、视频、数字人、短视频剪辑和品牌内容。
+	
+⑤ 效率办公 代表工具：Notion AI、NotebookLM、Grammarly、Gamma、Granola、Superhuman、Wispr Flow 适合资料整理、PPT、会议纪要、邮件处理、写作润色。
+	
+⑥ 自动化&集成 代表工具：n8n、Zapier、Lindy AI、Chatbase、Gemini、Apify、Clay、Softr
+适合把不同工具串起来，让重复流程自动跑。我的建议是：别一次性学太多工具。
+写东西慢，就用 ChatGPT/Claude；查资料乱，就用 Perplexity；想搭工具，就用 Codex/Cursor；做内容，就用 Midjourney/Kling/Canva；重复工作多，就研究 n8n/Zapier。
+	
+2026年真正重要的能力，不是收藏多少AI工具，而是能不能把AI放进自己的工作流里。
+	
+#AI工具[话题]# #AI应用[话题]# #人工智能[话题]# #Codex[话题]# #ChatGPT[话题]# #效率工具[话题]# #AI办公[话题]# #小红书成长笔记[话题]# #自媒体工具[话题]# #AI工作流[话题]#",normal,1781007512000,2026-06-09T12:18:32+00:00,2026-06-09T20:18:32+08:00,4569c4bdf04ca010,С***i,,1.1万,1.2万,326,1174,"AI工具,AI应用,人工智能,Codex,ChatGPT,效率工具,AI办公,小红书成长笔记,自媒体工具,AI工作流",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_004\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,6a2e39c6000000003502a3c8,https://www.xiaohongshu.com/explore/6a2e39c6000000003502a3c8?xsec_token=ABvn0GjGkf68vvyHPsiE3VB549GHU1udRNKn1jfDs7Wko=&xsec_source=pc_search,实测GLM-5.2和opus-4.8：差距比我想像的小,"最近智谱和月之暗面都发布了新模型，同时 A 社下架了所有 Fable 模型。借这个节点，我做了两个长时程 coding agent 任务，观察 GLM-5.2、kimi-2.7-coding 和 opus-4.8 在实际任务中的表现差异。
+测试都使用 cc 的 goal 模式，最多优化 100 轮。任务包括：
+1. 在浏览器里复现 Mac OS 26 的液态玻璃效果和访达主要功能
+2. 复现一个可玩的《我的世界》
+完整任务记录已开源：KMnO4-zx/LoHo-case。
+先看 GLM-5.2。在 Mac OS 26 任务里，Dock 动画和访达管理栏仍有不足，但整体视觉结构和交互雏形比较完整。考虑到它是纯文本模型，不能像 opus-4.8 那样用 Playwright 截图自检，这个结果有一定参考价值。
+在《我的世界》任务里，GLM-5.2 完成速度较快，贴图质量也比较稳定，最终可以正常游玩。和 opus-4.8 相比，整体完成度没有被明显拉开。
+再看 kimi-2.7-coding。Mac OS 26 任务运行了三个多小时，消耗一个账号的 5 小时限额，又用了约 80 元 API，最终前端页面报错，无法启动。它在长时程前端任务中的稳定性还需要继续观察。
+《我的世界》任务中，它完成了游戏主体，但画面相对简单，交互上也有明显问题：W 键是后退，S 键是前进，影响基础可玩性。
+opus-4.8 整体比较稳定。Mac OS 26 任务里，Dock 图标偏大并遮挡了部分内容，但访达功能和视觉层次相对更完整。《我的世界》任务也能正常游玩，贴图质量保持得不错。
+一个观察是，opus-4.8 会频繁用 Playwright 截图自检；GLM-5.2 没有这一步，但最终结果仍接近可比较水平。也就是说，在这个测试里，GLM-5.2 是在纯文本条件下完成了较复杂的前端和游戏任务。
+昨晚看到唐杰老师在微博提到，前沿智能不应该只属于少数人，也不应该被少数规则随时收回。GLM-5.2 已经在智谱所有 coding plan 中可用。如果国产模型继续在真实 coding agent 任务中提升，开发者会有更多可替代选择，也能减少对昂贵、限制多、可用性不稳定的国外模型的依赖。
+#大模型[话题]# #glm52[话题]# #智谱[话题]# #claudecode[话题]# #vibecoding[话题]# #KimiK27Code[话题]# #minecraft[话题]# #对比[话题]#",normal,1781414342000,2026-06-14T05:19:02+00:00,2026-06-14T13:19:02+08:00,8303355f8c50b55f,不***蒜,河南,1866,572,118,205,"大模型,glm52,智谱,claudecode,vibecoding,KimiK27Code,minecraft,对比",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_006\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,6a3d04e10000000011019999,https://www.xiaohongshu.com/explore/6a3d04e10000000011019999?xsec_token=ABPn-2hmi5Xe8x0AI3FCQ6C3NT02jasH3bnWhstAFAk9M=&xsec_source=pc_search,这次，我必须站阿里,"Anthropic今天指控阿里蒸馏模型，这手双标给我看呆了。
+	
+最近阿里先是被塞进了所谓""涉华制裁黑名单（CMC），紧接着又被Anthropic指控千问模型""蒸馏""了它家的Claude。一手zz帽子，一手技术脏水，配合得相当默契。
+	
+阿里是这么回应的：6月23日，阿里直接起诉了对方，要求把自己从那份名单上移除，直接用他们自己的法律体系怼回去了！
+	
+为什么打压重心从芯片转移到了模型？我的理解是：芯片封锁这条路，越来越不好使了。国内各家模型厂商都在自建芯片，模型架构也不断创新，芯片打压的效果越来越有限。硬的不行那就来软的，给中国AI泼脏水，用舆论战和zz标签来恶心你。
+	
+舆论战上，冲在最前面的就是Anthropic。今年2月指控DeepSeek、月之暗面、MiniMax""蒸馏攻击""，现在又轮到了千问。套路也不变：你们的模型好，那一定是偷了我的。
+	
+知识蒸馏是Geoffrey Hinton发明的技术，这位老先生还因此拿了诺贝尔物理学奖。海外公司之间天天互相蒸馏，大家也默许、闭麦、啥都不说；咱们一用，就成了“工业级蒸馏攻击”。可以说非常双标了。。。
+	
+真要比“数据干净”，Anthropic自己怕是最没资格开口的那个！去年被抓到从盗版网站下载了超过700万本书来训练Claude，最后赔了超过15亿美金才摆平。今年又被环球音乐等出版商告上法院，指控它通过BT种子盗版获取音乐作品训练模型，索赔金额可能超过30亿；还有上个月的“撕书案”。一个靠盗版内容喂大的模型，现在指着别人鼻子说“你偷了我的东西”。
+	
+而且，大家还记得吗？Opus 4.8上线的时候，有用户发现这个模型偶尔会把自己认成Qwen。你指控别人蒸馏你，结果你自己的模型转头把""老师""供出来了。自个打了自个的脸，事后也没说啥。
+	
+阿里这次硬刚，做得好。因为面对不公正的指控和打压，沉默本身就是一种退让，我们需要为自己争取。当芯片封锁、实体清单、舆论抹黑变成一套组合拳，有人愿意站出来正面接招，用对方的规则在对方的场地上打一场硬仗，我们应该支持。
+	
+#anthropic[话题]# #阿里巴巴[话题]# #小红书热点观察团[话题]# #互联网大厂[话题]# #世界颠成了我想要的样子[话题]# #模型蒸馏[话题]# #千问[话题]# #模型训练[话题]# #一个想法但不一定对[话题]#",normal,1782383842000,2026-06-25T10:37:22+00:00,2026-06-25T18:37:22+08:00,4ab1fda2b622134a,电***奇,广东,942,99,62,72,"anthropic,阿里巴巴,小红书热点观察团,互联网大厂,世界颠成了我想要的样子,模型蒸馏,千问,模型训练,一个想法但不一定对",,device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_001\xhs\jsonl\detail_contents_2026-07-13.jsonl
+E010,Kimi 新功能,6a3d05100000000017008f78,https://www.xiaohongshu.com/explore/6a3d05100000000017008f78?xsec_token=ABPn-2hmi5Xe8x0AI3FCQ6C6XrDiN3vH6jzSDTUhRMamY=&xsec_source=pc_search,Kimi Work的10个用法｜小白入门,"之前出过的一些通用模型和Agent 的教程
+很多朋友说用不了，门槛高
+这次整理了Kimi Work的入门用法
+可以理解为“国产Codex”
+	
+把Kimi Work值得先学的用法都放到了前面
+（已分好章节）按顺序看：
+1）Agent集群（处理大型任务）
+2）目标模式 （能自动验收标准）
+3）Skills （技能）
+4）如何创建Skill
+5）插件（操控应用）
+6）定时任务
+7）本地文件管理
+8）离线可用和本地优先
+9）深度研究模拟
+10）全栈文档处理
+	
+#AI智能体[话题]#  #AI助手[话题]#  #智能体[话题]#  #kimiwork[话题]# #科技[话题]#",video,1782392916000,2026-06-25T13:08:36+00:00,2026-06-25T21:08:36+08:00,a39d831e48dbbd02,S***e,上海,5358,4729,46,566,"AI智能体,AI助手,智能体,kimiwork,科技","http://sns-video-qc.xhscdn.com/stream/1/110/259/01ea3d04030880e2010370039efe5f57c7_259.mp4?sign=140d37e589a62a3715d2a8dc84f4565b&t=6a595ebf,http://sns-video-qc.xhscdn.com/stream/1/110/261/01ea3d04030880e2010370019efe6104c4_261.mp4?sign=374daa32d293f96670dbbaa95a93af1b&t=6a595ebf",device_c_e009_e010_fastpass_20260713,runs\xhs_core_events\device_c_e009_e010_fastpass_20260713\device_c\selected-comments\E010\chunk_005\xhs\jsonl\detail_contents_2026-07-13.jsonl
