@@ -1,0 +1,16 @@
+{
+  "device_id": "C",
+  "events": [
+    "E008",
+    "E009",
+    "E010"
+  ],
+  "raw_note_rows_seen": 112,
+  "raw_comment_rows_seen": 34364,
+  "unique_notes": 87,
+  "unique_top_level_comments": 21676,
+  "comments_with_public_ip_location": 21669,
+  "skipped_invalid_rows": 0,
+  "note_sources_scanned": 14,
+  "scope": "E008/E009/E010; first-level comments only"
+}
