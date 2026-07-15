@@ -4,11 +4,25 @@ This repository contains a Xiaohongshu/RedNote data collection kit expanded as a
 
 - Collection engine: `MediaCrawler/`
 - Device and event configs: `configs/`
-- GitHub-ready exported data: `github_data/`
+- Collaboration-ready device data: `data/` (start at `data/README.md`)
+- Legacy GitHub-ready exports: `github_data/`
 - Distribution and merge scripts: `scripts/`
 - Optional collection seed files: `seed_data/`
 - Package guide: `XHS_DISTRIBUTED_COLLECTION_PACKAGE.md`
 - GitHub sync guide: `GITHUB_SYNC_RUNBOOK.md`
+
+## Data for collaborators
+
+All current device snapshots use one convention:
+
+```text
+data/<device>/<snapshot>/
+```
+
+Open [`data/README.md`](data/README.md) first. It lists every available device
+snapshot, collection scope, row counts, recommended tables, and privacy boundary.
+Use the per-snapshot `README.md` before reading a CSV. `github_data/` is retained
+only for earlier compatibility exports; new device-level deliveries belong in `data/`.
 
 ## Full comment collection
 
