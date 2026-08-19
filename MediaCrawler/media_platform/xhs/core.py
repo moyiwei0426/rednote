@@ -46,6 +46,17 @@ from .exception import DataFetchError, NoteNotFoundError
 from .field import SearchSortType
 from .help import parse_note_info_from_note_url, parse_creator_info_from_url, get_search_id
 from .login import XiaoHongShuLogin
+from .pagination import (
+    append_quality_status,
+    append_raw_search_result,
+    classify_page_times,
+    load_existing_content_note_ids,
+    parse_boundary_ms,
+    search_item_publish_time_ms,
+    search_page_checkpoint_decision,
+    search_stop_decision,
+    take_detail_budget,
+)
 
 
 class XiaoHongShuCrawler(AbstractCrawler):
@@ -89,11 +100,38 @@ class XiaoHongShuCrawler(AbstractCrawler):
                     self.user_agent,
                     headless=config.HEADLESS,
                 )
-                # stealth.min.js is a js script to prevent the website from detecting the crawler.
+                # stealth.min.js is only needed for the standard Playwright context.
                 await self.browser_context.add_init_script(path="libs/stealth.min.js")
+            if os.getenv("XHS_DISABLE_GEOLOCATION", "").strip().lower() in {"1", "true", "yes"}:
+                await self.browser_context.clear_permissions()
+                utils.logger.info("[XiaoHongShuCrawler] Cleared browser permissions for regional collection")
 
-            self.context_page = await self.browser_context.new_page()
-            await self.context_page.goto(self.index_url)
+            # A reused CDP browser already has an authenticated XHS page. Reuse it
+            # instead of making every batch wait for the root page to finish loading.
+            existing_page = next(
+                (
+                    page
+                    for page in self.browser_context.pages
+                    if not page.is_closed() and page.url.startswith(self.index_url)
+                ),
+                None,
+            )
+            if existing_page is not None:
+                self.context_page = existing_page
+            else:
+                self.context_page = await self.browser_context.new_page()
+                try:
+                    await self.context_page.goto(
+                        self.index_url,
+                        wait_until="domcontentloaded",
+                        timeout=60_000,
+                    )
+                except Exception as exc:
+                    utils.logger.warning(
+                        "[XiaoHongShuCrawler] Index page navigation timed out; "
+                        "continuing with the current browser context: %s",
+                        exc,
+                    )
 
             # Create a client to interact with the Xiaohongshu website.
             self.xhs_client = await self.create_xhs_client(httpx_proxy_format)
@@ -130,7 +168,22 @@ class XiaoHongShuCrawler(AbstractCrawler):
         """Search for notes and retrieve their comment information."""
         utils.logger.info("[XiaoHongShuCrawler.search] Begin search Xiaohongshu keywords")
         xhs_limit_count = 20  # Xiaohongshu limit page fixed value
-        if config.CRAWLER_MAX_NOTES_COUNT < xhs_limit_count:
+        all_results = bool(getattr(config, "XHS_SEARCH_ALL_RESULTS", False))
+        max_pages = max(1, int(getattr(config, "XHS_SEARCH_MAX_PAGES", 200)))
+        old_page_stop_count = max(1, int(getattr(config, "XHS_SEARCH_OLD_PAGE_STOP_COUNT", 2)))
+        detail_session_limit = max(0, int(getattr(config, "XHS_SEARCH_DETAIL_SESSION_LIMIT", 8)))
+        page_session_limit = max(0, int(getattr(config, "XHS_SEARCH_PAGE_SESSION_LIMIT", 0)))
+        card_only = bool(getattr(config, "XHS_SEARCH_CARD_ONLY", False))
+        page_cooldown_sec = max(
+            config.CRAWLER_MAX_SLEEP_SEC,
+            int(getattr(config, "XHS_SEARCH_PAGE_COOLDOWN_SEC", 300)),
+        )
+        window_start_ms = parse_boundary_ms(getattr(config, "XHS_SEARCH_WINDOW_START", ""))
+        window_end_ms = parse_boundary_ms(
+            getattr(config, "XHS_SEARCH_WINDOW_END", ""),
+            end_of_day=True,
+        )
+        if not all_results and config.CRAWLER_MAX_NOTES_COUNT < xhs_limit_count:
             config.CRAWLER_MAX_NOTES_COUNT = xhs_limit_count
         start_page = config.START_PAGE
         for keyword in config.KEYWORDS.split(","):
@@ -138,11 +191,39 @@ class XiaoHongShuCrawler(AbstractCrawler):
             utils.logger.info(f"[XiaoHongShuCrawler.search] Current search keyword: {keyword}")
             page = 1
             search_id = get_search_id()
-            while (page - start_page + 1) * xhs_limit_count <= config.CRAWLER_MAX_NOTES_COUNT:
+            consecutive_old_pages = 0
+            existing_detail_ids = load_existing_content_note_ids()
+            seen_note_ids: set[str] = set(existing_detail_ids)
+            seen_search_note_ids: set[str] = set()
+            session_detail_attempts = 0
+            utils.logger.info(
+                "[XiaoHongShuCrawler.search] Loaded %s existing details; session request limit=%s; card_only=%s",
+                len(existing_detail_ids),
+                detail_session_limit or "unlimited",
+                card_only,
+            )
+            while True:
                 if page < start_page:
                     utils.logger.info(f"[XiaoHongShuCrawler.search] Skip page {page}")
                     page += 1
                     continue
+
+                if all_results:
+                    if page > max_pages:
+                        append_quality_status(
+                            "search_pagination_status.jsonl",
+                            {
+                                "keyword": keyword,
+                                "page": page - 1,
+                                "status": "incomplete",
+                                "stop_reason": "max_pages_guard",
+                                "complete": False,
+                                "max_pages": max_pages,
+                            },
+                        )
+                        break
+                elif (page - start_page + 1) * xhs_limit_count > config.CRAWLER_MAX_NOTES_COUNT:
+                    break
 
                 try:
                     utils.logger.info(f"[XiaoHongShuCrawler.search] search Xiaohongshu keyword: {keyword}, page: {page}")
@@ -155,9 +236,74 @@ class XiaoHongShuCrawler(AbstractCrawler):
                         sort=(SearchSortType(config.SORT_TYPE) if config.SORT_TYPE != "" else SearchSortType.GENERAL),
                     )
                     utils.logger.info(f"[XiaoHongShuCrawler.search] Search notes response: {notes_res}")
-                    if not notes_res or not notes_res.get("has_more", False):
-                        utils.logger.info("[XiaoHongShuCrawler.search] No more content!")
+                    if not notes_res:
+                        append_quality_status(
+                            "search_pagination_status.jsonl",
+                            {
+                                "keyword": keyword,
+                                "page": page,
+                                "status": "incomplete",
+                                "stop_reason": "empty_response",
+                                "complete": False,
+                            },
+                        )
+                        utils.logger.error("[XiaoHongShuCrawler.search] Empty search response")
                         break
+                    has_more = bool(notes_res.get("has_more", False))
+                    items = [
+                        item
+                        for item in notes_res.get("items", [])
+                        if item.get("model_type") not in ("rec_query", "hot_query")
+                    ]
+                    detail_items = []
+                    card_time_rows = []
+                    skipped_newer_ids = []
+                    skipped_duplicate_ids = []
+                    skipped_existing_detail_ids = []
+                    for rank, item in enumerate(items, start=1):
+                        note_id = str(item.get("id") or "")
+                        search_publish_time_ms = search_item_publish_time_ms(item)
+                        card_time_rows.append({"time": search_publish_time_ms})
+                        append_raw_search_result(
+                            {
+                                "keyword": keyword,
+                                "search_id": search_id,
+                                "page": page,
+                                "rank_in_page": rank,
+                                "has_more": has_more,
+                                "note_id": note_id,
+                                "xsec_token": item.get("xsec_token"),
+                                "xsec_source": item.get("xsec_source"),
+                                "model_type": item.get("model_type"),
+                                "search_publish_time_ms": search_publish_time_ms,
+                                "search_item": item,
+                            }
+                        )
+                        if not note_id:
+                            continue
+                        if note_id in seen_search_note_ids:
+                            skipped_duplicate_ids.append(note_id)
+                            continue
+                        seen_search_note_ids.add(note_id)
+                        if note_id in existing_detail_ids:
+                            skipped_existing_detail_ids.append(note_id)
+                            continue
+                        if (
+                            window_end_ms is not None
+                            and search_publish_time_ms is not None
+                            and search_publish_time_ms > window_end_ms
+                        ):
+                            skipped_newer_ids.append(note_id)
+                            continue
+                        detail_items.append(item)
+                    if card_only:
+                        fetch_items, deferred_items = [], []
+                    else:
+                        fetch_items, deferred_items = take_detail_budget(
+                            detail_items,
+                            session_detail_attempts,
+                            detail_session_limit,
+                        )
                     semaphore = asyncio.Semaphore(config.MAX_CONCURRENCY_NUM)
                     task_list = [
                         self.get_note_detail_async_task(
@@ -165,25 +311,136 @@ class XiaoHongShuCrawler(AbstractCrawler):
                             xsec_source=post_item.get("xsec_source"),
                             xsec_token=post_item.get("xsec_token"),
                             semaphore=semaphore,
-                        ) for post_item in notes_res.get("items", {}) if post_item.get("model_type") not in ("rec_query", "hot_query")
+                        ) for post_item in fetch_items
                     ]
                     note_details = await asyncio.gather(*task_list)
+                    session_detail_attempts += len(fetch_items)
+                    valid_note_details = []
                     for note_detail in note_details:
                         if note_detail:
                             await xhs_store.update_xhs_note(note_detail)
                             await self.get_notice_media(note_detail)
-                            note_ids.append(note_detail.get("note_id"))
+                            note_id = str(note_detail.get("note_id") or "")
+                            if note_id in seen_note_ids:
+                                continue
+                            seen_note_ids.add(note_id)
+                            valid_note_details.append(note_detail)
+                            note_ids.append(note_id)
                             xsec_tokens.append(note_detail.get("xsec_token"))
-                    page += 1
                     utils.logger.info(f"[XiaoHongShuCrawler.search] Note details: {note_details}")
                     await self.batch_get_note_comments(note_ids, xsec_tokens)
 
+                    page_time_status = classify_page_times(
+                        card_time_rows if card_only else valid_note_details,
+                        window_start_ms,
+                        window_end_ms,
+                    )
+                    if all_results and page_time_status["all_known_rows_older"]:
+                        consecutive_old_pages += 1
+                    else:
+                        consecutive_old_pages = 0
+
+                    stop_reason, complete = search_stop_decision(
+                        has_more=has_more,
+                        all_results=all_results,
+                        consecutive_old_pages=consecutive_old_pages,
+                        old_page_stop_count=old_page_stop_count,
+                        page=page,
+                        max_pages=max_pages,
+                    )
+                    resume_page = 0
+                    if not card_only and deferred_items:
+                        stop_reason = "session_detail_limit"
+                        complete = False
+                        resume_page = page
+                    elif (
+                        not card_only
+                        and not stop_reason
+                        and detail_session_limit > 0
+                        and session_detail_attempts >= detail_session_limit
+                    ):
+                        stop_reason = "session_detail_limit"
+                        complete = False
+                        resume_page = page + 1
+                    page_checkpoint_reason, page_checkpoint_resume = search_page_checkpoint_decision(
+                        page=page,
+                        start_page=start_page,
+                        session_limit=page_session_limit,
+                        terminal_stop_reason=stop_reason,
+                        overlap_pages=1 if card_only else 0,
+                    )
+                    if page_checkpoint_reason:
+                        stop_reason = page_checkpoint_reason
+                        complete = False
+                        resume_page = page_checkpoint_resume
+
+                    append_quality_status(
+                        "search_pagination_status.jsonl",
+                        {
+                            "keyword": keyword,
+                            "page": page,
+                            "status": (
+                                "complete"
+                                if complete
+                                else ("checkpoint" if stop_reason == "session_detail_limit" else ("incomplete" if stop_reason else "running"))
+                            ),
+                            "stop_reason": stop_reason,
+                            "complete": complete,
+                            "has_more": has_more,
+                            "returned_items": len(items),
+                            "detail_rows": len(valid_note_details),
+                            "detail_failed_ids": [
+                                str(item.get("id") or "")
+                                for item, detail in zip(fetch_items, note_details)
+                                if not detail
+                            ],
+                            "detail_candidates": len(detail_items),
+                            "detail_attempted_ids": [str(item.get("id") or "") for item in fetch_items],
+                            "detail_deferred_ids": [str(item.get("id") or "") for item in deferred_items],
+                            "session_detail_attempts": session_detail_attempts,
+                            "detail_session_limit": detail_session_limit,
+                            "session_pages": page - start_page + 1,
+                            "page_session_limit": page_session_limit,
+                            "card_only": card_only,
+                            "resume_page": resume_page,
+                            "skipped_newer_ids": skipped_newer_ids,
+                            "skipped_duplicate_ids": skipped_duplicate_ids,
+                            "skipped_existing_detail_ids": skipped_existing_detail_ids,
+                            "existing_detail_rows": len(existing_detail_ids),
+                            "unique_notes_seen": len(seen_search_note_ids) if card_only else len(seen_note_ids),
+                            "consecutive_old_pages": consecutive_old_pages,
+                            **page_time_status,
+                        },
+                    )
+
+                    if stop_reason:
+                        utils.logger.info(
+                            "[XiaoHongShuCrawler.search] Stop keyword=%s reason=%s complete=%s",
+                            keyword,
+                            stop_reason,
+                            complete,
+                        )
+                        break
+
                     # Sleep after each page navigation
-                    await asyncio.sleep(config.CRAWLER_MAX_SLEEP_SEC)
-                    utils.logger.info(f"[XiaoHongShuCrawler.search] Sleeping for {config.CRAWLER_MAX_SLEEP_SEC} seconds after page {page-1}")
-                except DataFetchError:
-                    utils.logger.error("[XiaoHongShuCrawler.search] Get note detail error")
-                    break
+                    page_sleep = page_cooldown_sec if all_results else config.CRAWLER_MAX_SLEEP_SEC
+                    await asyncio.sleep(page_sleep)
+                    utils.logger.info(f"[XiaoHongShuCrawler.search] Sleeping for {page_sleep} seconds after page {page}")
+                    page += 1
+                except DataFetchError as exc:
+                    append_quality_status(
+                        "search_pagination_status.jsonl",
+                        {
+                            "keyword": keyword,
+                            "page": page,
+                            "status": "incomplete",
+                            "stop_reason": "data_fetch_error",
+                            "complete": False,
+                            "error": str(exc),
+                        },
+                    )
+                    utils.logger.error("[XiaoHongShuCrawler.search] Get note detail error: %s", exc)
+                    raise
 
     async def get_creators_and_notes(self) -> None:
         """Get creator's notes and retrieve their comment information."""

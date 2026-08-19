@@ -23,6 +23,18 @@
 # Sorting method, the specific enumeration value is in media_platform/xhs/field.py
 SORT_TYPE = "popularity_descending"
 
+# Exhaustive, bounded search controls. These are opt-in so existing collection
+# commands keep their historical fixed-count behavior.
+XHS_SEARCH_ALL_RESULTS = False
+XHS_SEARCH_WINDOW_START = ""
+XHS_SEARCH_WINDOW_END = ""
+XHS_SEARCH_MAX_PAGES = 200
+XHS_SEARCH_OLD_PAGE_STOP_COUNT = 2
+XHS_SEARCH_PAGE_COOLDOWN_SEC = 300
+XHS_SEARCH_DETAIL_SESSION_LIMIT = 8
+XHS_SEARCH_PAGE_SESSION_LIMIT = 0
+XHS_SEARCH_CARD_ONLY = False
+
 # Specify the note URL list, which must carry the xsec_token parameter
 XHS_SPECIFIED_NOTE_URL_LIST = [
     "https://www.xiaohongshu.com/explore/64b95d01000000000c034587?xsec_token=AB0EFqJvINCkj6xOCKCQgfNNh8GdnBC_6XecG4QOddo3Q=&xsec_source=pc_cfeed"

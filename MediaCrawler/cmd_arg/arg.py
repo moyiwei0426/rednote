@@ -283,6 +283,88 @@ async def parse_cmd(argv: Optional[Sequence[str]] = None):
                 rich_help_panel="Basic Configuration",
             ),
         ] = config.CRAWLER_MAX_NOTES_COUNT,
+        xhs_search_all_results: Annotated[
+            str,
+            typer.Option(
+                "--xhs_search_all_results",
+                help="For XHS search, continue until the endpoint or configured time window is exhausted",
+                rich_help_panel="Basic Configuration",
+                show_default=True,
+            ),
+        ] = str(getattr(config, "XHS_SEARCH_ALL_RESULTS", False)),
+        xhs_search_sort: Annotated[
+            str,
+            typer.Option(
+                "--xhs_search_sort",
+                help="XHS search sort enum, for example time_descending",
+                rich_help_panel="Basic Configuration",
+            ),
+        ] = str(getattr(config, "SORT_TYPE", "")),
+        xhs_search_window_start: Annotated[
+            str,
+            typer.Option(
+                "--xhs_search_window_start",
+                help="Inclusive XHS publish-date lower bound in YYYY-MM-DD",
+                rich_help_panel="Basic Configuration",
+            ),
+        ] = str(getattr(config, "XHS_SEARCH_WINDOW_START", "")),
+        xhs_search_window_end: Annotated[
+            str,
+            typer.Option(
+                "--xhs_search_window_end",
+                help="Inclusive XHS publish-date upper bound in YYYY-MM-DD",
+                rich_help_panel="Basic Configuration",
+            ),
+        ] = str(getattr(config, "XHS_SEARCH_WINDOW_END", "")),
+        xhs_search_max_pages: Annotated[
+            int,
+            typer.Option(
+                "--xhs_search_max_pages",
+                help="Safety guard for exhaustive XHS search",
+                rich_help_panel="Basic Configuration",
+            ),
+        ] = int(getattr(config, "XHS_SEARCH_MAX_PAGES", 200)),
+        xhs_search_page_cooldown_sec: Annotated[
+            int,
+            typer.Option(
+                "--xhs_search_page_cooldown_sec",
+                help="Cooldown between exhaustive XHS search pages",
+                rich_help_panel="Performance Configuration",
+            ),
+        ] = int(getattr(config, "XHS_SEARCH_PAGE_COOLDOWN_SEC", 300)),
+        xhs_search_detail_session_limit: Annotated[
+            int,
+            typer.Option(
+                "--xhs_search_detail_session_limit",
+                help="Maximum XHS note-detail requests before writing a resumable search checkpoint; 0 disables the limit",
+                rich_help_panel="Performance Configuration",
+            ),
+        ] = int(getattr(config, "XHS_SEARCH_DETAIL_SESSION_LIMIT", 8)),
+        xhs_search_page_session_limit: Annotated[
+            int,
+            typer.Option(
+                "--xhs_search_page_session_limit",
+                help="Maximum successful XHS search pages per subprocess before writing a resumable checkpoint; 0 disables the limit",
+                rich_help_panel="Performance Configuration",
+            ),
+        ] = int(getattr(config, "XHS_SEARCH_PAGE_SESSION_LIMIT", 0)),
+        xhs_search_card_only: Annotated[
+            str,
+            typer.Option(
+                "--xhs_search_card_only",
+                help="Store regional search cards and pagination evidence without requesting note details",
+                rich_help_panel="Basic Configuration",
+                show_default=True,
+            ),
+        ] = str(getattr(config, "XHS_SEARCH_CARD_ONLY", False)),
+        crawler_sleep_sec: Annotated[
+            int,
+            typer.Option(
+                "--crawler_sleep_sec",
+                help="Fixed delay between XHS page/comment requests",
+                rich_help_panel="Performance Configuration",
+            ),
+        ] = config.CRAWLER_MAX_SLEEP_SEC,
         max_concurrency_num: Annotated[
             int,
             typer.Option(
@@ -359,6 +441,16 @@ async def parse_cmd(argv: Optional[Sequence[str]] = None):
         config.COOKIES = cookies
         config.CRAWLER_MAX_COMMENTS_COUNT_SINGLENOTES = max_comments_count_singlenotes
         config.CRAWLER_MAX_NOTES_COUNT = crawler_max_notes_count
+        config.XHS_SEARCH_ALL_RESULTS = _to_bool(xhs_search_all_results)
+        config.SORT_TYPE = xhs_search_sort
+        config.XHS_SEARCH_WINDOW_START = xhs_search_window_start
+        config.XHS_SEARCH_WINDOW_END = xhs_search_window_end
+        config.XHS_SEARCH_MAX_PAGES = xhs_search_max_pages
+        config.XHS_SEARCH_PAGE_COOLDOWN_SEC = xhs_search_page_cooldown_sec
+        config.XHS_SEARCH_DETAIL_SESSION_LIMIT = xhs_search_detail_session_limit
+        config.XHS_SEARCH_PAGE_SESSION_LIMIT = xhs_search_page_session_limit
+        config.XHS_SEARCH_CARD_ONLY = _to_bool(xhs_search_card_only)
+        config.CRAWLER_MAX_SLEEP_SEC = crawler_sleep_sec
         config.MAX_CONCURRENCY_NUM = max_concurrency_num
         config.SAVE_DATA_PATH = save_data_path
         config.ENABLE_IP_PROXY = enable_ip_proxy_value

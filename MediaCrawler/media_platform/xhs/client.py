@@ -24,7 +24,7 @@ from urllib.parse import quote, urlencode
 
 import httpx
 from playwright.async_api import BrowserContext, Page
-from tenacity import retry, stop_after_attempt, wait_fixed, retry_if_not_exception_type
+from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential, wait_fixed
 from tools.httpx_util import make_async_client
 
 import config
@@ -35,10 +35,11 @@ from tools import utils
 if TYPE_CHECKING:
     from proxy.proxy_ip_pool import ProxyIpPool
 
-from .exception import DataFetchError, IPBlockError, NoteNotFoundError
+from .exception import DataFetchError, IPBlockError, NoteNotFoundError, PaginationIncompleteError
 from .field import SearchNoteType, SearchSortType
 from .help import get_search_id
 from .extractor import XiaoHongShuExtractor
+from .pagination import append_quality_status, cursor_stop_reason
 from .playwright_sign import sign_with_xhshow
 
 
@@ -112,7 +113,12 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
         self.headers.update(headers)
         return self.headers
 
-    @retry(stop=stop_after_attempt(3), wait=wait_fixed(1), retry=retry_if_not_exception_type(NoteNotFoundError))
+    @retry(
+        stop=stop_after_attempt(6),
+        wait=wait_exponential(multiplier=10, min=10, max=60),
+        retry=retry_if_exception_type(httpx.TransportError),
+        reraise=True,
+    )
     async def request(self, method, url, **kwargs) -> Union[str, Any]:
         """
         Wrapper for httpx common request method, processes request response
@@ -129,8 +135,13 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
 
         # return response.text
         return_response = kwargs.pop("return_response", False)
+        if "/comment/page" in url:
+            safe_url = url.split("&xsec_token=", 1)[0]
+            utils.logger.info(f"[XiaoHongShuClient.request] comment request start url={safe_url}&xsec_token=<redacted>")
         async with make_async_client(proxy=self.proxy) as client:
             response = await client.request(method, url, timeout=self.timeout, **kwargs)
+        if "/comment/page" in url:
+            utils.logger.info(f"[XiaoHongShuClient.request] comment request done status={response.status_code}")
 
         if response.status_code == 471 or response.status_code == 461:
             # someday someone maybe will bypass captcha
@@ -237,8 +248,23 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
         headers = await self._pre_headers(uri, params={})
         async with make_async_client(proxy=self.proxy) as client:
             response = await client.get(f"{self._host}{uri}", headers=headers)
-            if response.status_code == 200:
-                return response.json()
+            if response.status_code != 200:
+                utils.logger.warning(
+                    "[XiaoHongShuClient.query_self] selfinfo returned status=%s",
+                    response.status_code,
+                )
+                return None
+            try:
+                payload = response.json()
+            except Exception as exc:
+                utils.logger.warning(
+                    "[XiaoHongShuClient.query_self] selfinfo returned invalid JSON: %s",
+                    type(exc).__name__,
+                )
+                return None
+            if not payload.get("data", {}).get("result", {}).get("success"):
+                utils.logger.warning("[XiaoHongShuClient.query_self] selfinfo response has success=false")
+            return payload
         return None
 
     async def pong(self) -> bool:
@@ -253,6 +279,12 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
             self_info: Dict = await self.query_self()
             if self_info and self_info.get("data", {}).get("result", {}).get("success"):
                 ping_flag = True
+            elif self_info is None and await self._browser_session_looks_authenticated():
+                utils.logger.warning(
+                    "[XiaoHongShuClient.pong] selfinfo unavailable; "
+                    "keeping the browser session because profile UI and web_session are present"
+                )
+                ping_flag = True
         except Exception as e:
             utils.logger.error(
                 f"[XiaoHongShuClient.pong] Check login state failed: {e}, and try to login again..."
@@ -260,6 +292,18 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
             ping_flag = False
         utils.logger.info(f"[XiaoHongShuClient.pong] Login state result: {ping_flag}")
         return ping_flag
+
+    async def _browser_session_looks_authenticated(self) -> bool:
+        """Use the visible profile entry only when the selfinfo service is unavailable."""
+        if not self.cookie_dict.get("web_session"):
+            return False
+        try:
+            profile_entry = self.playwright_page.locator(
+                "a[href*='/user/profile/']"
+            ).filter(has_text="我").first
+            return await profile_entry.is_visible(timeout=1500)
+        except Exception:
+            return False
 
     async def update_cookies(self, browser_context: BrowserContext, urls: Optional[list[str]] = None):
         """
@@ -424,33 +468,80 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
 
         """
         result = []
+        unlimited = max_count <= 0
+        root_comment_count = 0
+        page_count = 0
         comments_has_more = True
         comments_cursor = ""
-        while comments_has_more and len(result) < max_count:
-            comments_res = await self.get_note_comments(
-                note_id=note_id, xsec_token=xsec_token, cursor=comments_cursor
-            )
-            comments_has_more = comments_res.get("has_more", False)
-            comments_cursor = comments_res.get("cursor", "")
-            if "comments" not in comments_res:
-                utils.logger.info(
-                    f"[XiaoHongShuClient.get_note_all_comments] No 'comments' key found in response: {comments_res}"
+        seen_cursors = {comments_cursor}
+        try:
+            while comments_has_more and (unlimited or root_comment_count < max_count):
+                current_cursor = comments_cursor
+                comments_res = await self.get_note_comments(
+                    note_id=note_id, xsec_token=xsec_token, cursor=current_cursor
                 )
-                break
-            comments = comments_res["comments"]
-            if len(result) + len(comments) > max_count:
-                comments = comments[: max_count - len(result)]
-            if callback:
-                await callback(note_id, comments)
-            await asyncio.sleep(crawl_interval)
-            result.extend(comments)
-            sub_comments = await self.get_comments_all_sub_comments(
-                comments=comments,
-                xsec_token=xsec_token,
-                crawl_interval=crawl_interval,
-                callback=callback,
+                page_count += 1
+                comments_has_more = bool(comments_res.get("has_more", False))
+                next_cursor = str(comments_res.get("cursor") or "")
+                if "comments" not in comments_res:
+                    raise PaginationIncompleteError("top-level response omitted comments")
+                page_comments = comments_res["comments"]
+                if not unlimited and root_comment_count + len(page_comments) > max_count:
+                    page_comments = page_comments[: max_count - root_comment_count]
+                root_comment_count += len(page_comments)
+                if callback:
+                    await callback(note_id, page_comments)
+                await asyncio.sleep(crawl_interval)
+                result.extend(page_comments)
+                result.extend(
+                    await self.get_comments_all_sub_comments(
+                        comments=page_comments,
+                        xsec_token=xsec_token,
+                        crawl_interval=crawl_interval,
+                        callback=callback,
+                    )
+                )
+
+                cursor_reason = cursor_stop_reason(
+                    current_cursor,
+                    next_cursor,
+                    comments_has_more,
+                    seen_cursors,
+                )
+                if cursor_reason in {"missing_next_cursor", "repeated_cursor"}:
+                    raise PaginationIncompleteError(f"top-level {cursor_reason}")
+                if comments_has_more:
+                    seen_cursors.add(next_cursor)
+                    comments_cursor = next_cursor
+
+            status = "complete" if not comments_has_more else "limited"
+            append_quality_status(
+                "comment_pagination_status.jsonl",
+                {
+                    "kind": "top_level",
+                    "note_id": note_id,
+                    "status": status,
+                    "stop_reason": "endpoint_exhausted" if status == "complete" else "configured_limit",
+                    "pages": page_count,
+                    "observed_comments": root_comment_count,
+                    "unlimited": unlimited,
+                },
             )
-            result.extend(sub_comments)
+        except Exception as exc:
+            append_quality_status(
+                "comment_pagination_status.jsonl",
+                {
+                    "kind": "top_level",
+                    "note_id": note_id,
+                    "status": "incomplete",
+                    "stop_reason": type(exc).__name__,
+                    "pages": page_count,
+                    "observed_comments": root_comment_count,
+                    "unlimited": unlimited,
+                    "error": str(exc),
+                },
+            )
+            raise
         return result
 
     async def get_comments_all_sub_comments(
@@ -479,61 +570,83 @@ class XiaoHongShuClient(AbstractApiClient, ProxyRefreshMixin):
 
         result = []
         for comment in comments:
+            note_id = comment.get("note_id")
+            root_comment_id = comment.get("id")
+            declared_count = int(comment.get("sub_comment_count") or 0)
+            page_count = 0
+            observed_count = 0
             try:
-                note_id = comment.get("note_id")
-                sub_comments = comment.get("sub_comments")
-                if sub_comments and callback:
-                    await callback(note_id, sub_comments)
+                inline_comments = comment.get("sub_comments") or []
+                if inline_comments and callback:
+                    await callback(note_id, inline_comments)
+                observed_count += len(inline_comments)
 
-                sub_comment_has_more = comment.get("sub_comment_has_more")
-                if not sub_comment_has_more:
-                    continue
-
-                root_comment_id = comment.get("id")
-                sub_comment_cursor = comment.get("sub_comment_cursor")
-
-                while sub_comment_has_more:
-                    try:
+                sub_comment_has_more = bool(comment.get("sub_comment_has_more"))
+                if sub_comment_has_more:
+                    sub_comment_cursor = str(comment.get("sub_comment_cursor") or "")
+                    seen_cursors = {sub_comment_cursor}
+                    while sub_comment_has_more:
+                        current_cursor = sub_comment_cursor
                         comments_res = await self.get_note_sub_comments(
                             note_id=note_id,
                             root_comment_id=root_comment_id,
                             xsec_token=xsec_token,
                             num=10,
-                            cursor=sub_comment_cursor,
+                            cursor=current_cursor,
                         )
-
-                        if comments_res is None:
-                            utils.logger.info(
-                                f"[XiaoHongShuClient.get_comments_all_sub_comments] No response found for note_id: {note_id}"
-                            )
-                            break
-                        sub_comment_has_more = comments_res.get("has_more", False)
-                        sub_comment_cursor = comments_res.get("cursor", "")
-                        if "comments" not in comments_res:
-                            utils.logger.info(
-                                f"[XiaoHongShuClient.get_comments_all_sub_comments] No 'comments' key found in response: {comments_res}"
-                            )
-                            break
-                        comments = comments_res["comments"]
+                        page_count += 1
+                        if comments_res is None or "comments" not in comments_res:
+                            raise PaginationIncompleteError("reply response omitted comments")
+                        sub_comment_has_more = bool(comments_res.get("has_more", False))
+                        next_cursor = str(comments_res.get("cursor") or "")
+                        page_comments = comments_res["comments"]
                         if callback:
-                            await callback(note_id, comments)
+                            await callback(note_id, page_comments)
                         await asyncio.sleep(crawl_interval)
-                        result.extend(comments)
-                    except DataFetchError as e:
-                        utils.logger.warning(
-                            f"[XiaoHongShuClient.get_comments_all_sub_comments] Failed to get sub-comments for note_id: {note_id}, root_comment_id: {root_comment_id}, error: {e}. Skipping this comment's sub-comments."
+                        result.extend(page_comments)
+                        observed_count += len(page_comments)
+
+                        cursor_reason = cursor_stop_reason(
+                            current_cursor,
+                            next_cursor,
+                            sub_comment_has_more,
+                            seen_cursors,
                         )
-                        break  # Break out of the sub-comment acquisition loop of the current comment and continue processing the next comment
-                    except Exception as e:
-                        utils.logger.error(
-                            f"[XiaoHongShuClient.get_comments_all_sub_comments] Unexpected error when getting sub-comments for note_id: {note_id}, root_comment_id: {root_comment_id}, error: {e}"
-                        )
-                        break
-            except Exception as e:
-                utils.logger.error(
-                    f"[XiaoHongShuClient.get_comments_all_sub_comments] Error processing comment: {comment.get('id', 'unknown')}, error: {e}. Continuing with next comment."
+                        if cursor_reason in {"missing_next_cursor", "repeated_cursor"}:
+                            raise PaginationIncompleteError(f"reply {cursor_reason}")
+                        if sub_comment_has_more:
+                            seen_cursors.add(next_cursor)
+                            sub_comment_cursor = next_cursor
+
+                append_quality_status(
+                    "comment_pagination_status.jsonl",
+                    {
+                        "kind": "reply",
+                        "note_id": note_id,
+                        "root_comment_id": root_comment_id,
+                        "status": "complete",
+                        "stop_reason": "endpoint_exhausted",
+                        "pages": page_count,
+                        "observed_comments": observed_count,
+                        "declared_comments": declared_count,
+                    },
                 )
-                continue  # Continue to next comment
+            except Exception as exc:
+                append_quality_status(
+                    "comment_pagination_status.jsonl",
+                    {
+                        "kind": "reply",
+                        "note_id": note_id,
+                        "root_comment_id": root_comment_id,
+                        "status": "incomplete",
+                        "stop_reason": type(exc).__name__,
+                        "pages": page_count,
+                        "observed_comments": observed_count,
+                        "declared_comments": declared_count,
+                        "error": str(exc),
+                    },
+                )
+                raise
         return result
 
     async def get_creator_info(

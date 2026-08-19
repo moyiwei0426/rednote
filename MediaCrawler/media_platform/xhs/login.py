@@ -199,7 +199,7 @@ class XiaoHongShuLogin(AbstractLogin):
         partial_show_qrcode = functools.partial(utils.show_qrcode, base64_qrcode_img)
         asyncio.get_running_loop().run_in_executor(executor=None, func=partial_show_qrcode)
 
-        utils.logger.info(f"[XiaoHongShuLogin.login_by_qrcode] waiting for scan code login, remaining time is 120s")
+        utils.logger.info("[XiaoHongShuLogin.login_by_qrcode] waiting for scan code login, remaining time is 600s")
         try:
             await self.check_login_state(no_logged_in_session)
         except RetryError:

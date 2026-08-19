@@ -31,3 +31,7 @@ class IPBlockError(RequestError):
 
 class NoteNotFoundError(RequestError):
     """Note does not exist or is abnormal"""
+
+
+class PaginationIncompleteError(RuntimeError):
+    """A comment pagination cursor failed to advance or a page failed."""
