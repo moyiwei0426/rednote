@@ -1,0 +1,43 @@
+{
+  "schema_version": "GK2026D1-wuhan-checkpoint-v1",
+  "generated_at": "2026-08-23T07:54:18.104717+00:00",
+  "device": "wuhan",
+  "event_id": "GK2026D1",
+  "queue_items": 199,
+  "complete_items": 96,
+  "partial_items": 1,
+  "pending_items": 102,
+  "complete_unique_notes": 96,
+  "complete_unique_comments": 7227,
+  "complete_top_level_comments": 2661,
+  "complete_reply_comments": 4566,
+  "partial_unique_notes": 1,
+  "partial_unique_comments": 639,
+  "privacy_boundary": "Public research fields retained; cookies, browser profiles, logs, and xsec_token excluded.",
+  "files": {
+    "notes_public_full.csv": {
+      "sha256": "3E95F3AD2D6724F98C1DA6101D7F57F089DC5E0824FC18299E248C5B5AB3605B",
+      "bytes": 122108
+    },
+    "comments_public_full.csv": {
+      "sha256": "AF9F26F37C710AFB651838E9E99404564C2F2F33EB46F9DE89AA848E7CB8FED1",
+      "bytes": 1435968
+    },
+    "partial_notes_public_full.csv": {
+      "sha256": "6C143BA4C3791FC98998E82D8A11C2F3420507E136EC89D8F9AF9C66425E12D2",
+      "bytes": 964
+    },
+    "partial_comments_public_full.csv": {
+      "sha256": "4A744A222B1123DE548D55062A371CC73AA666A6865037EA14B92DE6E4C9E630",
+      "bytes": 135205
+    },
+    "collection_worklist_status.csv": {
+      "sha256": "E95C8F8681618D795687B7A6A1EC98062B453A773F7D4B695D13F746E28C9683",
+      "bytes": 51542
+    },
+    "comment_pagination_status.csv": {
+      "sha256": "1D2CD9B8CC9AFCE79FC97E1CA2290754C962513B6D2CC9956EAF7C7AF20EDE75",
+      "bytes": 551144
+    }
+  }
+}
