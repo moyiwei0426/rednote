@@ -1,0 +1,36 @@
+{
+  "schema_version": "GK2026D1-chengdu-checkpoint-v1",
+  "generated_at": "2026-08-24T04:37:28+00:00",
+  "region": "chengdu",
+  "event_id": "GK2026D1",
+  "queue_items": 55,
+  "complete_items": 55,
+  "partial_items": 0,
+  "pending_items": 0,
+  "complete_unique_notes": 55,
+  "complete_unique_comments": 3042,
+  "complete_top_level_comments": 2043,
+  "complete_reply_comments": 999,
+  "comment_region_present": 3041,
+  "pagination_rows": 2098,
+  "pagination_incomplete_rows": 0,
+  "data_boundary": "public fields only; no cookie, browser profile, local path, proxy secret, or xsec token",
+  "files": {
+    "collection_worklist_status.csv": {
+      "bytes": 14311,
+      "sha256": "891391e97f30b47766adbb1bb2f7cdf3930631364a51f41175f6b41f581136aa"
+    },
+    "notes_public_full.csv": {
+      "bytes": 63447,
+      "sha256": "8e354dd77a967e9687ace3d5510355590e240f29c4d814a7a7a2407cae10e7b3"
+    },
+    "comments_public_full.csv": {
+      "bytes": 632261,
+      "sha256": "d3982a985f604553de1f4c4aeaf2f014cad1aba5920eb093de3f05c3d2192ba4"
+    },
+    "comment_pagination_status.csv": {
+      "bytes": 364169,
+      "sha256": "7584043d03d4bee3df20c489b37aed5681e7348af0c4e2265c0b55fa4e861d69"
+    }
+  }
+}
