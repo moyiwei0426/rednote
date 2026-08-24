@@ -1,0 +1,36 @@
+{
+  "schema_version": "GK2026D1-beijing-checkpoint-v1",
+  "generated_at": "2026-08-24T14:32:00+00:00",
+  "region": "beijing",
+  "event_id": "GK2026D1",
+  "queue_items": 20,
+  "complete_items": 20,
+  "partial_items": 0,
+  "pending_items": 0,
+  "complete_unique_notes": 20,
+  "complete_unique_comments": 385,
+  "complete_top_level_comments": 227,
+  "complete_reply_comments": 158,
+  "comment_region_present": 385,
+  "pagination_rows": 247,
+  "pagination_incomplete_rows": 0,
+  "data_boundary": "public fields only; no cookie, browser profile, local path, proxy secret, or xsec token",
+  "files": {
+    "collection_worklist_status.csv": {
+      "bytes": 5340,
+      "sha256": "10b21a9c83d3bbaec0c194931fa4869e74bc813efbdc9c09b362e6b92e04920b"
+    },
+    "notes_public_full.csv": {
+      "bytes": 22401,
+      "sha256": "e1070e47f662699518a2f9de0720af3e80b9d43058f1dc04361d7b61048d2c80"
+    },
+    "comments_public_full.csv": {
+      "bytes": 83957,
+      "sha256": "3ce0a5ff0dd1b16751e5f321d6ee08cf5f9e1a280453ca00f7094ac3ef27e7f3"
+    },
+    "comment_pagination_status.csv": {
+      "bytes": 42972,
+      "sha256": "2e65135713f5366e9d84fcf0c8233134178525a6e397714513eb2efcb245a363"
+    }
+  }
+}
