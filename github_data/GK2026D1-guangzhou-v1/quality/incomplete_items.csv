@@ -1,0 +1,9 @@
+﻿started_at,finished_at,event_name,keyword,status,captcha_detected,returncode
+2026-08-26T00:21:09,2026-08-26T00:21:13,2026高考第一天,selected_notes_chunk_038,empty,False,0
+2026-08-26T13:40:56,2026-08-26T13:47:39,2026高考第一天,selected_notes_chunk_011,captcha,True,1
+2026-08-26T14:07:44,2026-08-26T14:18:50,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-24T13:58:09,2026-08-24T14:45:30,2026高考第一天,selected_notes_chunk_006,captcha,True,1
+2026-08-25T12:24:36,2026-08-25T12:24:42,2026高考第一天,selected_notes_chunk_008,empty,False,0
+2026-08-25T14:35:43,2026-08-25T14:35:50,2026高考第一天,selected_notes_chunk_008,empty,False,0
+2026-08-25T16:14:51,2026-08-25T16:15:37,2026高考第一天,selected_notes_chunk_002,failed,False,1073807364
+2026-08-25T15:29:25,2026-08-25T15:44:42,2026高考第一天,selected_notes_chunk_008,captcha,True,1

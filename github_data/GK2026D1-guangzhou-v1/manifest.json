@@ -1,0 +1,13 @@
+{
+  "schema_version": "GK2026D1-guangzhou-v1",
+  "generated_at": "2026-08-26T08:15:15+00:00",
+  "region": "guangzhou",
+  "event_id": "GK2026D1",
+  "complete_notes": 76,
+  "unique_comments": 5891,
+  "top_level_comments": 3333,
+  "reply_comments": 2558,
+  "quality_rows": 3435,
+  "incomplete_attempts": 8,
+  "data_boundary": "public fields only; no cookies, browser profiles, local paths, proxy secrets, or xsec tokens"
+}
