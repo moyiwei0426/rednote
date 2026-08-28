@@ -1,4 +1,16 @@
 ﻿started_at,finished_at,event_name,keyword,status,captcha_detected,returncode
+2026-08-26T19:45:53,2026-08-26T19:46:43,2026高考第一天,selected_notes_chunk_011,captcha,True,1
+2026-08-27T16:55:20,2026-08-27T18:07:57,2026高考第一天,selected_notes_chunk_002,login_expired,False,1
+2026-08-27T18:59:57,2026-08-27T19:01:50,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-27T12:07:40,2026-08-27T12:08:47,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-26T20:44:49,2026-08-26T20:45:28,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-26T21:51:25,2026-08-26T21:52:00,2026高考第一天,selected_notes_chunk_008,captcha,True,1
+2026-08-27T13:45:37,2026-08-27T13:46:44,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-26T23:51:53,2026-08-26T23:52:30,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-27T11:00:37,2026-08-27T11:01:14,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-27T20:41:16,2026-08-27T21:22:35,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-27T21:36:56,2026-08-27T21:40:03,2026高考第一天,selected_notes_chunk_001,captcha,True,1
+2026-08-28T00:08:31,2026-08-28T00:11:37,2026高考第一天,selected_notes_chunk_001,captcha,True,1
 2026-08-26T00:21:09,2026-08-26T00:21:13,2026高考第一天,selected_notes_chunk_038,empty,False,0
 2026-08-26T13:40:56,2026-08-26T13:47:39,2026高考第一天,selected_notes_chunk_011,captcha,True,1
 2026-08-26T14:07:44,2026-08-26T14:18:50,2026高考第一天,selected_notes_chunk_001,captcha,True,1

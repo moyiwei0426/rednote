@@ -1,13 +1,18 @@
 {
   "schema_version": "GK2026D1-guangzhou-v1",
-  "generated_at": "2026-08-26T08:15:15+00:00",
+  "generated_at": "2026-08-28T05:01:52+00:00",
   "region": "guangzhou",
   "event_id": "GK2026D1",
-  "complete_notes": 76,
-  "unique_comments": 5891,
-  "top_level_comments": 3333,
-  "reply_comments": 2558,
-  "quality_rows": 3435,
-  "incomplete_attempts": 8,
+  "notes_with_data": 95,
+  "complete_notes": 94,
+  "partial_notes": 1,
+  "partial_note_ids": [
+    "6a256f340000000022018444"
+  ],
+  "unique_comments": 6770,
+  "top_level_comments": 3525,
+  "reply_comments": 3245,
+  "quality_rows": 3646,
+  "incomplete_attempts": 20,
   "data_boundary": "public fields only; no cookies, browser profiles, local paths, proxy secrets, or xsec tokens"
 }
