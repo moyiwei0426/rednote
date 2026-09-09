@@ -49,6 +49,7 @@ python3 xhs_distributed_runner.py \
 
 ## 4. 节奏、恢复与数据要求
 
+- 国际版的搜索、详情、一级评论和二级回复都必须使用 `--international-rednote`。运行器会把它透传为 `--xhs_international true`，并在 `batch_meta.json`、原始分页质量记录中写入 `collection_platform=rednote_international`；缺少该标记的批次不得与本任务合并。
 - 搜索：单并发；每页 30 秒；每成功 5 页冷却 1,800 秒；关键词之间冷却 600 秒。
 - 搜索阶段只落盘公开搜索卡、页码、排名、采集时间、原始分页状态和必要的访问令牌字段；令牌只在本机受忽略的 `runs/` 中保存，绝不提交 Git。
 - 终止证据必须是 `has_more_false`、`two_pages_before_window` 或被明确记录的 `max_pages_guard`/中断原因。仅有进程存活、ledger 行或非空文件都不代表完整。

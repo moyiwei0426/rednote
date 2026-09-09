@@ -627,6 +627,7 @@ def build_crawler_env(args: argparse.Namespace) -> dict[str, str]:
     env = os.environ.copy()
     env.setdefault("UV_DEFAULT_INDEX", "https://pypi.org/simple")
     context = {
+        "XHS_COLLECTION_PLATFORM": "rednote_international" if getattr(args, "international_rednote", False) else "xiaohongshu_domestic",
         "XHS_COLLECTION_EGRESS_REGION": getattr(args, "collection_egress_region", ""),
         "XHS_COLLECTION_EGRESS_ID": getattr(args, "collection_egress_id", ""),
         "XHS_COLLECTION_ACCOUNT_ID": getattr(args, "account_id", ""),
@@ -654,6 +655,7 @@ def build_crawler_env(args: argparse.Namespace) -> dict[str, str]:
 
 def collection_context_from_args(args: argparse.Namespace) -> dict[str, str | int]:
     return {
+        "collection_platform": "rednote_international" if getattr(args, "international_rednote", False) else "xiaohongshu_domestic",
         "collection_egress_region": getattr(args, "collection_egress_region", ""),
         "collection_egress_id": getattr(args, "collection_egress_id", ""),
         "collection_account_id": getattr(args, "account_id", ""),
@@ -1223,6 +1225,8 @@ def build_detail_command(
                 "static",
             ]
         )
+    if getattr(args, "international_rednote", False):
+        cmd.extend(["--xhs_international", "true"])
     return cmd, cwd
 
 

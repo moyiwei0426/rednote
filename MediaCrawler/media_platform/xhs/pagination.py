@@ -15,6 +15,7 @@ BJ = timezone(timedelta(hours=8))
 
 def collection_context() -> dict[str, str]:
     mappings = {
+        "collection_platform": "XHS_COLLECTION_PLATFORM",
         "collection_egress_region": "XHS_COLLECTION_EGRESS_REGION",
         "collection_egress_id": "XHS_COLLECTION_EGRESS_ID",
         "collection_account_id": "XHS_COLLECTION_ACCOUNT_ID",
