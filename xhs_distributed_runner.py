@@ -56,6 +56,10 @@ TRANSIENT_FAILURE_MARKERS = (
     "Connection reset by peer",
     "Command timeout after",
 )
+UNAVAILABLE_NOTE_MARKERS = (
+    "Note not found or abnormal, code: -510000",
+    "Note not found:",
+)
 DATA_LOG_MARKERS = (
     "[store.xhs.update_xhs_note]",
     "[store.xhs.update_xhs_note_comment]",
@@ -311,7 +315,12 @@ def completed_output_dirs_from_ledger(path: Path, stage: str) -> set[str]:
             has_required_output = selected_detail_output_complete(output_path)
         else:
             has_required_output = output_has_jsonl_rows(output_path)
-        if row.get("status") == "ok" and has_required_output:
+        if row.get("status") == "skipped_unavailable":
+            # The platform confirmed that this note is no longer available.
+            # Keep its log and ledger row as provenance, but never retry it on
+            # a resumed queue.
+            completed.add(output_dir)
+        elif row.get("status") == "ok" and has_required_output:
             completed.add(output_dir)
     return completed
 
@@ -689,6 +698,8 @@ def classify_failure(log_path: Path, returncode: int, captcha: bool) -> str:
     latest_login_success = max((text.rfind(marker) for marker in LOGIN_SUCCESS_MARKERS), default=-1)
     if latest_login_failure > latest_login_success:
         return "login_expired"
+    if any(marker in text for marker in UNAVAILABLE_NOTE_MARKERS):
+        return "unavailable_note"
     if any(marker in text for marker in TRANSIENT_FAILURE_MARKERS):
         return "transient_network"
     return "command_failed" if returncode else "empty_output"
@@ -1341,6 +1352,7 @@ def collect_selected_comments(args: argparse.Namespace) -> int:
             status = "dry_run" if args.dry_run else (
                 "captcha" if failure_kind == "captcha" else
                 "login_expired" if failure_kind == "login_expired" else
+                "skipped_unavailable" if failure_kind == "unavailable_note" else
                 "retryable_network" if failure_kind == "transient_network" else
                 "ok" if returncode == 0 and has_output and has_required_output else
                 "incomplete_pagination" if returncode == 0 and has_output else
@@ -1408,6 +1420,8 @@ def collect_selected_comments(args: argparse.Namespace) -> int:
         if failure_kind == "login_expired":
             print(f"Login session expired. Stop now and refresh login/session. Partial: {final_quarantine or output_dir}")
             return 88
+        if failure_kind == "unavailable_note":
+            print(f"Note unavailable on platform; recorded skipped_unavailable and continuing. Log: {log_path}")
         if status == "empty" and args.stop_on_empty:
             print(f"No required JSONL output generated. Stop now and inspect the batch. Log: {log_path}")
             return 87
