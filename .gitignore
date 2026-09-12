@@ -21,3 +21,10 @@ xhs_agent_collection_kit_latest/received/
 
 *.log
 *.tmp
+
+# Local crawler state may contain browser profiles, cookies, request tokens,
+# transient build artifacts, or received archives. Keep it out of Git.
+.local_backups/
+.artifact_tmp_*/
+dist/
+.DS_Store
