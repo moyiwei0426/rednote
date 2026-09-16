@@ -1,0 +1,34 @@
+{
+  "schema_version": "ai-keyword-followup-guangzhou-snapshot-v1",
+  "dataset_id": "AIKF-INT-20260909-full-comments",
+  "snapshot_at": "2026-09-16T23:02:56+08:00",
+  "scope": "Guangzhou international RedNote selected-note body plus first- and second-level comments; in-progress snapshot.",
+  "target_notes": 2630,
+  "resolved_notes": 631,
+  "remaining_notes": 1999,
+  "status_counts": {
+    "captcha": 14,
+    "failed": 9,
+    "login_expired": 1,
+    "ok": 607,
+    "skipped_unavailable": 24
+  },
+  "unique_landed_notes": 623,
+  "unique_comments": 28435,
+  "pagination_records": 13645,
+  "pagination_status_counts": {
+    "complete": 13631,
+    "incomplete": 13,
+    "running": 1
+  },
+  "dangling_parent_comment_relationships": 64,
+  "files": {
+    "worklist": 2630,
+    "progress": 655,
+    "notes": 623,
+    "comments": 28435,
+    "pagination": 13645
+  },
+  "privacy_boundary": "No cookies, browser profiles, credentials, proxy or IP details, account/device identifiers, local paths, logs, xsec tokens, signed URLs, nicknames, locations, media URLs, or raw post/comment text. Text and actor values are SHA-256 digests.",
+  "completion_claim": "Partial snapshot only; collection continues after this cutoff."
+}
