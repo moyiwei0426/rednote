@@ -1,0 +1,22 @@
+{
+  "schema_version": "ai-keyword-followup-local-sync-v1",
+  "dataset_id": "ai_keyword_followup_20260916_local_sync",
+  "data_boundary": "Public note identifiers and non-secret task metadata only. No cookies, browser profiles, proxies, credentials, logs, xsec tokens, or signed URLs.",
+  "note_region_exposure_rows": 15062,
+  "unique_note_ids_across_available_regions": 9640,
+  "regions_with_terminal_search_snapshots": [
+    "beijing",
+    "shanghai",
+    "chengdu"
+  ],
+  "regions_with_selected_list_only": [
+    "guangzhou"
+  ],
+  "regions_missing_local_evidence": [
+    "wuhan"
+  ],
+  "chengdu_local_only_worklist_notes": 1575,
+  "shanghai_local_only_worklist_notes": 2408,
+  "collection_results_included": false,
+  "collection_results_note": "The two worklists are planned/in-progress collection queues, not completed collection claims."
+}
