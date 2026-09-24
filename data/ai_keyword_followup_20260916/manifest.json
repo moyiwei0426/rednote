@@ -17,6 +17,15 @@
   ],
   "chengdu_local_only_worklist_notes": 1575,
   "shanghai_local_only_worklist_notes": 2408,
-  "collection_results_included": false,
-  "collection_results_note": "The two worklists are planned/in-progress collection queues, not completed collection claims."
+  "collection_results_included": true,
+  "chengdu_collection_results": {
+    "delivery_path": "chengdu_collection_20260924",
+    "target_notes": 1575,
+    "content_collected_notes": 1515,
+    "completed_without_accessible_content": 60,
+    "comment_rows": 41364,
+    "top_level_comment_rows": 20343,
+    "reply_comment_rows": 21021
+  },
+  "collection_results_note": "The Chengdu worklist is complete in chengdu_collection_20260924. The Shanghai worklist remains a planning/in-progress queue."
 }
