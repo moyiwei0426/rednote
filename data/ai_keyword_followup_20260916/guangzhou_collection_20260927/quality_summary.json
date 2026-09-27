@@ -1,0 +1,36 @@
+{
+  "target_notes": 2630,
+  "unique_worklist_note_ids": 2630,
+  "completion_rows": 2630,
+  "terminal_status_counts": {
+    "completed_without_accessible_content": 108,
+    "content_collected": 2521,
+    "structurally_complete_reuse": 1
+  },
+  "landed_notes": 2522,
+  "notes_with_title": 2522,
+  "notes_with_desc": 2479,
+  "notes_with_tags": 2149,
+  "note_rows_with_pii_redaction": 85,
+  "note_pii_fragments_redacted": 135,
+  "comments": 79427,
+  "top_level_comments": 39583,
+  "reply_comments": 39844,
+  "comments_with_text": 78672,
+  "comment_content_types": {
+    "empty": 13,
+    "image_only": 742,
+    "text": 75707,
+    "text_and_image": 2965
+  },
+  "comment_rows_with_pii_redaction": 3328,
+  "comment_pii_fragments_redacted": 4078,
+  "dangling_parent_relationships": 122,
+  "pagination_records": 42105,
+  "pagination_status_counts": {
+    "complete": 42105
+  },
+  "orphan_comment_note_ids": 0,
+  "duplicate_note_ids": 0,
+  "duplicate_comment_keys": 0
+}

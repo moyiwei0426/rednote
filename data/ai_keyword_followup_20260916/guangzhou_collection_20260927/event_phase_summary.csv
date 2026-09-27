@@ -1,0 +1,7 @@
+﻿phase_id,phase_name,target_notes,content_collected,structurally_complete_reuse,completed_without_accessible_content,landed_notes,comments,top_level_comments,reply_comments,pagination_records
+F001,GPT-5.6,660,629,1,30,630,22943,11280,11663,11910
+F002,Kimi K3,628,610,0,18,610,21612,10322,11290,10932
+F003,DeepSeek-V4-Pro GA,264,254,0,10,254,12018,7046,4972,7300
+F004,DeepSeek-V4-Flash-Vision-Exp,147,141,0,6,141,1555,700,855,841
+F005,Claude Fable 5.1 / Mythos 5.1,270,266,0,4,266,2463,1221,1242,1487
+F006,GPT-6 Astra,661,621,0,40,621,18836,9014,9822,9635

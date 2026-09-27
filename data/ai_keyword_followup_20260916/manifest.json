@@ -1,7 +1,7 @@
 {
-  "schema_version": "ai-keyword-followup-local-sync-v1",
+  "schema_version": "ai-keyword-followup-local-sync-v2",
   "dataset_id": "ai_keyword_followup_20260916_local_sync",
-  "data_boundary": "Public note identifiers and non-secret task metadata only. No cookies, browser profiles, proxies, credentials, logs, xsec tokens, or signed URLs.",
+  "data_boundary": "Public research text is retained in completed regional deliveries. No cookies, browser profiles, proxies, credentials, logs, xsec tokens, signed URLs, nicknames, or raw identity fields.",
   "note_region_exposure_rows": 15062,
   "unique_note_ids_across_available_regions": 9640,
   "regions_with_terminal_search_snapshots": [
@@ -9,7 +9,7 @@
     "shanghai",
     "chengdu"
   ],
-  "regions_with_selected_list_only": [
+  "regions_with_selected_list_but_no_terminal_search_snapshot": [
     "guangzhou"
   ],
   "regions_missing_local_evidence": [
@@ -27,5 +27,19 @@
     "top_level_comment_rows": 20343,
     "reply_comment_rows": 21021
   },
-  "collection_results_note": "The Chengdu worklist is complete in chengdu_collection_20260924. The Shanghai worklist remains a planning/in-progress queue."
+  "guangzhou_collection_results": {
+    "delivery_path": "guangzhou_collection_20260927",
+    "target_notes": 2630,
+    "content_collected_notes": 2521,
+    "structurally_complete_reuse": 1,
+    "completed_without_accessible_content": 108,
+    "landed_notes": 2522,
+    "comment_rows": 79427,
+    "top_level_comment_rows": 39583,
+    "reply_comment_rows": 39844,
+    "pagination_records": 42105,
+    "public_text_retained": true
+  },
+  "sanitization_standard": "../../docs/RESEARCH_TEXT_PRESERVING_SANITIZATION_PROMPT_ZH.md",
+  "collection_results_note": "Chengdu and Guangzhou completed deliveries are included. Guangzhou is a research-text-preserving export and supersedes its earlier hash-only snapshot. Shanghai remains a planning/in-progress queue."
 }
