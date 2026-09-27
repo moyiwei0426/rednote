@@ -1,0 +1,39 @@
+{
+  "schema_version": "ai-keyword-followup-research-text-v1",
+  "dataset_id": "AIKF-INT-20260909-full-comments-guangzhou-public-text",
+  "snapshot_at": "2026-09-27T14:59:52+08:00",
+  "region": "Guangzhou",
+  "collection_platform": "RedNote international",
+  "continuation_boundary": "International follow-up dataset; separate from the earlier domestic baseline.",
+  "target_notes": 2630,
+  "content_collected_notes": 2521,
+  "structurally_complete_reuse": 1,
+  "completed_without_accessible_content": 108,
+  "landed_notes": 2522,
+  "comment_rows": 79427,
+  "top_level_comment_rows": 39583,
+  "reply_comment_rows": 39844,
+  "pagination_records": 42105,
+  "privacy": {
+    "included": "public post titles, descriptions, tags, comment text, public engagement counts, province/country public location, canonical note URLs, relationship and pagination evidence",
+    "excluded": "cookies, browser/session state, signed access URLs, xsec tokens, media URLs, crawler logs, proxy/egress details, device/account identifiers, nicknames and raw author/commenter identifiers",
+    "identity_method": "HMAC-SHA256 stable anonymous identifiers; key stored outside repository",
+    "text_method": "public text retained; detected PII fragments replaced in place and counted"
+  },
+  "deduplication": {
+    "notes": "note_id; latest last_modify_ts with text completeness tie-break",
+    "comments": "(note_id, comment_id); latest last_modify_ts with content completeness tie-break",
+    "pagination": "(note_id, kind, root_comment_id); latest recorded_at",
+    "progress": "(phase_id, chunk); terminal result preferred, latest finished_at tie-break"
+  },
+  "files": {
+    "worklist.csv": 2630,
+    "collection_completion.csv": 2630,
+    "notes_unified.csv": 2522,
+    "comments_unified.csv": 79427,
+    "pagination_status.csv": 42105,
+    "event_phase_summary.csv": 6,
+    "data_inventory.csv": 7
+  },
+  "completion_claim": "All 2,630 frozen targets have one effective terminal outcome. Public text is present for all accessible landed records; inaccessible targets remain explicit rows."
+}

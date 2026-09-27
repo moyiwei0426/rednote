@@ -1,0 +1,7 @@
+event_id,event_name,event_date,country_group,brand,assigned_device,priority,collection_group,enabled,keywords,analysis_window_start,analysis_window_end,notes_limit_recon,notes_limit_deep,comments_per_note_pilot,comments_per_note_deep,author_post_limit,notes
+F001,GPT-5.6,2026-07-09,Overseas,OpenAI,all,1,followup,yes,GPT-5.6,2026-07-09,2026-09-08,0,0,0,0,0,官方来源=https://openai.com/index/gpt-5-6/；成熟观察日=2026-09-17
+F002,Kimi K3,2026-07-16,China,Kimi,all,2,followup,yes,Kimi K3,2026-07-16,2026-09-08,0,0,0,0,0,官方来源=https://www.moonshot.cn/；成熟观察日=2026-09-24
+F003,DeepSeek-V4-Pro GA,2026-08-13,China,DeepSeek,all,3,followup,yes,DeepSeek V4 Pro,2026-08-13,2026-09-08,0,0,0,0,0,官方来源=https://api-docs.deepseek.com/news/news260813/；成熟观察日=2026-10-22
+F004,DeepSeek-V4-Flash-Vision-Exp,2026-08-21,China,DeepSeek,all,4,followup,yes,DeepSeek V4 Flash Vision,2026-08-21,2026-09-08,0,0,0,0,0,官方来源=https://api-docs.deepseek.com/news/news260821/；成熟观察日=2026-10-30
+F005,Claude Fable 5.1 / Mythos 5.1,2026-09-01,Overseas,Anthropic,all,5,followup,yes,Claude Fable 5.1,2026-09-01,2026-09-08,0,0,0,0,0,官方来源=https://www.anthropic.com/news；成熟观察日=2026-11-10
+F006,GPT-6 Astra,2026-09-03,Overseas,OpenAI,all,6,followup,yes,GPT-6 Astra,2026-09-03,2026-09-08,0,0,0,0,0,官方来源=https://openai.com/products/release-notes/；成熟观察日=2026-11-12

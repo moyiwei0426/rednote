@@ -1,0 +1,15 @@
+{
+  "dataset": "chengdu_ai_keyword_collection_20260924",
+  "region": "Chengdu",
+  "target_notes": 1575,
+  "content_collected_notes": 1515,
+  "completed_without_accessible_content": 60,
+  "comment_rows": 41364,
+  "top_level_comment_rows": 20343,
+  "reply_comment_rows": 21021,
+  "privacy": {
+    "included": "public post and comment text, public engagement counts, generalized public location, canonical note URLs",
+    "excluded": "browser state, cookies, session data, signed access URLs, crawler logs, proxy information, raw author/commenter identity fields"
+  },
+  "collection_boundary": "All accessible top-level comments and accessible replies at collection time; inaccessible or empty pages are recorded in the completion audit."
+}
