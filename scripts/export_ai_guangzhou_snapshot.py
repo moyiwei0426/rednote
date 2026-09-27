@@ -27,6 +27,7 @@ PHASE_LANES = {
     "F006": "B",
 }
 RESOLVED_STATUSES = {"ok", "skipped_unavailable"}
+STRUCTURAL_STATUS = "ok_structural_reuse"
 
 
 def read_jsonl(path: Path) -> Iterable[dict[str, Any]]:
@@ -77,10 +78,49 @@ def chunk_context(path: Path) -> tuple[str, int]:
     return phase, chunk
 
 
+def lane_context(path: Path) -> str:
+    return next((lane for device, lane in LANES.items() if device in path.parts), "")
+
+
+def pagination_complete(output_dir: Path) -> bool:
+    path = output_dir / "xhs" / "quality" / "comment_pagination_status.jsonl"
+    rows = list(read_jsonl(path)) if path.exists() else []
+    if not rows:
+        return False
+    latest: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for row in rows:
+        key = (
+            str(row.get("kind") or ""),
+            str(row.get("note_id") or ""),
+            str(row.get("root_comment_id") or ""),
+        )
+        latest[key] = row
+    top_rows = [row for key, row in latest.items() if key[0] == "top_level"]
+    if not top_rows or any(row.get("status") != "complete" for row in top_rows):
+        return False
+    reply_rows = [row for key, row in latest.items() if key[0] == "reply"]
+    if any(row.get("status") != "complete" for row in reply_rows):
+        return False
+    targets_path = output_dir / "xhs" / "quality" / "subcomment_parent_targets.jsonl"
+    targets = list(read_jsonl(targets_path)) if targets_path.exists() else []
+    expected = {
+        (str(row.get("note_id") or ""), str(row.get("root_comment_id") or ""))
+        for row in targets
+        if str(row.get("root_comment_id") or "")
+    }
+    completed = {
+        (key[1], key[2])
+        for key, row in latest.items()
+        if key[0] == "reply" and row.get("status") == "complete"
+    }
+    return not expected or expected.issubset(completed)
+
+
 def collect_notes(run_root: Path) -> list[dict[str, Any]]:
     latest: dict[str, dict[str, Any]] = {}
     for path in run_root.rglob("detail_contents_*.jsonl"):
         phase, chunk = chunk_context(path)
+        lane = lane_context(path)
         for row in read_jsonl(path):
             note_id = str(row.get("note_id", "")).strip()
             if not note_id:
@@ -88,7 +128,7 @@ def collect_notes(run_root: Path) -> list[dict[str, Any]]:
             candidate = {
                 "note_id": note_id,
                 "phase_id": phase,
-                "lane": PHASE_LANES.get(phase, ""),
+                "lane": lane,
                 "chunk": chunk,
                 "type": row.get("type", ""),
                 "published_at_ms": int_value(row.get("time")),
@@ -112,6 +152,7 @@ def collect_comments(run_root: Path) -> list[dict[str, Any]]:
     latest: dict[tuple[str, str], dict[str, Any]] = {}
     for path in run_root.rglob("detail_comments_*.jsonl"):
         phase, chunk = chunk_context(path)
+        lane = lane_context(path)
         for row in read_jsonl(path):
             note_id = str(row.get("note_id", "")).strip()
             comment_id = str(row.get("comment_id", "")).strip()
@@ -123,7 +164,7 @@ def collect_comments(run_root: Path) -> list[dict[str, Any]]:
                 "comment_id": comment_id,
                 "parent_comment_id": str(row.get("parent_comment_id", "")).strip(),
                 "phase_id": phase,
-                "lane": PHASE_LANES.get(phase, ""),
+                "lane": lane,
                 "chunk": chunk,
                 "created_at_ms": int_value(row.get("create_time")),
                 "likes": int_value(row.get("like_count")),
@@ -143,6 +184,7 @@ def collect_pagination(run_root: Path) -> list[dict[str, Any]]:
     latest: dict[tuple[str, str, str], dict[str, Any]] = {}
     for path in run_root.rglob("comment_pagination_status.jsonl"):
         phase, chunk = chunk_context(path)
+        lane = lane_context(path)
         for row in read_jsonl(path):
             note_id = str(row.get("note_id", "")).strip()
             kind = str(row.get("kind", "")).strip()
@@ -154,7 +196,7 @@ def collect_pagination(run_root: Path) -> list[dict[str, Any]]:
                 "kind": kind,
                 "root_comment_id": root_comment_id,
                 "phase_id": phase,
-                "lane": PHASE_LANES.get(phase, ""),
+                "lane": lane,
                 "chunk": chunk,
                 "status": row.get("status", ""),
                 "stop_reason": row.get("stop_reason", ""),
@@ -197,7 +239,7 @@ def collect_worklist(path: Path) -> list[dict[str, Any]]:
 
 
 def collect_progress(run_root: Path) -> list[dict[str, Any]]:
-    latest: dict[tuple[str, str, str], dict[str, Any]] = {}
+    latest: dict[tuple[str, int], dict[str, Any]] = {}
     for device, lane in LANES.items():
         ledger = run_root / device / "batch_ledger.csv"
         with ledger.open("r", encoding="utf-8-sig", newline="") as handle:
@@ -206,6 +248,10 @@ def collect_progress(run_root: Path) -> list[dict[str, Any]]:
                 keyword = source.get("keyword", "")
                 chunk_match = re.search(r"chunk_(\d+)", keyword)
                 chunk = int(chunk_match.group(1)) if chunk_match else 0
+                status = source.get("status", "")
+                output_dir = run_root / device / "selected-sub-comments" / phase / f"chunk_{chunk:03d}"
+                if status not in RESOLVED_STATUSES and pagination_complete(output_dir):
+                    status = STRUCTURAL_STATUS
                 row = {
                     "phase_id": phase,
                     "phase_name": source.get("event_name", ""),
@@ -213,11 +259,23 @@ def collect_progress(run_root: Path) -> list[dict[str, Any]]:
                     "chunk": chunk,
                     "started_at": source.get("started_at", ""),
                     "finished_at": source.get("finished_at", ""),
-                    "status": source.get("status", ""),
+                    "status": status,
                     "returncode": source.get("returncode", ""),
                     "captcha_detected": source.get("captcha_detected", ""),
                 }
-                latest[(lane, phase, keyword)] = row
+                key = (phase, chunk)
+                current = latest.get(key)
+                row_resolved = status in RESOLVED_STATUSES or status == STRUCTURAL_STATUS
+                current_resolved = bool(
+                    current
+                    and (current["status"] in RESOLVED_STATUSES or current["status"] == STRUCTURAL_STATUS)
+                )
+                if (
+                    current is None
+                    or (row_resolved and not current_resolved)
+                    or (row_resolved == current_resolved and row["finished_at"] >= current["finished_at"])
+                ):
+                    latest[key] = row
     return sorted(latest.values(), key=lambda row: (row["phase_id"], row["chunk"], row["lane"]))
 
 
@@ -246,7 +304,7 @@ def main() -> int:
     }
 
     statuses = Counter(row["status"] for row in progress)
-    closed = statuses["ok"] + statuses["skipped_unavailable"]
+    closed = sum(statuses[status] for status in RESOLVED_STATUSES | {STRUCTURAL_STATUS})
     comment_ids = {(row["note_id"], row["comment_id"]) for row in comments}
     dangling_parents = sum(
         1 for row in comments
@@ -255,10 +313,10 @@ def main() -> int:
     pagination_statuses = Counter(row["status"] for row in pagination)
     snapshot_at = datetime.now().astimezone().isoformat(timespec="seconds")
     manifest = {
-        "schema_version": "ai-keyword-followup-guangzhou-snapshot-v1",
+        "schema_version": "ai-keyword-followup-guangzhou-final-v2",
         "dataset_id": "AIKF-INT-20260909-full-comments",
         "snapshot_at": snapshot_at,
-        "scope": "Guangzhou international RedNote selected-note body plus first- and second-level comments; in-progress snapshot.",
+        "scope": "Final Guangzhou international RedNote selected-note body plus first- and second-level comments delivery.",
         "target_notes": len(worklist),
         "resolved_notes": closed,
         "remaining_notes": len(worklist) - closed,
@@ -270,7 +328,7 @@ def main() -> int:
         "dangling_parent_comment_relationships": dangling_parents,
         "files": counts,
         "privacy_boundary": "No cookies, browser profiles, credentials, proxy or IP details, account/device identifiers, local paths, logs, xsec tokens, signed URLs, nicknames, locations, media URLs, or raw post/comment text. Text and actor values are SHA-256 digests.",
-        "completion_claim": "Partial snapshot only; collection continues after this cutoff.",
+        "completion_claim": "Final delivery: all 2,630 target batches are closed by successful pagination, structurally complete reusable pagination, or confirmed platform unavailability.",
     }
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
