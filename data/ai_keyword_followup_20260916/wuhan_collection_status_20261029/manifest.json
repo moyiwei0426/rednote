@@ -1,0 +1,29 @@
+{
+  "schema_version": "ai-keyword-followup-collection-status-v1",
+  "dataset_id": "wuhan_local_only_collection_status_20261029",
+  "region": "wuhan",
+  "scope": "wuhan_local_only",
+  "collection_stage": "selected-sub-comments",
+  "snapshot_date": "2026-10-29",
+  "last_ledger_activity_at": "2026-10-25T23:29:47",
+  "timezone": "Asia/Shanghai",
+  "worklist_tasks": 2915,
+  "latest_task_status_counts": {
+    "ok": 2614,
+    "empty": 247,
+    "login_expired": 1,
+    "not_started": 53
+  },
+  "completed_or_empty_tasks": 2861,
+  "outstanding_tasks": 54,
+  "outstanding_phase": "F006",
+  "outstanding_chunk_range": {
+    "first": 413,
+    "last": 466
+  },
+  "files": {
+    "all_task_statuses": "task_status.csv",
+    "outstanding_note_ids": "remaining_note_ids.csv"
+  },
+  "data_boundary": "Public note IDs and task metadata only. No signed URLs, xsec tokens, browser profile, cookies, proxies, credentials, logs, note bodies, or comment/reply contents."
+}
