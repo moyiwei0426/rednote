@@ -1,0 +1,41 @@
+{
+  "region": "Wuhan",
+  "target_notes": 2915,
+  "unique_worklist_note_ids": 2915,
+  "completion_rows": 2915,
+  "terminal_status_counts": {
+    "completed_without_accessible_content": 247,
+    "content_collected": 2614,
+    "login_expired": 1,
+    "missing_terminal_status": 53
+  },
+  "landed_notes": 2614,
+  "content_collected_without_landed_note": 0,
+  "notes_with_title": 2614,
+  "notes_with_desc": 2581,
+  "notes_with_tags": 2222,
+  "note_rows_with_pii_redaction": 175,
+  "note_pii_fragments_redacted": 273,
+  "comments": 83586,
+  "top_level_comments": 40318,
+  "reply_comments": 43268,
+  "comments_with_text": 82204,
+  "comment_content_types": {
+    "empty": 13,
+    "image_only": 1369,
+    "text": 79537,
+    "text_and_image": 2667
+  },
+  "comment_rows_with_pii_redaction": 2656,
+  "comment_pii_fragments_redacted": 3116,
+  "dangling_parent_relationships": 177,
+  "pagination_records": 8371,
+  "pagination_status_counts": {
+    "complete": 8371
+  },
+  "content_notes_without_top_level_pagination_record": 0,
+  "content_notes_with_incomplete_pagination": 0,
+  "orphan_comment_note_ids": 0,
+  "duplicate_note_ids": 0,
+  "duplicate_comment_keys": 0
+}

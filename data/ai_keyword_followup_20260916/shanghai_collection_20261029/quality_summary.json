@@ -1,0 +1,39 @@
+{
+  "region": "Shanghai",
+  "target_notes": 2408,
+  "unique_worklist_note_ids": 2408,
+  "completion_rows": 2408,
+  "terminal_status_counts": {
+    "completed_without_accessible_content": 178,
+    "content_collected": 2230
+  },
+  "landed_notes": 2230,
+  "content_collected_without_landed_note": 0,
+  "notes_with_title": 2228,
+  "notes_with_desc": 2178,
+  "notes_with_tags": 1840,
+  "note_rows_with_pii_redaction": 108,
+  "note_pii_fragments_redacted": 175,
+  "comments": 58694,
+  "top_level_comments": 26770,
+  "reply_comments": 31924,
+  "comments_with_text": 58306,
+  "comment_content_types": {
+    "empty": 4,
+    "image_only": 384,
+    "text": 56519,
+    "text_and_image": 1787
+  },
+  "comment_rows_with_pii_redaction": 2180,
+  "comment_pii_fragments_redacted": 2475,
+  "dangling_parent_relationships": 79,
+  "pagination_records": 6509,
+  "pagination_status_counts": {
+    "complete": 6509
+  },
+  "content_notes_without_top_level_pagination_record": 0,
+  "content_notes_with_incomplete_pagination": 0,
+  "orphan_comment_note_ids": 0,
+  "duplicate_note_ids": 0,
+  "duplicate_comment_keys": 0
+}

@@ -1,0 +1,6 @@
+region,target_notes,content_collected_notes,structurally_complete_reuse,completed_without_accessible_content,unresolved_targets,login_expired_targets,not_started_targets,landed_notes,comment_rows,top_level_comments,reply_comments,pagination_records,pagination_incomplete_records,pagination_scope,package_path
+Beijing,1250,1086,0,164,0,0,0,1086,22962,10807,12155,2799,0,all landed-note pagination records complete,../beijing_collection_20261029/
+Shanghai,2408,2230,0,178,0,0,0,2230,58694,26770,31924,6509,0,all landed-note pagination records complete,../shanghai_collection_20261029/
+Chengdu,1575,1515,0,60,0,0,0,1515,41364,20343,21021,,,reported all accessible top-level comments and replies; per-thread pagination table not present in export,../chengdu_collection_20260924/
+Guangzhou,2630,2521,1,108,0,0,0,2522,79427,39583,39844,42105,0,all 42105 pagination records complete; 122 dangling parent relationships flagged,../guangzhou_collection_20260927/
+Wuhan,2915,2614,0,247,54,1,53,2614,83586,40318,43268,8371,0,all landed-note pagination records complete; 54 targets remain unresolved,../wuhan_collection_partial_20261029/

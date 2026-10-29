@@ -1,0 +1,79 @@
+{
+  "schema_version": "ai-keyword-followup-research-text-v1",
+  "dataset_id": "AIKF-INT-20260916-SH-AI-LOCAL-ONLY-research-text",
+  "snapshot_at": "2026-10-29T18:07:36+08:00",
+  "run_id": "AIKF-INT-20260916-SH-AI-LOCAL-ONLY",
+  "region": "Shanghai",
+  "collection_platform": "RedNote international",
+  "target_notes": 2408,
+  "content_collected_notes": 2230,
+  "structurally_complete_reuse": 0,
+  "completed_without_accessible_content": 178,
+  "unresolved_targets": 0,
+  "landed_notes": 2230,
+  "comment_rows": 58694,
+  "top_level_comment_rows": 26770,
+  "reply_comment_rows": 31924,
+  "pagination_records": 6509,
+  "privacy": {
+    "included": "public post/comment text, public engagement counts, generalized public location, canonical note URLs, relationship and pagination evidence",
+    "excluded": "cookies, browser/session state, signed access URLs, xsec tokens, media URLs, crawler logs, proxy/egress details, device/account identifiers, nicknames and raw author/commenter identifiers",
+    "identity_method": "HMAC-SHA256; per-export key is kept outside the repository",
+    "text_method": "public text retained; detected PII fragments replaced in place and counted"
+  },
+  "deduplication": {
+    "notes": "note_id within region; latest last_modify_ts with text completeness tie-break",
+    "comments": "(note_id, comment_id) within region; latest last_modify_ts with content completeness tie-break",
+    "pagination": "(note_id, kind, root_comment_id); latest recorded_at",
+    "progress": "(phase_id, chunk); terminal result preferred, latest finished_at tie-break"
+  },
+  "files": {
+    "worklist.csv": 2408,
+    "collection_completion.csv": 2408,
+    "remaining_tasks.csv": 0,
+    "notes_unified.csv": 2230,
+    "comments_unified.csv": 58694,
+    "pagination_status.csv": 6509,
+    "event_phase_summary.csv": 6,
+    "data_inventory.csv": 8
+  },
+  "integrity": {
+    "region": "Shanghai",
+    "target_notes": 2408,
+    "unique_worklist_note_ids": 2408,
+    "completion_rows": 2408,
+    "terminal_status_counts": {
+      "completed_without_accessible_content": 178,
+      "content_collected": 2230
+    },
+    "landed_notes": 2230,
+    "content_collected_without_landed_note": 0,
+    "notes_with_title": 2228,
+    "notes_with_desc": 2178,
+    "notes_with_tags": 1840,
+    "note_rows_with_pii_redaction": 108,
+    "note_pii_fragments_redacted": 175,
+    "comments": 58694,
+    "top_level_comments": 26770,
+    "reply_comments": 31924,
+    "comments_with_text": 58306,
+    "comment_content_types": {
+      "empty": 4,
+      "image_only": 384,
+      "text": 56519,
+      "text_and_image": 1787
+    },
+    "comment_rows_with_pii_redaction": 2180,
+    "comment_pii_fragments_redacted": 2475,
+    "dangling_parent_relationships": 79,
+    "pagination_records": 6509,
+    "pagination_status_counts": {
+      "complete": 6509
+    },
+    "content_notes_without_top_level_pagination_record": 0,
+    "content_notes_with_incomplete_pagination": 0,
+    "orphan_comment_note_ids": 0,
+    "duplicate_note_ids": 0,
+    "duplicate_comment_keys": 0
+  }
+}
