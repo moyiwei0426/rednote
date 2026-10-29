@@ -1,0 +1,7 @@
+﻿phase_id,phase_name,target_notes,content_collected,structurally_complete_reuse,completed_without_accessible_content,login_expired,missing_terminal_status,other_unresolved,landed_notes,comments,top_level_comments,reply_comments,pagination_records
+F001,F001,356,303,0,53,0,0,0,303,6363,3402,2961,700
+F002,F002,111,108,0,3,0,0,0,108,830,418,412,182
+F003,F003,325,294,0,31,0,0,0,294,8690,3595,5095,1004
+F004,F004,22,19,0,3,0,0,0,19,65,44,21,25
+F005,F005,122,110,0,12,0,0,0,110,1828,792,1036,263
+F006,F006,314,252,0,62,0,0,0,252,5186,2556,2630,625

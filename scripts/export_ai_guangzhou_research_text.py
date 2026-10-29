@@ -10,7 +10,7 @@ import hmac
 import json
 import re
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
 from zoneinfo import ZoneInfo
@@ -30,7 +30,10 @@ PHASE_LANES = {
 }
 RESOLVED = {"ok", "skipped_unavailable"}
 STRUCTURAL = "ok_structural_reuse"
-BJ = ZoneInfo("Asia/Shanghai")
+try:
+    BJ = ZoneInfo("Asia/Shanghai")
+except Exception:  # Windows Python may not include the IANA tz database.
+    BJ = timezone(timedelta(hours=8), name="Asia/Shanghai")
 
 PII_PATTERNS: list[tuple[str, re.Pattern[str], str]] = [
     ("url", re.compile(r"(?i)\b(?:https?://|www\.)\S+"), "[URL]"),

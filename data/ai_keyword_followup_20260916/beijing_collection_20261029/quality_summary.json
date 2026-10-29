@@ -1,0 +1,39 @@
+{
+  "region": "Beijing",
+  "target_notes": 1250,
+  "unique_worklist_note_ids": 1250,
+  "completion_rows": 1250,
+  "terminal_status_counts": {
+    "completed_without_accessible_content": 164,
+    "content_collected": 1086
+  },
+  "landed_notes": 1086,
+  "content_collected_without_landed_note": 0,
+  "notes_with_title": 1086,
+  "notes_with_desc": 1067,
+  "notes_with_tags": 919,
+  "note_rows_with_pii_redaction": 49,
+  "note_pii_fragments_redacted": 73,
+  "comments": 22962,
+  "top_level_comments": 10807,
+  "reply_comments": 12155,
+  "comments_with_text": 22617,
+  "comment_content_types": {
+    "empty": 9,
+    "image_only": 336,
+    "text": 21306,
+    "text_and_image": 1311
+  },
+  "comment_rows_with_pii_redaction": 770,
+  "comment_pii_fragments_redacted": 978,
+  "dangling_parent_relationships": 39,
+  "pagination_records": 2799,
+  "pagination_status_counts": {
+    "complete": 2799
+  },
+  "content_notes_without_top_level_pagination_record": 0,
+  "content_notes_with_incomplete_pagination": 0,
+  "orphan_comment_note_ids": 0,
+  "duplicate_note_ids": 0,
+  "duplicate_comment_keys": 0
+}

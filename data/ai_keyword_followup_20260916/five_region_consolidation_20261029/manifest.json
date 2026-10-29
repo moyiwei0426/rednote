@@ -1,0 +1,41 @@
+{
+  "schema_version": "ai-keyword-followup-five-region-index-v1",
+  "dataset_id": "AIKF-INT-20261029-five-region-consolidation",
+  "snapshot_at": "2026-10-29T18:10:00+08:00",
+  "collection_platform": "RedNote international",
+  "events": ["F001", "F002", "F003", "F004", "F005", "F006"],
+  "regions": ["Beijing", "Shanghai", "Chengdu", "Guangzhou", "Wuhan"],
+  "target_notes": 10778,
+  "unique_target_note_ids": 10778,
+  "content_collected_notes": 9966,
+  "structurally_complete_reuse": 1,
+  "completed_without_accessible_content": 757,
+  "unresolved_targets": 54,
+  "unresolved_wuhan_targets": {
+    "login_expired": 1,
+    "not_started": 53
+  },
+  "landed_notes": 9967,
+  "comment_rows": 286033,
+  "top_level_comment_rows": 137821,
+  "reply_comment_rows": 148212,
+  "privacy": {
+    "included": "public post/comment text, canonical note IDs/URLs, generalized public location, public engagement counts, comment relationships, completion and pagination evidence",
+    "excluded": "browser profiles, cookies, signed access URLs/xsec tokens, media URLs, crawler logs, proxy/egress details, account/device identifiers, nicknames, and raw author/commenter identifiers",
+    "text_method": "PII patterns redacted in newly exported Beijing, Shanghai, and Wuhan text; author/commenter identifiers HMAC-pseudonymized with keys kept outside Git"
+  },
+  "regional_packages": {
+    "Beijing": "../beijing_collection_20261029/",
+    "Shanghai": "../shanghai_collection_20261029/",
+    "Chengdu": "../chengdu_collection_20260924/",
+    "Guangzhou": "../guangzhou_collection_20260927/",
+    "Wuhan": "../wuhan_collection_partial_20261029/"
+  },
+  "limitations": [
+    "The five regional worklists contain 10,778 distinct note IDs; no cross-region target duplicates were found.",
+    "757 targets across the five regions have a completed ledger outcome but no accessible post body at collection time.",
+    "Wuhan is the only region with unresolved work: one login-expired target and 53 targets not started.",
+    "Chengdu's published audit gives aggregate comment counts and states that all accessible top-level comments/replies were collected, but its package does not include per-thread pagination rows.",
+    "Guangzhou reports 122 dangling parent relationships; these observed replies are preserved and flagged rather than inferred."
+  ]
+}
